@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="sidebarInner">
+    <nav>
+      <dl *ngFor="let link of sbLinks">
+        <dt (click)="link.isOpen = !link.isOpen">{{link.firstLink[1]}}</dt>
+        <div class="navbar_list">
+          <dd [ngClass]="{'open': link.isOpen}" >
+            <a *ngFor="let subLink of link.secondLink" routerLink='subLink[0]' innerHtml="subLink[1]"></a>
+          </dd>
+        </div>
+      </dl>
+    </nav>
+    <div class="legal"></div>
+  </div>
+</div>

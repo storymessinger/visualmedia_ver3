@@ -1,0 +1,71 @@
+@import '../../../../assets/css/_variables.scss';
+
+.content-row {
+    // fixing row under col margin bug
+    margin : 0;
+    justify-content: center;
+}
+
+.member_image_box {
+    // row
+    display: flex;
+    flex-wrap:wrap;
+
+    padding: 2rem 0 2rem 0;
+    .partner-box {
+        margin-bottom: 2rem;
+
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+
+        .partner-img img:hover {
+            -webkit-filter: grayscale(100%) contrast(80%);
+        }
+        .partner-img {
+            overflow:hidden;
+
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 1rem;
+            // margin-bottom: 2rem;
+            img {
+                width: 100%;
+            }
+        }
+        .partner-text {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0 1.5rem;
+            max-width: 400px;
+        }
+        .partner-title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.year {
+    padding: 2rem 3rem 3rem;
+    flex-flow:column;
+    align-items: center;
+}
+.about-title {
+    color: $primary_grey;
+}
+hr {
+    width: 100px;
+    border-top: 3px $primary_orange solid;
+}
+.about-text {
+    color: $primary_grey;
+    margin-top:1rem;
+}
+
+
+@media (max-width: 991px) {
+
+}
+@media (max-width: 575px) {
+}

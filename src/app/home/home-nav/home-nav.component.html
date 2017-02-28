@@ -1,0 +1,27 @@
+<div class="indexPage-nav">
+  <div class="list-group">
+    <a class="list-group-item" href="/about/us">About</a>
+    <a class="list-group-item" href="/member/professor">Member</a>
+    <a class="list-group-item" href="/project">Research</a>
+    <a class="list-group-item" href="/news">News and Events</a>
+    <a class="list-group-item" href="/archive/download">Archive</a>
+  </div>
+</div>
+
+<nav class="navbar navbar-light fixed-top">
+  <img class="menu_btn" (click)=clickMenuBtn($event) [src]=menuIconPath fill-opacity="0" width="30px">
+  <a class="indexpage-nav-btn navbar-brand" routerLink="/"><img alt="brand" [src]=logoIconPath width="168"></a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active"><a class="nav-link" routerLInk="main/info">About</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="member/all">Member</a></li>
+    <li class="nav-item"><a class="nav-link" href="/project">Research</a></li>
+    <li class="nav-item"><a class="nav-link" href="/news">News & Events</a></li>
+    <li class="nav-item"><a class="nav-link" href="/archive/download">Archive</a></li>
+  </ul>
+  <ul class="search-nav">
+    <li class="search">
+      <img class="search_btn" (click)=clickSearchBtn($event) [src]=searchIconPath fill-opacity="0" width="30px">
+      <input id="searchBar">
+    </li>
+  </ul>
+</nav>

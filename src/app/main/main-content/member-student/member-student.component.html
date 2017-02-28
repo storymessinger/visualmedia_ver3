@@ -1,0 +1,83 @@
+<div class="flex-content">
+  <div class="make_dimmer"></div>
+  <div class="content col-sm container-fluid">
+    <div class="row content-row">
+      <div class="member_image_box col-sm-12">
+        <h2 class="member-status col-sm-12">professor
+          <hr/>
+        </h2>
+
+
+        <!-- card container-->
+        <div class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img"><img [src]='ProfImgPath' alt="Professor profile img" /></div>
+          <div class="student-text">
+            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
+            <h6>INTERESTED TOPICS</h6>
+            <p>Computer Graphics / Video Projection</p>
+            <h6>E-MAIL</h6>
+            <p>bumkikim@kaist.ac.kr</p>
+          </div>
+        </div>
+      </div>
+      <div class="member_image_box col-sm-12">
+        <h2 class="member-status col-sm-12">current students
+          <hr/>
+        </h2>
+        <div *ngFor='let student of students' class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img"><img [src]='student.img'></div>
+          <div class="student-text">
+            <h5 class="name">
+              {{student.name}} <sub>{{student.status}}</sub>
+            </h5>
+            <h6>INTERESTED TOPICS</h6>
+            <div>
+              <span *ngFor='let topic of student.topics'>{{topic}} </span>
+            </div>
+            <h6>E-MAIL</h6>
+            <p>{{student.email}}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="member_image_box col-sm-12">
+        <h2 class="member-status col-sm-12">former students
+          <hr/>
+        </h2>
+        <!-- card container-->
+        <div class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
+          <div class="student-text">
+            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
+            <h6>INTERESTED TOPICS</h6>
+            <p>Computer Graphics / Video Projection</p>
+            <h6>E-MAIL</h6>
+            <p>bumkikim@kaist.ac.kr</p>
+          </div>
+        </div>
+        <!-- card container-->
+        <div class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
+          <div class="student-text">
+            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
+            <h6>INTERESTED TOPICS</h6>
+            <p>Computer Graphics / Video Projection</p>
+            <h6>E-MAIL</h6>
+            <p>bumkikim@kaist.ac.kr</p>
+          </div>
+        </div>
+        <!-- card container-->
+        <div class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
+          <div class="student-text">
+            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
+            <h6>INTERESTED TOPICS</h6>
+            <p>Computer Graphics / Video Projection</p>
+            <h6>E-MAIL</h6>
+            <p>bumkikim@kaist.ac.kr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
