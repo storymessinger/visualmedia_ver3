@@ -13,6 +13,7 @@ export class MemberStudentComponent implements OnInit {
   constructor(private memberService:MemberService) { 
     this.students = this.memberService.getMembers();
   }
+  
 
   ngOnInit() {
   }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { SidebarFoldService } from './../sidebar-fold.service';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router'; 
 
 @Component({
@@ -17,12 +18,21 @@ export class MainNavbarComponent {
   //
   breadcrumbs:string[];
 
-  constructor( private router:Router ) {
+  constructor( private router:Router, private sidebarFold:SidebarFoldService ) {
     this.breadcrumbs =  this.router.url.split('/');
   }
 
   menuClick() {
-    
+    this.sidebarFold._isFolded = true;
   }
+
+  @Input() state;
+  @Output() clicked = new EventEmitter<string>();
+  
+  onClicked() {
+    this.state = !this.state;
+    this.clicked.emit(this.state);
+  }
+
 
 }

@@ -1,0 +1,54 @@
+@import '../../../../assets/css/_variables.scss';
+
+.year {
+    border-top: 1px solid #ccc;
+    padding: 2rem 3rem 3rem;
+    flex-flow:column;
+    .year-title {
+        color: $primary_grey;
+        margin-bottom: 3rem;
+    }
+}
+.news-box {
+    display:flex;
+    margin-bottom: 5rem;
+
+    .news-date {
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .news-img {
+        min-width: 300px;
+        width: 300px;
+        height: 200px;
+        background-color: black;
+    }
+    .news-desc {
+        margin: 0 3rem;
+        color: $primary_grey;
+        h5, h3 {
+            color: $primary_dark_grey;
+        }
+        .news-text {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .news-box {
+        flex-flow:column;
+        .news-desc {
+            margin: 2rem 0 2rem 0;
+        }
+    }
+    .news-img {
+        width:100% !important;
+    }
+
+
+}
+@media (max-width: 575px) {
+}

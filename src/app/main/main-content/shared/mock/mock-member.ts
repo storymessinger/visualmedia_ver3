@@ -1,12 +1,4 @@
-interface Member {
-    img: string,
-    name: string,
-    status: string,
-    topics: string[],
-    email: string
-}
-
-export const Members: Member[] = [
+export const Members = [
 
     {  
       img: 'assets/imgs/member_student.jpg', 

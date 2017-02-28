@@ -1,0 +1,82 @@
+@import '../../../../assets/css/_variables.scss';
+
+.project-list {
+    border-top: 1px solid #ccc;
+    padding: 2rem 3rem 3rem;
+
+    .card-box {
+        padding: 0 0.5rem;
+
+        .card {
+            height: 25rem;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            .card-header {
+                border: none;
+                background-color: inherit;
+            }
+            .card-text {
+                margin-bottom: 1.2rem;
+            }
+            .card-desc {
+                display: flex;
+                .card-desc-title {
+                    margin-right: 1.8rem;
+                }
+            }
+
+            span {
+                font-size: 1rem;
+            }
+            .overlay {
+                position:absolute;
+                padding: 2.5rem 0 0 2.5rem;
+                p {
+                    font-size:1.1rem;
+                    opacity: 0;
+                    color:white;
+                }
+            }
+
+            .project-img {
+                position: absolute;
+                // top: -9999px;
+                // bottom: -9999px;
+                left: -9999px;
+                right: -9999px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .btn {
+                @include card(1);
+            }
+            .btn:active{
+                @include card(0);
+            }
+        }
+    }
+
+    .card-person {
+        display: flex;
+        flex-flow: column;
+        .student-img {
+        }
+    }
+
+    .panel-heading {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem 0 2.5rem 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-text {
+        margin-bottom: 1rem !important;
+    }
+}
+@media (max-width: 575px) {
+
+}

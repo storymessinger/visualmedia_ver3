@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <router-outlet></router-outlet>
   `,
-  styles: []
+  styles: [`
+    :host {
+      width: 100%;
+    }
+  `]
 })
 export class MainContentComponent implements OnInit {
 

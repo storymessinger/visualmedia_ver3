@@ -1,6 +1,8 @@
+import { SidebarFoldService } from './../sidebar-fold.service';
 import {
   Component,
-  OnInit
+  OnInit,
+  Input
 } from '@angular/core';
 
 @Component({
@@ -26,12 +28,12 @@ export class MainSidebarComponent implements OnInit {
       ]
     },
     {
-      firstLink: ["research", "Rearch"],
+      firstLink: ["research", "Research"],
       secondLink: [
         ["area", "Research Area"],
         ["projects", "Projects"],
         ["publicate", "Publications"],
-        ["publicate_korea", "Publications(Domestic)"],
+        ["publicate_kr", "Publications(Domestic)"],
         ["thesis", "Thesis"]
       ]
     },
@@ -52,8 +54,13 @@ export class MainSidebarComponent implements OnInit {
     },
   ]
 
-  constructor() {}
+  @Input() state;
+
+  constructor(private sidebarFold: SidebarFoldService) {}
 
   ngOnInit() {}
+
+
+
 
   }

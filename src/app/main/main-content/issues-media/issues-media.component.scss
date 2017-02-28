@@ -1,0 +1,54 @@
+@import '../../../../assets/css/_variables.scss';
+
+.year {
+    border-top: 1px solid #ccc;
+    padding: 2rem 3rem 3rem;
+    flex-flow:column;
+    .year-title {
+        color: $primary_grey;
+        margin-bottom: 3rem;
+    }
+}
+.media-box {
+    display:flex;
+    margin-bottom: 5rem;
+
+    .media-date {
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .media-img {
+        min-width: 300px;
+        width: 300px;
+        height: 200px;
+        background-color: black;
+    }
+    .media-desc {
+        margin: 0 3rem;
+        color: $primary_grey;
+        h5, h3 {
+            color: $primary_dark_grey;
+        }
+        .media-text {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .media-box {
+        flex-flow:column;
+        .media-desc {
+            margin: 2rem 0 2rem 0;
+        }
+    }
+    .media-img {
+        width:100% !important;
+    }
+
+
+}
+@media (max-width: 575px) {
+}
