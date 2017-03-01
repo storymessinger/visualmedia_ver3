@@ -19,7 +19,7 @@ export class MainNavbarComponent {
   breadcrumbs:string[];
 
   constructor( private router:Router ) {
-    this.breadcrumbs =  this.router.url.split('/');
+    this.breadcrumbs =  ['home', ...this.router.url.split('/').slice(2)]
   }
 
   @Input() state;

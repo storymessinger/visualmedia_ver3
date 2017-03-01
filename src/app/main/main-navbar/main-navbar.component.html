@@ -5,11 +5,8 @@
     <li class="search"><img [src]='searchIconPath' fill-opacity="0" width="30px" class="search_btn" />
       <input class="search_bar" />
     </li>
-    <li>
-      <a routerLink="/">home</a>
-    </li>
     <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
-      <a routerLink='' [innerHtml]='breadcrumb' ></a>
+      <a routerLink='{{breadcrumb}}' >{{breadcrumb}}</a>
     </li>
   </ol>
 </div>
