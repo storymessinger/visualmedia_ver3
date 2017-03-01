@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MediaService } from './shared/media.service';
 import { NewsService } from './shared/news.service';
 import { MemberService } from './shared/member.service';
@@ -20,10 +21,14 @@ import { IssuesLifeComponent } from './issues-life/issues-life.component';
 import { ArchiveDownloadsComponent } from './archive-downloads/archive-downloads.component';
 import { ArchiveSeminarComponent } from './archive-seminar/archive-seminar.component';
 
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery/app/angular2imagegallery.module'
+
 @NgModule({
   imports: [
     CommonModule,
-    MainContentRoutingModule
+    MainContentRoutingModule,
+    Angular2ImageGalleryModule,
+    NgbModule
   ],
   declarations: [MainContentComponent, AboutInfoComponent, AboutAdmissionComponent, MemberStudentComponent, IssuesNewsComponent, ResearchProjectsComponent, MemberProfessorComponent, ResearchAreaComponent, ResearchPublicateComponent, ResearchPublicateKrComponent, ResearchThesisComponent, IssuesMediaComponent, IssuesLifeComponent, ArchiveDownloadsComponent, ArchiveSeminarComponent],
   providers: [MemberService, NewsService, MediaService]

@@ -1,5 +1,9 @@
 @import '../../../../assets/css/_variables.scss';
 
+.pagination {
+    justify-content: center;
+}
+
 .project-list {
     border-top: 1px solid #ccc;
     padding: 2rem 3rem 3rem;

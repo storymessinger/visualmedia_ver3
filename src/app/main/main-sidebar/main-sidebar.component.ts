@@ -1,8 +1,9 @@
 import { SidebarFoldService } from './../sidebar-fold.service';
 import {
   Component,
-  OnInit,
-  Input
+  Output,
+  Input,
+  EventEmitter
 } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ import {
   templateUrl: './main-sidebar.component.html',
   styleUrls: ['./main-sidebar.component.scss']
 })
-export class MainSidebarComponent implements OnInit {
+export class MainSidebarComponent {
 
   sbLinks: any[] = [
     {
@@ -55,10 +56,15 @@ export class MainSidebarComponent implements OnInit {
   ]
 
   @Input() state;
+  @Output() clicked = new EventEmitter<string>();
+  
+  constructor(){}
 
-  constructor(private sidebarFold: SidebarFoldService) {}
+  sbMenuClicked() {
+    this.state = !this.state;
+    this.clicked.emit(this.state);
+  }
 
-  ngOnInit() {}
 
 
 

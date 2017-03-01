@@ -18,12 +18,8 @@ export class MainNavbarComponent {
   //
   breadcrumbs:string[];
 
-  constructor( private router:Router, private sidebarFold:SidebarFoldService ) {
+  constructor( private router:Router ) {
     this.breadcrumbs =  this.router.url.split('/');
-  }
-
-  menuClick() {
-    this.sidebarFold._isFolded = true;
   }
 
   @Input() state;

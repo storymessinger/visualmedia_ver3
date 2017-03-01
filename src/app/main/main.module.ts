@@ -1,4 +1,3 @@
-import { SidebarFoldService } from './sidebar-fold.service';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
 import { MainComponent } from './main.component';
@@ -18,6 +17,6 @@ import { HttpModule } from '@angular/http';
     MainRoutingModule
   ],
   declarations: [ MainSidebarComponent, MainNavbarComponent,  MainComponent ],
-  providers: [SidebarFoldService]
+  providers: []
 })
 export class MainModule { }

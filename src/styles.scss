@@ -3,3 +3,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "assets/css/_variables.scss";
 @import "assets/css/_base.scss";
+
+// import for angular2-image-gallery
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.scss';
+// @import '~https://fonts.googleapis.com/icon?family=Material+Icons';

@@ -11,8 +11,8 @@ import { routing } from './app.routing';
 
 import { MainModule } from './main/main.module';
 import { PageNotFoundComponent } from './page-not-found.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,8 @@ import { PageNotFoundComponent } from './page-not-found.component';
     FormsModule,
     HttpModule,
     MainModule,
-    routing
-
-    // NgbModule.forRoot(), // Add Bootstrap module here.
+    routing,
+    NgbModule.forRoot() // Add Bootstrap module here.
   ],
   providers: [],
   bootstrap: [AppComponent]

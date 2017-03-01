@@ -5,7 +5,7 @@
         <dt (click)="link.isOpen = !link.isOpen">{{link.firstLink[1]}}</dt>
         <div class="navbar_list">
           <dd [ngClass]="{'open': link.isOpen}" >
-            <a *ngFor="let subLink of link.secondLink" routerLink="content/{{subLink[0]}}">{{subLink[1]}}</a>
+            <a *ngFor="let subLink of link.secondLink" (click)='sbMenuClicked()' routerLink="content/{{subLink[0]}}">{{subLink[1]}}</a>
           </dd>
         </div>
       </dl>
