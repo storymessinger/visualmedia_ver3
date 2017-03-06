@@ -7,13 +7,16 @@ import { NgModule } from '@angular/core';
         { 
             path: 'main',
             component: MainComponent,
+            data: {
+                breadcrumb: "Main"
+            },
             children: [
                 { 
                     path: 'content', 
                     loadChildren: 'app/main/main-content/main-content.module#MainContentModule'
                 }
             ],
-        } 
+        }
     ])],
     exports: [RouterModule]
 })

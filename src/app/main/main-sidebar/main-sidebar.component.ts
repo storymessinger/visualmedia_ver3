@@ -1,4 +1,3 @@
-import { SidebarFoldService } from './../sidebar-fold.service';
 import {
   Component,
   Output,
@@ -8,7 +7,24 @@ import {
 
 @Component({
   selector: 'app-main-sidebar',
-  templateUrl: './main-sidebar.component.html',
+  template: `
+  <div class="sidebar" [ngClass]='{"open":state}'>
+    <div class="sidebarInner">
+      <nav>
+        <dl *ngFor="let link of sbLinks">
+          <dt (click)="link.isOpen = !link.isOpen">{{link.firstLink[1]}}</dt>
+          <div class="navbar_list">
+            <dd [ngClass]="{'open': link.isOpen}" >
+              <a routerLinkActive="active" *ngFor="let subLink of link.secondLink" (click)='sbMenuClicked()' routerLink="content/{{subLink[0]}}" >{{subLink[1]}}</a>
+            </dd>
+          </div>
+        </dl>
+      </nav>
+      <div class="legal"></div>
+    </div>
+  </div>
+  <div class="make_dimmer" [ngClass]='{"dimmer":state}'></div>
+  `,
   styleUrls: ['./main-sidebar.component.scss']
 })
 export class MainSidebarComponent {
@@ -24,7 +40,7 @@ export class MainSidebarComponent {
     {
       firstLink: ["member", "Member"],
       secondLink: [
-        ["head", "Professor"],
+        ["all", "Professor"],
         ["all", "Student"]
       ]
     },

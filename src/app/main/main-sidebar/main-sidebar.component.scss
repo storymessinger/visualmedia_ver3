@@ -39,6 +39,10 @@
             }
 
             .navbar_list {
+                .active {
+                    color: $primary_orange;
+                    background-color: $primary_light_grey;
+                }
                 overflow: hidden;
                 dd {
                     margin-top: -180px;

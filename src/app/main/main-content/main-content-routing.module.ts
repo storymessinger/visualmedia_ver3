@@ -8,7 +8,6 @@ import { ResearchPublicateKrComponent } from './research-publicate-kr/research-p
 import { ResearchPublicateComponent } from './research-publicate/research-publicate.component';
 import { ResearchProjectsComponent } from './research-projects/research-projects.component';
 import { ResearchAreaComponent } from './research-area/research-area.component';
-import { MemberProfessorComponent } from './member-professor/member-professor.component';
 import { MemberStudentComponent } from './member-student/member-student.component';
 import { AboutAdmissionComponent } from './about-admission/about-admission.component';
 import { MainContentComponent } from './main-content.component';
@@ -23,20 +22,58 @@ import { NgModule } from '@angular/core';
             path: '',
             component: MainContentComponent,
             children: [
-                { path: 'info', component: AboutInfoComponent },
-                { path: 'admission', component: AboutAdmissionComponent},
-                { path: 'all', component: MemberStudentComponent},
-                { path: 'head', component: MemberProfessorComponent },
-                { path: 'area', component: ResearchAreaComponent},
-                { path: 'projects', component: ResearchProjectsComponent},
-                { path: 'publicate', component: ResearchPublicateComponent},
-                { path: 'publicate_kr', component: ResearchPublicateKrComponent},
-                { path: 'thesis', component: ResearchThesisComponent},
-                { path: 'news', component: IssuesNewsComponent},
-                { path: 'media', component: IssuesMediaComponent},
-                { path: 'life', component: IssuesLifeComponent},
-                { path: 'downloads', component: ArchiveDownloadsComponent},
-                { path: 'seminar', component: ArchiveSeminarComponent}
+                {   path: 'info', 
+                    component: AboutInfoComponent,
+                    data: { breadcrumb: "About us" }
+                },
+                {   path: 'admission', 
+                    component: AboutAdmissionComponent,
+                    data: { breadcrumb: "Admission" }
+                },
+                {   path: 'all', 
+                    component: MemberStudentComponent,
+                    data: { breadcrumb: "Members" }
+                },
+                {   path: 'area', 
+                    component: ResearchAreaComponent, 
+                    data: { breadcrumb: "Research Area" }
+                },
+                {   path: 'projects', 
+                    component: ResearchProjectsComponent, 
+                    data: { breadcrumb: "Projects" }
+                },
+                {   path: 'publicate', 
+                    component: ResearchPublicateComponent, 
+                    data: { breadcrumb: "Publications" }
+                },
+                {   path: 'publicate_kr', 
+                    component: ResearchPublicateKrComponent, 
+                    data: { breadcrumb: "Domestic Publications" }
+                },
+                {   path: 'thesis', 
+                    component: ResearchThesisComponent, 
+                    data: { breadcrumb: "Thesis" }
+                },
+                {   path: 'news', 
+                    component: IssuesNewsComponent,
+                    data: { breadcrumb: "Our News" }
+                },
+                {   path: 'media', 
+                    component: IssuesMediaComponent, 
+                    data: { breadcrumb: "In Media" }
+                },
+                {   path: 'life', 
+                    component: IssuesLifeComponent, 
+                    data: { breadcrumb: "Our Daily Life" }
+                },
+                {   path: 'downloads', 
+                    component: ArchiveDownloadsComponent, 
+                    data: { breadcrumb: "Downloads" }
+                },
+                {   path: 'seminar', 
+                    component: ArchiveSeminarComponent, 
+                    data: { breadcrumb: "Seminar" }
+                }
             ]
         }
 

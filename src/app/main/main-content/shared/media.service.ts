@@ -7,7 +7,7 @@ export class Media {
     img: string;
     date: string[];
     source: string;
-    more: string;
+    sourceLink: string;
 }
 
 @Injectable()

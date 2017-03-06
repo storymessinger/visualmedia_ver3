@@ -1,9 +1,16 @@
+
 <div class="flex-content">
+
   <div class="make_dimmer"></div>
   <div class="content col-sm container-fluid">
+    
+    <button pageScroll href="#professor"> Professor </button>
+    <button pageScroll href="#current"> Current </button>
+    <button pageScroll href="#former"> Former </button>
+    
     <div class="row content-row">
       <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12">professor
+        <h2 class="member-status col-sm-12" id="professor">professor
           <hr/>
         </h2>
 
@@ -20,12 +27,14 @@
           </div>
         </div>
       </div>
+
+
       <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12">current students
+        <h2 class="member-status col-sm-12" id="current">current students
           <hr/>
         </h2>
         <div *ngFor='let student of students' class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img [src]='student.img'></div>
+          <div class="student-img"><img [src]='student.img' (click)=onImgClick($event) ></div>
           <div class="student-text">
             <h5 class="name">
               {{student.name}} <sub>{{student.status}}</sub>
@@ -41,7 +50,7 @@
       </div>
       
       <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12">former students
+        <h2 class="member-status col-sm-12" id="former">former students
           <hr/>
         </h2>
         <!-- card container-->
@@ -67,7 +76,7 @@
           </div>
         </div>
         <!-- card container-->
-        <div class="student-box col-sm-12 col-md-6 col-lg-4">
+        <div  class="student-box col-sm-12 col-md-6 col-lg-4">
           <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
           <div class="student-text">
             <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
