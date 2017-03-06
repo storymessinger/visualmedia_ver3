@@ -3,14 +3,15 @@
   <div class="content col-sm container-fluid">
     <div class="row year">
       <h2 class="year-title">2016</h2>
-      <div class="download-box">
+
+      <div *ngFor="let download of downloads" class="download-box">
         <div class="download-img"></div>
         <div class="download-desc">
-          <h3 class="download-text">Group motion recognizer - lite</h3>
-          <div class="download-text">This software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).</div>
+          <h3 class="download-text">{{download.title}}</h3>
+          <div class="download-text">{{download.desc}}</div>
         </div>
         <div class="download-type">
-          <h5 class="download-text"><a href="#">Download</a></h5>
+          <h5 class="download-text"><a routerLink="{{download.link}}">{{download.type | uppercase }}</a></h5>
           <div class="download-text">
             <p><strong>Binary:</strong> recognizer_module_exe.zip</p>
             <p><strong>Type:</strong> Standalone</p>
@@ -18,18 +19,25 @@
             <p><strong>Platform:</strong> Microsoft Windows 8, 10, Kinect SDK 2.0 required</p>
           </div>
         </div>
-      </div>
+        </div>
+
+
+
+
+
       <div class="download-box">
         <div class="download-img"></div>
         <div class="download-desc">
           <h3 class="download-text">Rich360 - Datasets</h3>
-          <div class="download-text">Dataset consisting of input/output data and camera parameters used for stitching results in Rich360: Optimized Spherical Representation from Structured Panoramic Camera Arrays</div>
+          <div class="download-text">Dataset consisting of input/output data and camera parameters used for stitching results in Rich360: Optimized
+            Spherical Representation from Structured Panoramic Camera Arrays</div>
         </div>
         <div class="download-type">
           <h5 class="download-text"><a href="#">Project Page</a></h5>
           <div class="download-text">
             <p><strong>Input:</strong> set of input images for each camera (JPG sequence)</p>
-            <p><strong>Output:</strong> stitching results from Rich360 (the equirectangular projection with linear blending, non-uniform ray sampling was not applied.) CamParams.txt: 3D calibration data of all cameras.</p>
+            <p><strong>Output:</strong> stitching results from Rich360 (the equirectangular projection with linear blending,
+              non-uniform ray sampling was not applied.) CamParams.txt: 3D calibration data of all cameras.</p>
           </div>
         </div>
       </div>
@@ -37,7 +45,11 @@
         <div class="download-img"></div>
         <div class="download-desc">
           <h3 class="download-text">Group motion recognizer - lite</h3>
-          <div class="download-text">This software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).</div>
+          <div class="download-text">This software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user
+            through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose
+            sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this
+            version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize
+            simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).</div>
         </div>
         <div class="download-type">
           <h5 class="download-text"><a href="#">Download</a></h5>
@@ -56,7 +68,11 @@
         <div class="download-img"></div>
         <div class="download-desc">
           <h3 class="download-text">Group motion recognizer - lite</h3>
-          <div class="download-text">This software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).</div>
+          <div class="download-text">This software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user
+            through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose
+            sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this
+            version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize
+            simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).</div>
         </div>
         <div class="download-type">
           <h5 class="download-text"><a href="#">Download</a></h5>

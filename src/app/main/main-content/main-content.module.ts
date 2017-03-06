@@ -1,3 +1,5 @@
+import { SeminarService } from './shared/seminars.service';
+import { DownloadService } from './shared/downloads.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MediaService } from './shared/media.service';
 import { NewsService } from './shared/news.service';
@@ -30,6 +32,6 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
     Ng2PageScrollModule.forRoot()
   ],
   declarations: [MainContentComponent, AboutInfoComponent, AboutAdmissionComponent, MemberStudentComponent, IssuesNewsComponent, ResearchProjectsComponent,  ResearchAreaComponent, ResearchPublicateComponent, ResearchPublicateKrComponent, ResearchThesisComponent, IssuesMediaComponent, IssuesLifeComponent, ArchiveDownloadsComponent, ArchiveSeminarComponent],
-  providers: [MemberService, NewsService, MediaService]
+  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService]
 })
 export class MainContentModule { }

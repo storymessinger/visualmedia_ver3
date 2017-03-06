@@ -66,7 +66,7 @@ export class MainSidebarComponent {
       firstLink: ["archive", "Archive"],
       secondLink: [
         ["downloads", "Downloads"],
-        ["seminar", "Media Report"]
+        ["seminar", "Seminar"]
       ]
     },
   ]

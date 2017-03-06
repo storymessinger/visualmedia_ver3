@@ -1,3 +1,4 @@
+import { Download, DownloadService } from './../shared/downloads.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArchiveDownloadsComponent implements OnInit {
 
-  constructor() { }
+  public downloads:Download[];
+
+  constructor(private downloadService:DownloadService) { 
+    this.downloads = this.downloadService.getDownloads();
+  }
+
 
   ngOnInit() {
   }

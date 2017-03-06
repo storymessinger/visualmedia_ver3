@@ -94,7 +94,6 @@ export class MainNavbarComponent implements OnInit {
 
       //get the route's URL segment
       let routeURL: string = child.snapshot.url.map(segment => segment.path).join("/");
-      console.log(routeURL);
 
       //append route URL to URL
       if (url.slice(-1) === '/') { url = url.slice(0,-1); } //polyfill
