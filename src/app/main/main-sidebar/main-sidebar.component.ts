@@ -53,26 +53,22 @@ export class MainSidebarComponent {
         { 
           url: "projects",
           data: "Projects",
-          innerLink: ["2017", "2016", "2015"]
-          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         },
         { 
           url: "publicate",
           data: "Publicationss",
-          innerLink: ["2017", "2016", "2015"]
-          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         },
         { 
           url: "publicate_kr",
           data: "Publications(Domestic)",
-          innerLink: ["2017", "2016", "2015"]
-          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         },
         { 
           url: "thesis",
           data: "Thesis",
-          innerLink: ["2017", "2016", "2015"]
-          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         }
       ]
     },
@@ -102,7 +98,7 @@ export class MainSidebarComponent {
         { 
           url: "downloads",
           data: "Downloads",
-          innerLink: []
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         },
         { 
           url: "seminar",
@@ -112,8 +108,8 @@ export class MainSidebarComponent {
       ]
     },
   ]
-  public link:any;
-  public subLink:any;
+  public activeLink:any;
+  public subActiveLink:any;
 
   @Input() state;
   @Output() clicked = new EventEmitter<string>();
@@ -123,10 +119,5 @@ export class MainSidebarComponent {
   sbMenuClicked() {
     this.state = !this.state;
     this.clicked.emit(this.state);
-  }
-
-  onClick() {
-    console.log('hi');
-
   }
 }

@@ -2,14 +2,16 @@
     <div class="sidebarInner">
       <nav>
         <dl *ngFor="let link of sbLinks">
-          <dt sidebar-btn (click)="link.firstOpen = !link.firstOpen">{{link.firstLink[1]}}</dt>
-          <div class="navbar_list">
-            <dd [ngClass]="{'open': link.firstOpen}" >
-              <dl (click)="subLink.secondOpen = !subLink.secondOpen" routerLinkActive="active" *ngFor="let subLink of link.secondLink"  routerLink="content/{{subLink.url}}" >
-              {{subLink.data}}
-                <div class="navbar_list">
-                    <dd [ngClass]="{'open': subLink.secondOpen}" >
-                    <dl *ngFor="let inner of subLink.innerLink" (click)="sbMenuClicked()" routerLink="content/{{subLink.url}}/{{inner}}">{{inner}}</dl>
+          <dt (click)="activeLink = link.firstLink[1]">{{link.firstLink[1]}}</dt>
+          <div class="hideOverflow">
+            <dd [ngClass]="{'open': activeLink == link.firstLink[1]}" >
+              <dl (click)="subActiveLink = subLink.data" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
+                <div routerLink="content/{{subLink.url}}" class="secondMenu" >{{subLink.data}}</div>
+                <div class="hideOverflow">
+                    <dd [ngClass]="{'open': subActiveLink == subLink.data }" >
+                      <dl routerLinkActive="active" *ngFor="let inner of subLink.innerLink" (click)="sbMenuClicked()" >
+                        <div routerLink="content/{{subLink.url}}/{{inner}}" class="thirdMenu" >{{inner}}</div>
+                      </dl>
                     </dd>
                 </div>
                 </dl>
