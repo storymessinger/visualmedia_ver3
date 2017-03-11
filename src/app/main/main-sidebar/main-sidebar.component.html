@@ -1,0 +1,23 @@
+<div class="sidebar" [ngClass]='{"open":state}'>
+    <div class="sidebarInner">
+      <nav>
+        <dl *ngFor="let link of sbLinks">
+          <dt sidebar-btn (click)="link.firstOpen = !link.firstOpen">{{link.firstLink[1]}}</dt>
+          <div class="navbar_list">
+            <dd [ngClass]="{'open': link.firstOpen}" >
+              <dl (click)="subLink.secondOpen = !subLink.secondOpen" routerLinkActive="active" *ngFor="let subLink of link.secondLink"  routerLink="content/{{subLink.url}}" >
+              {{subLink.data}}
+                <div class="navbar_list">
+                    <dd [ngClass]="{'open': subLink.secondOpen}" >
+                    <dl *ngFor="let inner of subLink.innerLink" (click)="sbMenuClicked()" routerLink="content/{{subLink.url}}/{{inner}}">{{inner}}</dl>
+                    </dd>
+                </div>
+                </dl>
+            </dd>
+          </div>
+        </dl>
+      </nav>
+      <div class="legal"></div>
+    </div>
+  </div>
+  <div (click)="sbMenuClicked()" class="make_dimmer" [ngClass]='{"dimmer":state}'></div>

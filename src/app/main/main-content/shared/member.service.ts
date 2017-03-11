@@ -2,15 +2,17 @@ import { Members } from './mock/mock-member';
 import { Injectable } from '@angular/core';
 
 export class Member {
+    memberId:number;
+    graduate:boolean;
     type: string;
-    img: string;
     name: string;
-    status: string;
+    img: string;
     topics: string[];
     email: string;
+    status: string;
     team: string;
     affiliation: string;
-    personal_page: string;
+    personalPage: string;
 }
 
 @Injectable()

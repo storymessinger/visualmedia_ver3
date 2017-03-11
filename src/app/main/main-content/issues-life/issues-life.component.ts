@@ -1,3 +1,4 @@
+import { PostsService } from './../shared/posts.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IssuesLifeComponent implements OnInit {
 
-  constructor() { }
+  posts: any = [];
+
+  constructor(private postsService:PostsService) { 
+  }
 
   ngOnInit() {
+        // Retrieve posts from the API
+    this.postsService.getAllPosts().subscribe(posts => {
+      this.posts = posts;
+    });
   }
+
 
 }

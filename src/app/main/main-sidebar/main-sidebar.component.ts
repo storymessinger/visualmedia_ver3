@@ -2,29 +2,16 @@ import {
   Component,
   Output,
   Input,
-  EventEmitter
+  EventEmitter,
+  Directive,
+  ElementRef,
+  Renderer,
+  HostListener
 } from '@angular/core';
 
 @Component({
   selector: 'app-main-sidebar',
-  template: `
-  <div class="sidebar" [ngClass]='{"open":state}'>
-    <div class="sidebarInner">
-      <nav>
-        <dl *ngFor="let link of sbLinks">
-          <dt (click)="link.isOpen = !link.isOpen">{{link.firstLink[1]}}</dt>
-          <div class="navbar_list">
-            <dd [ngClass]="{'open': link.isOpen}" >
-              <a routerLinkActive="active" *ngFor="let subLink of link.secondLink" (click)='sbMenuClicked()' routerLink="content/{{subLink[0]}}" >{{subLink[1]}}</a>
-            </dd>
-          </div>
-        </dl>
-      </nav>
-      <div class="legal"></div>
-    </div>
-  </div>
-  <div class="make_dimmer" [ngClass]='{"dimmer":state}'></div>
-  `,
+  templateUrl: './main-sidebar.component.html',
   styleUrls: ['./main-sidebar.component.scss']
 })
 export class MainSidebarComponent {
@@ -33,43 +20,100 @@ export class MainSidebarComponent {
     {
       firstLink: ["about", "About"],
       secondLink: [
-        ["info", "About us"],
-        ["admission", "About Admission"]
+        { 
+          url: "info",
+          data: "About us",
+          innerLink: []
+        },
+        { 
+          url: "admission",
+          data: "About Admission",
+          innerLink: []
+        }
       ]
     },
     {
       firstLink: ["member", "Member"],
       secondLink: [
-        ["all", "Professor"],
-        ["all", "Student"]
+        { 
+          url: "all",
+          data: "Student",
+          innerLink: []
+        }
       ]
     },
     {
       firstLink: ["research", "Research"],
       secondLink: [
-        ["area", "Research Area"],
-        ["projects", "Projects"],
-        ["publicate", "Publications"],
-        ["publicate_kr", "Publications(Domestic)"],
-        ["thesis", "Thesis"]
+        { 
+          url: "area",
+          data: "Research Area",
+          innerLink: ["ABC", "CDF", "DEV"]
+        },
+        { 
+          url: "projects",
+          data: "Projects",
+          innerLink: ["2017", "2016", "2015"]
+          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        },
+        { 
+          url: "publicate",
+          data: "Publicationss",
+          innerLink: ["2017", "2016", "2015"]
+          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        },
+        { 
+          url: "publicate_kr",
+          data: "Publications(Domestic)",
+          innerLink: ["2017", "2016", "2015"]
+          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        },
+        { 
+          url: "thesis",
+          data: "Thesis",
+          innerLink: ["2017", "2016", "2015"]
+          // innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        }
       ]
     },
     {
       firstLink: ["issues", "News and Events"],
       secondLink: [
-        ["news", "News"],
-        ["media", "Media Report"],
-        ["life", "VML Life"]
+        { 
+          url: "news",
+          data: "News",
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        },
+        { 
+          url: "media",
+          data: "Media Report",
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        },
+        { 
+          url: "life",
+          data: "VML Life",
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        }
       ]
     },
     {
-      firstLink: ["archive", "Archive"],
+      firstLink: ["archive", "Archive", []],
       secondLink: [
-        ["downloads", "Downloads"],
-        ["seminar", "Seminar"]
+        { 
+          url: "downloads",
+          data: "Downloads",
+          innerLink: []
+        },
+        { 
+          url: "seminar",
+          data: "Seminar",
+          innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
+        }
       ]
     },
   ]
+  public link:any;
+  public subLink:any;
 
   @Input() state;
   @Output() clicked = new EventEmitter<string>();
@@ -81,8 +125,8 @@ export class MainSidebarComponent {
     this.clicked.emit(this.state);
   }
 
-
-
-
+  onClick() {
+    console.log('hi');
 
   }
+}

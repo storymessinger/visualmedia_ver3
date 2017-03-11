@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   // selector: 'app-main', // you dont need this
   template: `
-    <app-main-navbar [state]="testState" (clicked)="onClicked($event)"></app-main-navbar>
+    <app-main-navbar [state]="sidebarState" (clicked)="onClicked($event)"></app-main-navbar>
     <div class="main">
-      <app-main-sidebar [state]="testState" ></app-main-sidebar>
+      <app-main-sidebar [state]="sidebarState" ></app-main-sidebar>
       <router-outlet></router-outlet>
     </div>
   `,
@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  testState:boolean = false; //default is false
+  sidebarState:boolean = false; //default is false
 
   constructor() { }
 
@@ -22,7 +22,7 @@ export class MainComponent implements OnInit {
   }
 
   onClicked(value:boolean) {
-    this.testState = value;
+    this.sidebarState = value;
   }
 
 

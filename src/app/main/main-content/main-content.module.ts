@@ -1,3 +1,6 @@
+import { PublicationsService } from './shared/publications.service';
+import { PostsService } from './shared/posts.service';
+import { ProjectsService } from './shared/projects.service';
 import { SeminarService } from './shared/seminars.service';
 import { DownloadService } from './shared/downloads.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,6 +25,10 @@ import { IssuesLifeComponent } from './issues-life/issues-life.component';
 import { ArchiveDownloadsComponent } from './archive-downloads/archive-downloads.component';
 import { ArchiveSeminarComponent } from './archive-seminar/archive-seminar.component';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { ResearchProjectsIndividualComponent } from './research-projects-individual/research-projects-individual.component';
+import { ResearchPublicateIndividualComponent } from './research-publicate-individual/research-publicate-individual.component';
+import { ResearchAreaIndividualComponent } from './research-area-individual/research-area-individual.component';
+import { MemberStudentIndividualComponent } from './member-student-individual/member-student-individual.component';
 
 
 @NgModule({
@@ -29,9 +36,28 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
     CommonModule,
     MainContentRoutingModule,
     NgbModule,
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
   ],
-  declarations: [MainContentComponent, AboutInfoComponent, AboutAdmissionComponent, MemberStudentComponent, IssuesNewsComponent, ResearchProjectsComponent,  ResearchAreaComponent, ResearchPublicateComponent, ResearchPublicateKrComponent, ResearchThesisComponent, IssuesMediaComponent, IssuesLifeComponent, ArchiveDownloadsComponent, ArchiveSeminarComponent],
-  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService]
+  declarations: [
+    MainContentComponent, 
+    AboutInfoComponent, 
+    AboutAdmissionComponent, 
+    MemberStudentComponent, 
+    IssuesNewsComponent, 
+    ResearchProjectsComponent, 
+    ResearchAreaComponent, 
+    ResearchPublicateComponent, 
+    ResearchPublicateKrComponent, 
+    ResearchThesisComponent, 
+    IssuesMediaComponent, 
+    IssuesLifeComponent, 
+    ArchiveDownloadsComponent, 
+    ArchiveSeminarComponent, 
+    ResearchProjectsIndividualComponent, 
+    ResearchPublicateIndividualComponent, 
+    ResearchAreaIndividualComponent, 
+    MemberStudentIndividualComponent,
+    ],
+  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService, ProjectsService, PostsService, PublicationsService]
 })
 export class MainContentModule { }

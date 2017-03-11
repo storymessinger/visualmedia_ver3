@@ -1,5 +1,4 @@
 @import '../../../../assets/css/_variables.scss';
-
 .pagination {
     justify-content: center;
 }
@@ -8,10 +7,14 @@
     border-top: 1px solid #ccc;
     padding: 2rem 3rem 3rem;
 
+    // flex-flow: column;
+    
+
     .card-box {
         padding: 0 0.5rem;
 
         .card {
+            overflow:hidden;
             height: 25rem;
             position: relative;
             overflow: hidden;
@@ -22,6 +25,7 @@
             }
             .card-text {
                 margin-bottom: 1.2rem;
+                overflow: auto;
             }
             .card-desc {
                 display: flex;
@@ -60,20 +64,6 @@
             }
         }
     }
-
-    .card-person {
-        display: flex;
-        flex-flow: column;
-        .student-img {
-        }
-    }
-
-    .panel-heading {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 1rem 0 2.5rem 0.5rem;
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 991px) {
@@ -81,6 +71,12 @@
         margin-bottom: 1rem !important;
     }
 }
-@media (max-width: 575px) {
+@media (max-width: 769px) {
+    html {
+        font-size: 12px;
+    }
+    .project-img-box {
+        order: -1
+    }
 
 }

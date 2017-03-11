@@ -32,44 +32,45 @@
             dt {
                 font-weight: 700;
                 padding: 11px 0 11px 22px;
-                cursor: pointer;
             }
             dt.navbar_expanded {
                 background-color: $primary_light_grey;
             }
+            dt:hover {
+                cursor: pointer;
+                background-color: $primary_light_grey;
+            }
 
             .navbar_list {
-                .active {
-                    color: $primary_orange;
-                    background-color: $primary_light_grey;
-                }
                 overflow: hidden;
-                dd {
-                    margin-top: -180px;
-                    transition: margin 0.3s ease-out;
-                }
+
                 dd.open {
                     margin-top: 0;
                 }
+                dd {
+                    margin-top: -700px;
+                    transition: margin 0.3s ease-out;
+                    margin-bottom: 0px;
+                    .active {
+                        color: $primary_orange;
+                    }
+                    dl{
+                        display: block;
 
-                a{
-                    display: block;
+                        font-weight: 400;
+                        letter-spacing: .1px;
+                        padding: 8px 10px 8px 46px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
 
-                    font-weight: 400;
-                    letter-spacing: .1px;
-                    padding: 8px 10px 8px 46px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-
-                    color: $primary_dark_grey;
-                    text-decoration: none;
-                }
-                a:hover, dt:hover {
-                    background-color: $primary_light_grey;
-                }
-                a.navbar_selected {
-                    color: $primary_orange;
+                        color: $primary_dark_grey;
+                        text-decoration: none;
+                    }
+                    dl:hover {
+                        cursor: pointer;
+                        background-color: $primary_light_grey;
+                    }
                 }
             }
         }

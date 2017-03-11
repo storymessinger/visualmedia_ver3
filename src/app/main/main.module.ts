@@ -1,3 +1,4 @@
+import { SidebarBtnDirective } from './main-sidebar/sidebar-btn.directive';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
 import { MainComponent } from './main.component';
@@ -10,13 +11,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 @NgModule({
+  declarations: [ 
+    MainSidebarComponent, 
+    MainNavbarComponent, 
+    MainComponent,
+    SidebarBtnDirective
+    ],
   imports: [
     CommonModule, 
     FormsModule, 
     HttpModule, 
     MainRoutingModule
   ],
-  declarations: [ MainSidebarComponent, MainNavbarComponent,  MainComponent ],
   providers: []
 })
 export class MainModule { }

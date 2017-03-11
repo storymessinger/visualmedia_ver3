@@ -1,3 +1,7 @@
+import { MemberStudentIndividualComponent } from './member-student-individual/member-student-individual.component';
+import { ResearchAreaIndividualComponent } from './research-area-individual/research-area-individual.component';
+import { ResearchProjectsIndividualComponent } from './research-projects-individual/research-projects-individual.component';
+import { ResearchPublicateIndividualComponent } from './research-publicate-individual/research-publicate-individual.component';
 import { ArchiveSeminarComponent } from './archive-seminar/archive-seminar.component';
 import { ArchiveDownloadsComponent } from './archive-downloads/archive-downloads.component';
 import { IssuesLifeComponent } from './issues-life/issues-life.component';
@@ -34,13 +38,25 @@ import { NgModule } from '@angular/core';
                     component: MemberStudentComponent,
                     data: { breadcrumb: "Members" }
                 },
+                {   path: 'all/:id', 
+                    component: MemberStudentIndividualComponent,
+                    data: { breadcrumb: "Members (individual)" }
+                },
                 {   path: 'area', 
                     component: ResearchAreaComponent, 
                     data: { breadcrumb: "Research Area" }
                 },
+                {   path: 'area/:id', 
+                    component: ResearchAreaIndividualComponent, 
+                    data: { breadcrumb: "Research Area (individual)" }
+                },
                 {   path: 'projects', 
                     component: ResearchProjectsComponent, 
                     data: { breadcrumb: "Projects" }
+                },
+                {   path: 'projects/:id', 
+                    component: ResearchProjectsIndividualComponent, 
+                    data: { breadcrumb: "Projects (individual)" }
                 },
                 {   path: 'publicate', 
                     component: ResearchPublicateComponent, 
@@ -49,6 +65,10 @@ import { NgModule } from '@angular/core';
                 {   path: 'publicate_kr', 
                     component: ResearchPublicateKrComponent, 
                     data: { breadcrumb: "Domestic Publications" }
+                },
+                {   path: 'publicate/:id', 
+                    component: ResearchPublicateIndividualComponent, 
+                    data: { breadcrumb: "Publications (individual)" }
                 },
                 {   path: 'thesis', 
                     component: ResearchThesisComponent, 
@@ -70,7 +90,7 @@ import { NgModule } from '@angular/core';
                     component: ArchiveDownloadsComponent, 
                     data: { breadcrumb: "Downloads" }
                 },
-                {   path: 'seminar', 
+                {   path: 'seminar/:id', 
                     component: ArchiveSeminarComponent, 
                     data: { breadcrumb: "Seminar" }
                 }

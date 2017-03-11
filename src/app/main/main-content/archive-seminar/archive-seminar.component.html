@@ -1,10 +1,15 @@
 <div class="flex-content">
-  <div class="make_dimmer"></div>
   <div class="content col-sm container-fluid">
-
+    <form>
+      <div>
+        <button></button>
+        <button></button>
+        <label for="search-input"></label>
+      </div>
+    </form>
     <div class="row year">
-      <h2 class="year-title">2017</h2>
-      <div *ngFor="let seminar of seminars" class="weekly-box">
+      <h2 class="year-title">{{id}}</h2>
+      <div *ngFor="let seminar of aYearSeminars" class="weekly-box">
         <div class="weekly-img"></div>
         <div class="weekly-desc">
           <h3 class="weekly-text">{{seminar.title}}</h3>
@@ -13,26 +18,5 @@
         </div>
       </div>
     </div>
-
-    <div class="row year">
-      <h2 class="year-title">2015</h2>
-
-      <div class="weekly-box">
-        <div class="weekly-img"></div>
-        <div class="weekly-desc">
-          <h3 class="weekly-text">360 Video Stabilization</h3><strong>Presenter: Sanghoon Kim, Master student</strong>
-          <div class="weekly-date">Date:2017.01.06</div>
-        </div>
-      </div>
-      <div class="weekly-box">
-        <div class="weekly-img"></div>
-        <div class="weekly-desc">
-          <h3 class="weekly-text">360 Video Stabilization</h3><strong>Presenter: Sanghoon Kim, Master student</strong>
-          <div class="weekly-date">Date:2017.01.06</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row year"></div>
   </div>
 </div>
