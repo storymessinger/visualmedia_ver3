@@ -30,7 +30,10 @@ app.use(function (req, res, next) {
 
 // Get our API routes
 const api = require('./server/routes/api');
+const data = require('./server/routes/data');
 app.use('/main/content/api', api);
+
+app.use('/main/content', data);
 
 
 app.get('*', (req, res) => {

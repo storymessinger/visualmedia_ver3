@@ -86,6 +86,10 @@ import { NgModule } from '@angular/core';
                     component: IssuesLifeComponent, 
                     data: { breadcrumb: "Our Daily Life" }
                 },
+                {   path: 'downloads/:id', 
+                    component: ArchiveDownloadsComponent, 
+                    data: { breadcrumb: "Downloads" }
+                },
                 {   path: 'downloads', 
                     component: ArchiveDownloadsComponent, 
                     data: { breadcrumb: "Downloads" }

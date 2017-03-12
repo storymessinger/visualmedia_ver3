@@ -1,5 +1,8 @@
 import { Seminars } from './mock/mock-seminar';
+
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 export interface Seminar {
     seminarId: number;
@@ -14,10 +17,15 @@ export interface Seminar {
 @Injectable()
 export class SeminarService {
 
-  constructor() { }
+  constructor(private http:Http) { 
+  }
 
-  getSeminars():Seminar[] {
-    return Seminars;
+  getSeminars() {
+    // console.log(typeof(this.http.get('main/content/seminar').map(res => res.json())));
+    // console.log(this.http.get('main/content/seminar').map(res => res.json()));
+    // return Seminars;
+    return this.http.get('main/content/seminar')
+      .map(res => res.json());
   }
 
 }

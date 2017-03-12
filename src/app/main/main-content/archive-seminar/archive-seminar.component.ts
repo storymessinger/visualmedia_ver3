@@ -12,14 +12,14 @@ export class ArchiveSeminarComponent implements OnInit, OnDestroy {
 
   private subscription: Subscription;
 
-  getSeminars:Seminar[];
+  getSeminars:any = [];
   seminars:any;
   aYearSeminars:any;
   id: string;
 
-  constructor(private seminarService:SeminarService, router:Router, activatedRoute:ActivatedRoute) { 
-    this.getSeminars = this.seminarService.getSeminars();
-    this.subscription = activatedRoute.params // url로 주어지는 값
+  constructor(private seminarService:SeminarService, public activatedRoute:ActivatedRoute) { 
+    // this.getSeminars = this.seminarService.getSeminars();
+    this.subscription = this.activatedRoute.params // url로 주어지는 값
       .subscribe(
           (param: any) => {
             // default year is 2017
@@ -31,6 +31,11 @@ export class ArchiveSeminarComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+        // Retrieve posts from the API
+    this.seminarService.getSeminars()
+     .subscribe(items => {
+        this.getSeminars = items;
+      });
   }
 
   ngOnDestroy() {
