@@ -66,11 +66,11 @@ export class MainNavbarComponent implements OnInit {
   }
 
   @Input() state;
-  @Output() clicked = new EventEmitter<string>();
+  @Output() sidebarClick = new EventEmitter<string>();
   
   onClicked() {
     this.state = !this.state;
-    this.clicked.emit(this.state);
+    this.sidebarClick.emit(this.state);
   }
 
   ////

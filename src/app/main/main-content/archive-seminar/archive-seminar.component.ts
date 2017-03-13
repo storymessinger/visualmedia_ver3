@@ -1,6 +1,6 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { Seminar, SeminarService } from './../shared/seminars.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
 
 @Component({
@@ -8,7 +8,7 @@ import { Subscription } from "rxjs/Rx";
   templateUrl: './archive-seminar.component.html',
   styleUrls: ['./archive-seminar.component.scss']
 })
-export class ArchiveSeminarComponent implements OnInit, OnDestroy {
+export class ArchiveSeminarComponent implements OnInit, DoCheck, OnDestroy {
 
   private subscription: Subscription;
 
@@ -18,7 +18,17 @@ export class ArchiveSeminarComponent implements OnInit, OnDestroy {
   id: string;
 
   constructor(private seminarService:SeminarService, public activatedRoute:ActivatedRoute) { 
-    // this.getSeminars = this.seminarService.getSeminars();
+  }
+
+  ngOnInit() {
+    // Retrieve posts from the API
+    this.seminarService.getSeminars()
+     .subscribe(items => {
+        this.getSeminars = items;
+      });
+  }
+
+  ngDoCheck() {
     this.subscription = this.activatedRoute.params // url로 주어지는 값
       .subscribe(
           (param: any) => {
@@ -26,16 +36,11 @@ export class ArchiveSeminarComponent implements OnInit, OnDestroy {
             ( param['id'] !== undefined ) ? this.id = param['id'] : this.id = "2017";
             this.seminars = groupBy(this.getSeminars, 'year');
             this.aYearSeminars = this.seminars[this.id];
+            console.log('check');
+            console.log(this.getSeminars);
+            console.log(this.aYearSeminars);
           }
       );
-  }
-
-  ngOnInit() {
-        // Retrieve posts from the API
-    this.seminarService.getSeminars()
-     .subscribe(items => {
-        this.getSeminars = items;
-      });
   }
 
   ngOnDestroy() {

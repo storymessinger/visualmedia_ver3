@@ -32,7 +32,6 @@ app.use(function (req, res, next) {
 const api = require('./server/routes/api');
 const data = require('./server/routes/data');
 app.use('/main/content/api', api);
-
 app.use('/main/content', data);
 
 
