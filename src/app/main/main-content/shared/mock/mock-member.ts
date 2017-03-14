@@ -1,12 +1,12 @@
 export const Members = [
 
     {  
-      memberId: 0,
+      id: 1,
       graduate: false,
-      type: 'Ph.D',
-      name: 'Bumki Kim',
+      type: 'professor',
+      name: 'Professor name',
       img: 'assets/imgs/member_student.jpg', 
-      topics: [ 'Computer Graphics', 'Video Projection' ],
+      topics: '',
       email: 'bumkikim@kaist.ac.kr',
       status: '',
       team: 'EVE',
@@ -14,9 +14,9 @@ export const Members = [
       personalPage: ''
     },
     {  
-      memberId: 1,
+      id: 2,
       graduate: false,
-      type: 'Ph.D',
+      type: 'doctor',
       name: 'Jaedong Kim',
       img: 'assets/imgs/member_student.jpg', 
       topics: [ 'Computer Graphics', 'Video Projection' ],
@@ -27,9 +27,22 @@ export const Members = [
       personalPage: ''
     },
     {  
-      memberId: 2,
+      id: 3,
+      graduate: false,
+      type: 'doctor',
+      name: 'Jaedong Kim',
+      img: 'assets/imgs/member_student.jpg', 
+      topics: [ 'Computer Graphics', 'Video Projection' ],
+      email: 'bumkikim@kaist.ac.kr',
+      status: 'Head Student',
+      team: 'CFL2',
+      affiliation: '',
+      personalPage: ''
+    },
+    {  
+      id: 4,
       graduate: true,
-      type: 'Ph.D',
+      type: 'master',
       name: 'Byungkuk Choi',
       img: 'assets/imgs/member_student.jpg', 
       topics: [ 'Computer Graphics', 'Video Projection' ],
@@ -40,9 +53,9 @@ export const Members = [
       personalPage: ''
     },
     {  
-      memberId: 3,
+      id: 5,
       graduate: true,
-      type: 'Former Member',
+      type: 'former',
       name: 'Daseong Han',
       img: 'assets/imgs/member_student.jpg', 
       topics: [ 'Computer Graphics', 'Video Projection' ],

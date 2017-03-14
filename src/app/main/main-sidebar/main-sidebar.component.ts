@@ -27,7 +27,12 @@ export class MainSidebarComponent {
         },
         { 
           url: "admission",
-          data: "About Admission",
+          data: "Admission",
+          innerLink: []
+        },
+        { 
+          url: "partners",
+          data: "Partners",
           innerLink: []
         }
       ]

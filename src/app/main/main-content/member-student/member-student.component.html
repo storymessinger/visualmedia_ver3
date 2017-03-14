@@ -5,88 +5,107 @@
   <div class="content col-sm container-fluid">
     
     <button pageScroll href="#professor"> Professor </button>
-    <button pageScroll href="#current"> Current </button>
+    <button pageScroll href="#current_doctor"> Doctor </button>
+    <button pageScroll href="#current_master"> Master </button>
     <button pageScroll href="#former"> Former </button>
     
     <div class="row content-row">
-      <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12" id="professor">professor
+
+      <div class="member col-sm-12">
+        <h2 class="member-status col-sm-12" id="professor">Professor
           <hr/>
         </h2>
-
-
         <!-- card container-->
-        <div class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img [src]='ProfImgPath' alt="Professor profile img" /></div>
+        <div *ngFor="let person of datas.professor " class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img">
+            <img [src]='person.img'>
+          </div>
           <div class="student-text">
-            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-            <h6>INTERESTED TOPICS</h6>
-            <p>Computer Graphics / Video Projection</p>
-            <h6>E-MAIL</h6>
-            <p>bumkikim@kaist.ac.kr</p>
+            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
+            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
+            <p>{{person.topics}}</p>
+            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
+            <p>{{person.email}}</p>
+            <h6 *ngIf='person.team !== ""'>TEAM</h6>
+            <p>{{person.team}}</p>
+            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
+            <p>{{person.affiliation}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member col-sm-12">
+        <h2 class="member-status col-sm-12" id="current_doctor">
+          Doctor
+          <hr/>
+        </h2>
+        <!-- card container-->
+        <div *ngFor="let person of datas.doctor" class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img">
+            <img [src]='person.img'>
+          </div>
+          <div class="student-text">
+            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
+            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
+            <p>{{person.topics}}</p>
+            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
+            <p>{{person.email}}</p>
+            <h6 *ngIf='person.team !== ""'>TEAM</h6>
+            <p>{{person.team}}</p>
+            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
+            <p>{{person.affiliation}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="member col-sm-12">
+        <h2 class="member-status col-sm-12" id="current_master">Master
+          <hr/>
+        </h2>
+        <!-- card container-->
+        <div *ngFor="let person of datas.master" class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img">
+            <img [src]='person.img'>
+          </div>
+          <div class="student-text">
+            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
+            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
+            <p>{{person.topics}}</p>
+            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
+            <p>{{person.email}}</p>
+            <h6 *ngIf='person.team !== ""'>TEAM</h6>
+            <p>{{person.team}}</p>
+            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
+            <p>{{person.affiliation}}</p>
           </div>
         </div>
       </div>
 
 
-      <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12" id="current">current students
-          <hr/>
-        </h2>
-        <div *ngFor='let student of students' class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img [src]='student.img' (click)=onImgClick($event) ></div>
-          <div class="student-text">
-            <h5 class="name">
-              {{student.name}} <sub>{{student.status}}</sub>
-            </h5>
-            <h6>INTERESTED TOPICS</h6>
-            <div>
-              <span *ngFor='let topic of student.topics'>{{topic}} </span>
-            </div>
-            <h6>E-MAIL</h6>
-            <p>{{student.email}}</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="member_image_box col-sm-12">
-        <h2 class="member-status col-sm-12" id="former">former students
+      <div class="member col-sm-12">
+        <h2 class="member-status col-sm-12" id="former">Former Members
           <hr/>
         </h2>
         <!-- card container-->
-        <div class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
-          <div class="student-text">
-            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-            <h6>INTERESTED TOPICS</h6>
-            <p>Computer Graphics / Video Projection</p>
-            <h6>E-MAIL</h6>
-            <p>bumkikim@kaist.ac.kr</p>
+        <div *ngFor="let person of datas.former" class="student-box col-sm-12 col-md-6 col-lg-4">
+          <div class="student-img">
+            <img [src]='person.img'>
           </div>
-        </div>
-        <!-- card container-->
-        <div class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
           <div class="student-text">
-            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-            <h6>INTERESTED TOPICS</h6>
-            <p>Computer Graphics / Video Projection</p>
-            <h6>E-MAIL</h6>
-            <p>bumkikim@kaist.ac.kr</p>
-          </div>
-        </div>
-        <!-- card container-->
-        <div  class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img" /></div>
-          <div class="student-text">
-            <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-            <h6>INTERESTED TOPICS</h6>
-            <p>Computer Graphics / Video Projection</p>
-            <h6>E-MAIL</h6>
-            <p>bumkikim@kaist.ac.kr</p>
+            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
+            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
+            <p>{{person.topics}}</p>
+            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
+            <p>{{person.email}}</p>
+            <h6 *ngIf='person.team !== ""'>TEAM</h6>
+            <p>{{person.team}}</p>
+            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
+            <p>{{person.affiliation}}</p>
           </div>
         </div>
       </div>
+
+
     </div>
   </div>
 </div>

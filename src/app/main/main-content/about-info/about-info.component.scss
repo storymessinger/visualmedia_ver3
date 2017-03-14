@@ -1,33 +1,6 @@
 @import '../../../../assets/css/_variables.scss';
 
-.member_image_box {
-    // row
-    display: flex;
-    flex-wrap:wrap;
-    max-width: 1250px;
-
-    padding: 2rem 0 2rem 0;
-    .partner-box {
-        margin-bottom: 2rem;
-
-        .partner-img img:hover {
-            -webkit-filter: grayscale(100%) contrast(80%);
-        }
-        .partner-img {
-            display: flex;
-            overflow:hidden;
-            flex-flow: column;
-            align-items: center;
-            margin: 0 2.5rem 0 2.5rem;
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
-
 .year {
-    border-top: 1px solid #ccc;
     padding: 2rem 3rem 3rem;
     flex-flow:column;
 }

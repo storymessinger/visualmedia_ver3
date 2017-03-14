@@ -3,59 +3,18 @@
   <div class="content col-sm-12 container-fluid">
 
     <div class="row year">
-      <h2 class="year-title">2016</h2>
-      <div class="publication-box">
+      <h2 class="year-title">{{id}}</h2>
+      <div *ngFor="let pub of aYearDatas" class="publication-box">
         <div class="publication-img"></div>
+          <img [src]='pub.img'>
         <div class="publication-desc">
-          <h3 class="publication-desc-title publication-text">SketchiMo: Sketch-based Motion Editing for Articulated Characters</h3>
+          <h3 class="publication-desc-title publication-text">{{pub.title}}</h3>
           <h5 class="publication-desc-subtitle publication-text">Byungkuk, Roger i Ribera, J.P. Lewis, Yeongho Seol, Seokpyo Hong, Haegwang Eom, Sunjin Jung, and Junyoung Noh</h5>
           <div class="publication-text">
-            Conference: ACM SIGGRAPH, 2016 <br>
-            Journal: ACM Transaction on Graphics, Volume 35, Issue 4 p.146:1-146:12, July 2016
+            {{pub.conference}}{{pub.journal}}{{pub.thesisInfo}}
           </div>
-          <div class="publication-link publication-text"><a href="/publication/2016">Project Page / Paper</a></div>
+          <div class="publication-link publication-text">
+            <a [href]='pub.projectPage'>Project Page / Paper</a>
+          </div>
         </div>
       </div>
-      <div class="publication-box">
-        <div class="publication-img"></div>
-        <div class="publication-desc">
-          <h3 class="publication-desc-title publication-text">SketchiMo: Sketch-based Motion Editing for Articulated Characters</h3>
-          <h5 class="publication-desc-subtitle publication-text">Byungkuk, Roger i Ribera, J.P. Lewis, Yeongho Seol, Seokpyo Hong, Haegwang Eom, Sunjin Jung, and Junyoung Noh</h5>
-          <div class="publication-text">
-            Conference: ACM SIGGRAPH, 2016 <br>
-            Journal: ACM Transaction on Graphics, Volume 35, Issue 4 p.146:1-146:12, July 2016
-          </div>
-          <div class="publication-link publication-text"><a href="/publication/2016">Project Page / Paper</a></div>
-        </div>
-      </div>
-      <div class="publication-box">
-        <div class="publication-img"></div>
-        <div class="publication-desc">
-          <h3 class="publication-desc-title publication-text">SketchiMo: Sketch-based Motion Editing for Articulated Characters</h3>
-          <h5 class="publication-desc-subtitle publication-text">Byungkuk, Roger i Ribera, J.P. Lewis, Yeongho Seol, Seokpyo Hong, Haegwang Eom, Sunjin Jung, and Junyoung Noh</h5>
-          <div class="publication-text">
-            Conference: ACM SIGGRAPH, 2016 <br>
-            Journal: ACM Transaction on Graphics, Volume 35, Issue 4 p.146:1-146:12, July 2016
-          </div>
-          <div class="publication-link publication-text"><a href="/publication/2016">Project Page / Paper</a></div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="row year">
-      <h2 class="year-title">2015</h2>
-      <div class="publication-box">
-        <div class="publication-img"></div>
-        <div class="publication-desc">
-          <h3 class="publication-desc-title publication-text">SketchiMo: Sketch-based Motion Editing for Articulated Characters</h3>
-          <h5 class="publication-desc-subtitle publication-text">Byungkuk, Roger i Ribera, J.P. Lewis, Yeongho Seol, Seokpyo Hong, Haegwang Eom, Sunjin Jung, and Junyoung Noh</h5>
-          <div class="publication-text">
-            Conference: ACM SIGGRAPH, 2016 <br>
-            Journal: ACM Transaction on Graphics, Volume 35, Issue 4 p.146:1-146:12, July 2016
-          </div>
-          <div class="publication-link publication-text"><a href="/publication/2016">Project Page / Paper</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="row year"></div>
-</div>

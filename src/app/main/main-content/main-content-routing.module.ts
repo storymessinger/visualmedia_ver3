@@ -1,3 +1,4 @@
+import { AboutPartnersComponent } from './about-partners/about-partners.component';
 import { MemberStudentIndividualComponent } from './member-student-individual/member-student-individual.component';
 import { ResearchAreaIndividualComponent } from './research-area-individual/research-area-individual.component';
 import { ResearchProjectsIndividualComponent } from './research-projects-individual/research-projects-individual.component';
@@ -33,6 +34,10 @@ import { NgModule } from '@angular/core';
                 {   path: 'admission', 
                     component: AboutAdmissionComponent,
                     data: { breadcrumb: "Admission" }
+                },
+                {   path: 'partners', 
+                    component: AboutPartnersComponent,
+                    data: { breadcrumb: "Partners" }
                 },
                 {   path: 'all', 
                     component: MemberStudentComponent,

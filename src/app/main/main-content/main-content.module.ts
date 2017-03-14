@@ -1,3 +1,5 @@
+import { KeysPipe } from './shared/keys-pipe';
+import { PartnersService } from './shared/partners.service';
 import { PublicationsService } from './shared/publications.service';
 import { PostsService } from './shared/posts.service';
 import { ProjectsService } from './shared/projects.service';
@@ -29,6 +31,7 @@ import { ResearchProjectsIndividualComponent } from './research-projects-individ
 import { ResearchPublicateIndividualComponent } from './research-publicate-individual/research-publicate-individual.component';
 import { ResearchAreaIndividualComponent } from './research-area-individual/research-area-individual.component';
 import { MemberStudentIndividualComponent } from './member-student-individual/member-student-individual.component';
+import { AboutPartnersComponent } from './about-partners/about-partners.component';
 
 
 @NgModule({
@@ -56,8 +59,10 @@ import { MemberStudentIndividualComponent } from './member-student-individual/me
     ResearchProjectsIndividualComponent, 
     ResearchPublicateIndividualComponent, 
     ResearchAreaIndividualComponent, 
-    MemberStudentIndividualComponent,
+    MemberStudentIndividualComponent, 
+    AboutPartnersComponent,
+    KeysPipe
     ],
-  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService, ProjectsService, PostsService, PublicationsService]
+  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService, ProjectsService, PostsService, PublicationsService, PartnersService]
 })
 export class MainContentModule { }

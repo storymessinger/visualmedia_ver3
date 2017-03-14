@@ -68,15 +68,19 @@
                         color: $primary_dark_grey;
                         text-decoration: none;
                     }
-                    div.secondMenu {
+                    a {
+                        display:  block;
+                        color: $primary_dark_grey;
+                    }
+                    a.secondMenu {
                         font-size: 13px;
                         padding: 12px 0px 12px 46px;
                     }
-                    div.thirdMenu {
+                    a.thirdMenu {
                         font-size: 11px;
                         padding: 10px 0px 10px 70px;
                     }
-                    div.secondMenu:hover, div.thirdMenu:hover{
+                    a.secondMenu:hover, a.thirdMenu:hover{
                         cursor: pointer;
                         background-color: $primary_light_grey;
                     }

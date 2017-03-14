@@ -3,7 +3,7 @@ export const Partners = [
         "partnersId": 0,
         "type": "Government",
         "name": "Ministry of Culture, Sports and Tourism",
-        "logo": "logo/Government_1.png",
+        "logo": "http://www.artearchive.kr/promotion/file/581/%EB%AC%B8%EC%B2%B4%EB%B6%80.jpg",
         "link": "http://www.mcst.go.kr/main.jsp"
     },
     {
@@ -73,7 +73,7 @@ export const Partners = [
         "partnersId": 10,
         "type": "Productions",
         "name": "WETA Digital",
-        "logo": "logo/Academies_1.png",
+        "logo": "http://www.animationmagazine.net/wordpress/wp-content/uploads/weta-digital-post.jpg",
         "link": "http://www.wetafx.co.nz/"
     },
     {
@@ -101,7 +101,7 @@ export const Partners = [
         "partnersId": 14,
         "type": "Productions",
         "name": "SBS",
-        "logo": "logo/Academies_5.png",
+        "logo": "http://t1.daumcdn.net/encyclop/m900/jNXdS4YtJ8Mcr6jNiUxQRlOf3GQgk820X34mgL9U",
         "link": "http://www.sbs.co.kr/"
     },
     {

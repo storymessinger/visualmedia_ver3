@@ -1,4 +1,4 @@
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Download, DownloadService } from './../shared/downloads.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
@@ -17,7 +17,7 @@ export class ArchiveDownloadsComponent implements OnInit {
   aYearDatas:any;
   id: string;
 
-  constructor(private downloadService:DownloadService, router:Router, activatedRoute:ActivatedRoute) { 
+  constructor(private downloadService:DownloadService, private activatedRoute:ActivatedRoute) { 
     this.getDatas= this.downloadService.getDownloads();
     this.subscription = activatedRoute.params //
       .subscribe(

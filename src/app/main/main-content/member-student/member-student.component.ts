@@ -1,4 +1,4 @@
-import { Member, MemberService } from './../shared/member.service';
+import { MemberService } from './../shared/member.service';
 import { Component} from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
 
@@ -9,18 +9,29 @@ import { PageScrollConfig } from 'ng2-page-scroll';
 })
 export class MemberStudentComponent {
 
-  public students:Member[];
+  public getDatas:any[];
+  public datas:any;
 
   constructor(private memberService:MemberService) { 
-    this.students = this.memberService.getMembers();
+    this.getDatas= this.memberService.getMembers();
 
     //* PageScroll Configuration
     PageScrollConfig.defaultScrollOffset = 110;
-    PageScrollConfig.defaultDuration = 600;
+    PageScrollConfig.defaultDuration = 0;
     //*
+
+    this.datas = groupBy(this.getDatas, 'type');
   }
   
   onImgClick(target) {
     console.log(target);
   }
+}
+
+function groupBy(arr, property) {
+  return arr.reduce(function(memo, x) {
+    if (!memo[x[property]]) { memo[x[property]] = []; }
+    memo[x[property]].push(x);
+    return memo;
+  }, {});
 }

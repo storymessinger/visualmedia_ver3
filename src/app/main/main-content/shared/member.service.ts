@@ -20,7 +20,7 @@ export class MemberService {
 
   constructor() { }
 
-  getMembers():Member[] {
+  getMembers():any[] {
     return Members;
   }
 
