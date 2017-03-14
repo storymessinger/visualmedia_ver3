@@ -11,7 +11,7 @@
   "scripts": {
     "deploy": "git push origin master && git push heroku master",
     "postinstall": "ng build --aot -prod",
-    "start": "http-server server.js",
+    "start": "node server.js",
     "ng": "ng",
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
     "test": "ng test",
@@ -35,7 +35,6 @@
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
-    "http-server": "^0.9.0",
     "knex": "^0.12.7",
     "mysql": "^2.13.0",
     "ng2-page-scroll": "^4.0.0-beta.4",
