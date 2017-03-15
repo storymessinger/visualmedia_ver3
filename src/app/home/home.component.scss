@@ -1,5 +1,10 @@
 @import '../../assets/css/_variables.scss';
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 // for overlay noscroll issue
 .noscroll {
     overflow: hidden;
@@ -15,6 +20,7 @@
     position: relative;
     background-position: 50% center;
     background-size: cover;
+
 
     // for this page to be 'scroll-available'
     height: 100vh;
@@ -45,10 +51,11 @@
 
 }
 .content {
-    padding: 0 2rem;
+    padding: 0 2rem 5rem 2rem;
 
     .researchArea {
         .Heading {
+            margin: auto;
             text-align: center;
             padding: 4rem 0 4rem 0;
             h1 {
@@ -74,18 +81,22 @@
         .Heading {
             text-align: center;
             padding: 4rem 0 4rem 0;
+            margin:auto;
             h1 {
                 font-size: 3rem;
                 font-weight: bold;
             }
         }
         .card-columns {
+            margin:auto;
             .card {
-                max-width: 350px;
+                max-width: 300px;
+                margin-bottom: 1.5rem;
                 img.sel-img {
                     // -webkit-animation: sel-img-animation 0.3s 1;
                     filter: brightness(30%);
                 }
+
             }
         }
     }

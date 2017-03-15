@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>visual media lab website</title>
-
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <!-- fonts and files-->
-  <!-- using lato as the main font-->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>visual media lab website</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  </head>
 
   <body>
-
     <app-home-nav></app-home-nav>
-
 
     <div class="main">
       <div class="col-xs">
@@ -32,120 +26,59 @@
             </div>
             <div class="card-deck-wrapper">
               <div class="card-deck">
-                <div class="card"><img class="img-fluid card-img-top" src="../src/assets/img/Home_ResearchArea_1.png" alt="Card image cap">
+
+                <div *ngFor="let area of researchArea" class="card">
+                  <img class="img-fluid card-img-top" [src]='area.img'>
                   <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h4 class="card-title">{{area.team}}</h4>
+                    <p class="card-text">{{area.area}}</p>
+                    <p class="card-text"><small class="text-muted">{{area.desc}}</small></p>
                   </div>
                 </div>
-                <div class="card"><img class="img-fluid card-img-top" src="/img/Home_ResearchArea_1.png" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card"><img class="img-fluid card-img-top" src="/img/Home_ResearchArea_1.png" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+         
+
               </div>
             </div>
           </div>
           <div class="row news">
             <div class="Heading col-xs-12">
-              <h1>Recent News and Publication</h1>
+              <h1>Recent News and Media</h1>
               <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and human interaction system</p>
             </div>
+
             <div class="card-columns">
-              <div class="card card-inverse"><img class="sel-img card-img img-fluid" src="/img/Home_ResearchArea_1.png" alt="Card image cap">
-                <div class="card-img-overlay">
-                  <h4 class="card-title">Optimization Based Interactive Motion Synthesis</h4>
-                  <p class="card-text">Optimization Based Interactive Motion Synthesis</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card card-block">
-                <blockquote class="card-blockquote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer><small class="text-muted">Someone famous in
-                      <cite title="Source Title">Source Title</cite></small></footer>
-                </blockquote>
-              </div>
-              <div class="card"><img class="card-img-top img-fluid" src="/img/Home_RecentPublication_1.png" alt="Card image cap">
+              <div *ngFor="let issue of issuesByDate" class="card">
+                <img class="card-img-top img-fluid" [src]='issue.img'>
                 <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4 class="card-title">{{issue.title}}</h4>
+                  <p class="card-text">{{issue.desc}}</p>
+                  <p class="card-text"><small class="text-muted">{{issue.date}}</small></p>
                 </div>
-              </div>
-              <div class="card card-block card-inverse card-primary text-xs-center">
-                <blockquote class="card-blockquote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                  <footer><small>Someone famous in
-                      <cite title="Source Title">Source Title</cite></small></footer>
-                </blockquote>
-              </div>
-              <div class="card card-block text-xs-center">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-              <div class="card"><img class="card-img img-fluid" src="/img/AboutPeople1.png" alt="Card image"></div>
-              <div class="card card-block text-xs-right">
-                <blockquote class="card-blockquote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer><small class="text-muted">Someone famous in
-                      <cite title="Source Title">Source Title</cite></small></footer>
-                </blockquote>
-              </div>
-              <div class="card card-block">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-              <div class="card"><img class="card-img-top img-fluid" src="/img/Home_ResearchArea_1.png" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Card title that wraps to a new line</h4>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-              <div class="card card-block">
-                <blockquote class="card-blockquote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer><small class="text-muted">Someone famous in
-                      <cite title="Source Title">Source Title</cite></small></footer>
-                </blockquote>
-              </div>
-              <div class="card"><img class="card-img img-fluid" src="/img/AboutPeople1.png" alt="Card image"></div>
-              <div class="card card-block text-xs-right">
-                <blockquote class="card-blockquote">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer><small class="text-muted">Someone famous in
-                      <cite title="Source Title">Source Title</cite></small></footer>
-                </blockquote>
               </div>
             </div>
+
+
+
           </div>
         </div>
       </div>
     </div>
+
+
+
     <div class="footer row container-fluid">
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-4 footer-brand">
-            <div class="footer-brand-img"><img alt="footerLogo" src="img/logo_footer.svg"></div>
+          <div class="col-sm-12 col-md-4 footer-brand">
+            <div class="footer-brand-img"><img alt="footerLogo" src="assets/imgs/logo_footer.svg"></div>
+
             <ul>
               <li>+82 (0)42 350 5918</li>
               <li>visualmedia@kaist.ac.kr</li>
               <li>373-1 Guseong-dong. Yueseong-Gu Daejeon, 305-701, South Korea</li>
             </ul>
           </div>
-          <div class="hidden-md-down col-lg-4 sitemap">
+          <div class="hidden-sm-down col-md-8 sitemap">
             <div class="row">
               <ul class="col-xs">Introduction
                 <li><a href="#">About us</a></li>
@@ -169,10 +102,6 @@
                 <li><a href="#">Recent Events</a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-4 footer-partner">
-            <div class="footer-partner-img"><img class="img-fluid" alt="footerPartner" src="img/partnerLogo4.png"></div>
-            <div class="footer-partner-img"><img class="img-fluid" alt="footerPartner" src="img/partnerLogo2.png"></div>
           </div>
         </div>
       </div>

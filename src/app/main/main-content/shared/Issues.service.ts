@@ -1,32 +1,42 @@
 import { Issues } from './mock/mock-issues';
 import { Injectable } from '@angular/core';
 
-export class Media {
-    title: string;
-    desc: string;
-    img: string;
-    date: string[];
-    source: string;
-    sourceLink: string;
-}
-export class New {
-    title: string;
-    desc: string;
-    img: string;
-    date: string[];
-}
+export class Issue 
+  {
+      id: number;
+      type: string;
+      title: string; 
+      desc: string;
+      img: string;
+      date: string;
+      day: number;
+      month: number;
+      year: number;
+      source: string;
+      sourceLink: string;
+  }
+
 
 @Injectable()
 export class IssuesService {
 
-  constructor() { }
+  public groupedIssues = groupBy(Issues, 'type');
 
-  getIssues(arg) {
-      if ( arg == "media") {
-          
-      } else if ( arg == "news") {
+  constructor() { 
 
-      }
+  }
+
+  getIssues() {
+    return Issues;
+  }
+
+  getNews() {
+    return this.groupedIssues['news'];
+  }
+
+  getMedia() {
+    return this.groupedIssues['media'];
+
   }
 }
 
