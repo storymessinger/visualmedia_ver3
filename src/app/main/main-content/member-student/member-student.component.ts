@@ -1,5 +1,7 @@
+import { Subscription } from 'rxjs/Rx';
+import { ScrollAbleService } from './../shared/scroll-able.service';
 import { MemberService } from './../shared/member.service';
-import { Component} from '@angular/core';
+import { Component, OnDestroy} from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
 
 @Component({
@@ -9,22 +11,33 @@ import { PageScrollConfig } from 'ng2-page-scroll';
 })
 export class MemberStudentComponent {
 
+
   public getDatas:any[];
   public datas:any;
 
-  constructor(private memberService:MemberService) { 
-    this.getDatas= this.memberService.getMembers();
+  message:any;
+  subscription:Subscription;
 
+  constructor(private memberService:MemberService, private scrollAbleService:ScrollAbleService) { 
+    this.subscription = this.scrollAbleService.getMessage()
+      .subscribe(message => { 
+        this.onShout();
+        this.message = message; 
+      })
+    //
+    this.getDatas= this.memberService.getMembers();
+    this.datas = groupBy(this.getDatas, 'type');
     //* PageScroll Configuration
     PageScrollConfig.defaultScrollOffset = 110;
     PageScrollConfig.defaultDuration = 0;
     //*
-
-    this.datas = groupBy(this.getDatas, 'type');
   }
   
   onImgClick(target) {
     console.log(target);
+  }
+  onShout(){
+    alert('done');
   }
 }
 

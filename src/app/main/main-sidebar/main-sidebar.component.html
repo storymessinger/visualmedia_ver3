@@ -2,14 +2,14 @@
     <div class="sidebarInner">
       <nav>
         <dl *ngFor="let link of sbLinks">
-          <dt (click)="activeLink = link.firstLink[1]">{{link.firstLink[1]}}</dt>
+          <dt class="menu02" (click)="toggleMenu(link.firstLink[1])">{{link.firstLink[1]}}</dt>
           <div class="hideOverflow">
             <dd [ngClass]="{'open': activeLink == link.firstLink[1]}" >
-              <dl (click)="subActiveLink = subLink.data" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
-                <a [routerLink]="['content', subLink.url]" class="secondMenu" >{{subLink.data}}</a>
+              <dl (click)="toggleSubMenu(subLink.data)" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
+                <a [routerLink]="['content', subLink.url]" class="menu01 secondMenu" >{{subLink.data}}</a>
                 <div class="hideOverflow">
                     <dd [ngClass]="{'open': subActiveLink == subLink.data }" >
-                      <dl routerLinkActive="active" *ngFor="let inner of subLink.innerLink" (click)="sbMenuClicked()" >
+                      <dl routerLinkActive="active" *ngFor="let inner of subLink.innerLink" (click)="sidebarNavConnect()" >
                         <a [routerLink]="['content', subLink.url, inner]" class="thirdMenu" >{{inner}}</a>
                       </dl>
                     </dd>
@@ -22,4 +22,4 @@
       <div class="legal"></div>
     </div>
   </div>
-  <div (click)="sbMenuClicked()" class="make_dimmer" [ngClass]='{"dimmer":state}'></div>
+  <div (click)="sidebarNavConnect()" class="make_dimmer" [ngClass]='{"dimmer":state}'></div>

@@ -1,6 +1,7 @@
 import { SidebarBtnDirective } from './main-sidebar/sidebar-btn.directive';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
+import { ScrollAbleService } from './main-content/shared/scroll-able.service';
 import { MainComponent } from './main.component';
 
 import { MainRoutingModule } from './main-routing.module';
@@ -12,9 +13,9 @@ import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [ 
-    MainSidebarComponent, 
-    MainNavbarComponent, 
     MainComponent,
+    MainNavbarComponent,
+    MainSidebarComponent,
     SidebarBtnDirective
     ],
   imports: [

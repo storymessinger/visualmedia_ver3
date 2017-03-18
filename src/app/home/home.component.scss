@@ -20,28 +20,14 @@ body {
     position: relative;
     background-position: 50% center;
     background-size: cover;
-
-
     // for this page to be 'scroll-available'
     height: 100vh;
-
     .title {
         position: absolute;
         top: 50%;
         left:50%;
         transform: translate(-50%, -50%);
         color:white;
-        text-align: center;
-
-        h1 {
-            text-transform: uppercase;
-            font-size: 3rem;
-            font-weight: bold;
-        }
-        h4 {
-            margin-top:1rem;
-            margin-bottom: 2.5rem;
-        }
     }
 }
 @media (max-width: 991px) {
@@ -50,61 +36,38 @@ body {
     }
 
 }
+
 .content {
     padding: 0 2rem 5rem 2rem;
-
-    .researchArea {
-        .Heading {
-            margin: auto;
-            text-align: center;
-            padding: 4rem 0 4rem 0;
-            h1 {
-                font-size: 3rem;
-                font-weight: bold;
-            }
-        }
-
-        .card-deck-wrapper {
-            margin:auto;
-            .card-deck {
-                justify-content: center;
-                .card {
-                    max-width: 350px;
-                }
-            }
-        }
-    }
     .news {
         max-width: 1050px;
         margin: auto;
-
-        .Heading {
-            text-align: center;
-            padding: 4rem 0 4rem 0;
-            margin:auto;
-            h1 {
-                font-size: 3rem;
-                font-weight: bold;
-            }
-        }
-        .card-columns {
-            margin:auto;
+    }
+    .Heading {
+        padding: 4rem 0 4rem 0;
+    }
+    .card-deck-wrapper {
+        margin:auto;
+        .card-deck {
+            justify-content: center;
             .card {
-                max-width: 300px;
+                max-width: 350px;
                 margin-bottom: 1.5rem;
-                img.sel-img {
-                    // -webkit-animation: sel-img-animation 0.3s 1;
-                    filter: brightness(30%);
-                }
-
             }
         }
     }
-}
-@media (max-width:575px) {
-    .card {
-        margin: auto;
-        margin-bottom: 2rem;
+    .card-columns {
+        margin:auto;
+        .issueCard {
+            margin:auto;
+            max-width: 300px;
+            margin-bottom: 1.5rem;
+            img.sel-img {
+                // -webkit-animation: sel-img-animation 0.3s 1;
+                filter: brightness(30%);
+            }
+
+        }
     }
 }
 
@@ -114,66 +77,5 @@ body {
     background-color: $primary_dark_grey;
     color: $primary_white;
     margin: 0;
-
-    // for the VML main logo in the footer
-    .footer-brand {
-        ul {
-            list-style: none;
-            padding-left: 0;
-            font-size: 0.8rem;
-            font-weight: lighter;
-        }
-        .footer-brand-img {
-            // Go with vw. But should be careful not to make it too small.
-            width: 200px;
-        }
-    }
-
-    .sitemap {
-        .col-xs {
-            padding: 0 1.5rem 0 1.5rem;
-        }
-        ul {
-            color: rgba(255,255,255, 0.5);
-            font-size: 1rem;
-            list-style: none;
-            a {
-                color: $primary_white;
-                line-height: 1.8;
-
-            }
-        }
-    }
-
-    // for the VML partner logos at the footer.
-    .footer-partner {
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: space-around;;
-
-        padding: 3rem 0 3rem 0;
-        .footer-partner-img {
-            // Go with vw. But should be careful not to make it too small.
-            width: 100px;
-        }
-    }
-    @media (max-width: 575px) {
-        .footer-brand{
-            order:1;
-        }
-        .footer-partner {
-            order:-1;
-        }
-
-    }
-
-    .rights {
-        padding-top: 1rem;
-        .rights-text {
-            text-align: center;
-            font-size: 0.7rem;
-        }
-    }
-
+    height: 400px;
 }

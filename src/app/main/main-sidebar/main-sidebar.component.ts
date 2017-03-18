@@ -38,7 +38,7 @@ export class MainSidebarComponent {
       ]
     },
     {
-      firstLink: ["member", "Member"],
+      firstLink: ["member", "People"],
       secondLink: [
         { 
           url: "all",
@@ -119,10 +119,37 @@ export class MainSidebarComponent {
   @Input() state;
   @Output() clicked = new EventEmitter<string>();
   
-  constructor(){}
+  constructor(public el:ElementRef){
 
-  sbMenuClicked() {
+  }
+
+  // sendMessage() { 
+    // this.scrollAbleService.sendMessage('message from sidebar');
+  // }
+  // clearMessage() {
+  //   this.scrollAbleService.clearMessage();
+  // }
+
+  sidebarNavConnect() {
     this.state = !this.state;
     this.clicked.emit(this.state);
   }
+
+  toggleMenu(data) {
+    if (this.activeLink != data){
+      this.activeLink = data;
+    } else {
+      this.activeLink = null;
+    }
+  }
+
+  toggleSubMenu(data) {
+    if (this.subActiveLink != data) {
+      this.subActiveLink = data;
+    } else {
+      this.subActiveLink = null;
+    }
+
+  }
+
 }

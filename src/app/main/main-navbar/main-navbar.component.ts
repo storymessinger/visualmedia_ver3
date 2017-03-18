@@ -14,7 +14,7 @@ interface IBreadcrumb {
   <div class="breadcrumb-row row">
     <ol class="breadcrumb col-xs">
       <a routerLink="">
-        <img [src]='logoPath' width="168px" class="logo-white">
+        <img [src]='logoPath' height="56" class="logo-white">
       </a>
       <li>
         <img [src]='menuIconPath' (click)='onClicked()' fill-opacity="0" width="30px" class="sb_menu">
@@ -25,10 +25,10 @@ interface IBreadcrumb {
         <input class="search_bar" />
       </li>
 
-      <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+      <li class="breadcrumb-item"><a class="bodyText" routerLink="">Home</a></li>
 
       <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
-        <a routerLink="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
+        <a class="bodyText" routerLink="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
       </li>
 
     </ol>

@@ -1,7 +1,11 @@
 @import '../../../assets/css/_variables.scss';
+@import '../../../assets/css/_materialShadow.scss';
 
 .indexPage-nav {
         display: none;
+}
+.menu_btn {
+    display:none;
 }
 
 .search-nav {
@@ -63,7 +67,7 @@
     }
 
     .nav-link {
-        padding: 0 1rem;
+        padding: 0 1.5rem;
     }
 }
 // From under 750px,

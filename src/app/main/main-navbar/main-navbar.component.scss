@@ -1,4 +1,5 @@
 @import '../../../assets/css/_variables.scss';
+@import '../../../assets/css/_materialShadow.scss';
 
 .breadcrumb-row {
     position: fixed;
@@ -13,9 +14,7 @@
     display: flex;
     align-items: center;
 
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 2rem;
+    padding: 0 0 0 60px;
     height: $navbar_height;
 
     background-color: $primary_orange;
@@ -31,6 +30,7 @@
         display: flex;
         align-items: center;
         margin: 0;
+        padding: 0;
 
         a {
             color: #fff;
@@ -61,13 +61,6 @@
             }
         }
     }
-    //
-    // .form {
-    //     flex-grow: 0;
-    // }
-    // .nav-link {
-    //     padding: 0 1.5rem;
-    // }
 }
 
 .sb_menu {

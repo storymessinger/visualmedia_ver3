@@ -1,3 +1,4 @@
+import { ScrollAbleService } from './shared/scroll-able.service';
 import { KeysPipe } from './shared/keys-pipe';
 import { PartnersService } from './shared/partners.service';
 import { PublicationsService } from './shared/publications.service';
@@ -63,6 +64,6 @@ import { AboutPartnersComponent } from './about-partners/about-partners.componen
     AboutPartnersComponent,
     KeysPipe
     ],
-  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService, ProjectsService, PostsService, PublicationsService, PartnersService]
+  providers: [MemberService, NewsService, MediaService, DownloadService, SeminarService, ProjectsService, PostsService, PublicationsService, PartnersService, ScrollAbleService]
 })
 export class MainContentModule { }

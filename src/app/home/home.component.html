@@ -1,111 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>visual media lab website</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  </head>
 
-  <body>
-    <app-home-nav></app-home-nav>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>visual media lab website</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+</head>
 
-    <div class="main">
-      <div class="col-xs">
-        <div class="row header" [style.background-image]="'url(' + mainImgPath + ')'">
-          <div class="title">
-            <h1>Visual Media Lab.</h1>
-            <h4>Where Creativity Meets Techonology</h4>
-            <p>focuses on developing fundamental computer graphics technology and software applications specifically for the creation of movie visual effects and animated films. Since its foundation in 2006, VML has emphasized both R&D and contens production as a core part of lab activity. About 20 Ph.D. and master program students along have published numerous papers at premium graphics conferences and showcased animations at international computer animated festivals. The close relationship with industry has allowed VML to contribute its technology to recently released movies.</p>
-          </div>
+<body>
+  <app-home-nav></app-home-nav>
+
+  <div class="main">
+    <div class="col-xs">
+      <div class="row header" [style.background-image]="'url(' + mainImgPath + ')'">
+        <div class="title text-center">
+          <h1>Visual Media Lab.</h1>
+          <h5>Where Creativity Meets Techonology</h5>
+          <p>focuses on developing fundamental computer graphics technology and software applications specifically for the creation
+            of movie visual effects and animated films. Since its foundation in 2006, VML has emphasized both R&D and contens
+            production as a core part of lab activity. About 20 Ph.D. and master program students along have published numerous
+            papers at premium graphics conferences and showcased animations at international computer animated festivals.
+            The close relationship with industry has allowed VML to contribute its technology to recently released movies.</p>
         </div>
-        <div class="row content">
-          <div class="researchArea col-xs-12">
-            <div class="Heading">
-              <h1>Reseach Area</h1>
-              <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and human interaction system</p>
-            </div>
-            <div class="card-deck-wrapper">
-              <div class="card-deck">
+      </div>
+      <div class="row content">
 
-                <div *ngFor="let area of researchArea" class="card">
-                  <img class="img-fluid card-img-top" [src]='area.img'>
-                  <div class="card-block">
-                    <h4 class="card-title">{{area.team}}</h4>
-                    <p class="card-text">{{area.area}}</p>
-                    <p class="card-text"><small class="text-muted">{{area.desc}}</small></p>
-                  </div>
-                </div>
-         
-
+        <div class="Heading col-xs-12 text-center">
+          <h1>Reseach Area</h1>
+          <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and
+            human interaction system</p>
+        </div>
+        <div class="card-deck-wrapper col-sm-12">
+          <div class="card-deck">
+            <div *ngFor="let area of researchArea" class="card">
+              <img class="img-fluid card-img-top" [src]='area.img'>
+              <div class="card-block">
+                <h4 class="card-title">{{area.team}}</h4>
+                <p class="card-text">{{area.area}}</p>
+                <p class="card-text"><small class="text-muted">{{area.desc}}</small></p>
               </div>
             </div>
           </div>
-          <div class="row news">
-            <div class="Heading col-xs-12">
-              <h1>Recent News and Media</h1>
-              <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and human interaction system</p>
-            </div>
+        </div>
 
-            <div class="card-columns">
-              <div *ngFor="let issue of issuesByDate" class="card">
-                <img class="card-img-top img-fluid" [src]='issue.img'>
-                <div class="card-block">
-                  <h4 class="card-title">{{issue.title}}</h4>
-                  <p class="card-text">{{issue.desc}}</p>
-                  <p class="card-text"><small class="text-muted">{{issue.date}}</small></p>
-                </div>
+        <div class="col-sm-12 news">
+          <div class="Heading text-center col-sm-12">
+            <h1>Recent News and Media</h1>
+            <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and
+              human interaction system</p>
+          </div>
+
+          <div class="card-columns">
+            <div *ngFor="let issue of issuesByDate" class="card issueCard">
+              <img class="card-img-top img-fluid" [src]='issue.img'>
+              <div class="card-block">
+                <h4 class="card-title">{{issue.title}}</h4>
+                <p class="card-text">{{issue.desc}}</p>
+                <p class="card-text"><small class="text-muted">{{issue.date}}</small></p>
               </div>
             </div>
-
-
-
           </div>
         </div>
+
       </div>
     </div>
+  </div>
 
 
 
-    <div class="footer row container-fluid">
-      <div class="col-xs-12">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 footer-brand">
-            <div class="footer-brand-img"><img alt="footerLogo" src="assets/imgs/logo_footer.svg"></div>
-
-            <ul>
-              <li>+82 (0)42 350 5918</li>
-              <li>visualmedia@kaist.ac.kr</li>
-              <li>373-1 Guseong-dong. Yueseong-Gu Daejeon, 305-701, South Korea</li>
-            </ul>
-          </div>
-          <div class="hidden-sm-down col-md-8 sitemap">
-            <div class="row">
-              <ul class="col-xs">Introduction
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Admission</a></li>
-              </ul>
-              <ul class="col-xs">Member
-                <li><a href="#">Professor</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Former members</a></li>
-              </ul>
-              <ul class="col-xs">Research
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Research Area</a></li>
-                <li><a href="#">Publication</a></li>
-                <li><a href="#">Publication(domestic)</a></li>
-                <li><a href="#">Thesis</a></li>
-              </ul>
-              <ul class="col-xs">News and Events
-                <li><a href="#">Recent News</a></li>
-                <li><a href="#">Recent Events</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="footer row container-fluid">
+    <div class="col-xs-12">
     </div>
-  </body>
-  <!-- Core JS Files-->
+  </div>
+</body>
+<!-- Core JS Files-->
+
 </html>

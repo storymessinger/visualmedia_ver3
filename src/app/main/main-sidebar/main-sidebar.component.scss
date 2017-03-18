@@ -29,8 +29,6 @@
             width: 100%;
             padding: 12px 0 10px;
             dt {
-                font-size: 13px;
-                font-weight: 700;
                 padding: 11px 0 11px 22px;
             }
             dt.navbar_expanded {
@@ -57,7 +55,6 @@
                     dl{
                         display: block;
 
-                        font-weight: 400;
                         letter-spacing: .1px;
                         padding: 0px 0px 0px 0px;
                         margin-bottom: 0;
@@ -73,11 +70,10 @@
                         color: $primary_dark_grey;
                     }
                     a.secondMenu {
-                        font-size: 13px;
                         padding: 12px 0px 12px 46px;
                     }
                     a.thirdMenu {
-                        font-size: 11px;
+                        font-size: 0.7rem;
                         padding: 10px 0px 10px 70px;
                     }
                     a.secondMenu:hover, a.thirdMenu:hover{
