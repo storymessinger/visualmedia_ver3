@@ -7,13 +7,6 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
     imports: [RouterModule.forChild([
-        // {
-        //     path: 'main',
-        //     component: ContentComponent, children: CONTENT_ROUTES,
-        //     data: {
-        //         breadcrumb: "Main"
-        //     }
-        // },
         { 
             path: 'main',
             component: MainComponent,

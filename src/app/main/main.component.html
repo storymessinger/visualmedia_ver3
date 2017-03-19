@@ -1,0 +1,5 @@
+<app-main-navbar [state]="sidebarState" (sidebarClick)="onClicked($event)" ></app-main-navbar>
+<div class="main">
+    <app-main-sidebar [state]="sidebarState" ></app-main-sidebar>
+    <router-outlet></router-outlet>
+</div>
