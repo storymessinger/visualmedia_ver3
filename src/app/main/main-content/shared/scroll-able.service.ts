@@ -9,15 +9,16 @@ export class ScrollAbleService {
 
   constructor() { }
 
-  sendMessage(message: string) {
-      this.subject.next({ text: message });
+  setScroll(name:string ) {
+//   sendMessage(message: string) {
+      this.subject.next(name);
   }
 
   clearMessage() {
       this.subject.next();
   }
 
-  getMessage(): Observable<any> {
+  getScroll(): Observable<any>{
       return this.subject.asObservable();
   }
 

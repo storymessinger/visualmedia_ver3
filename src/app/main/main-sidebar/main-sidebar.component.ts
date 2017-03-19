@@ -1,3 +1,4 @@
+import { ScrollAbleService } from './../main-content/shared/scroll-able.service';
 import {
   Component,
   Output,
@@ -42,9 +43,39 @@ export class MainSidebarComponent {
       secondLink: [
         { 
           url: "all",
-          data: "Student",
+          data: "Professor",
           innerLink: []
-        }
+        },
+        { 
+          url: "all",
+          data: "Doctor",
+          innerLink: []
+        },
+        { 
+          url: "all",
+          data: "Master",
+          innerLink: []
+        },
+        { 
+          url: "all",
+          data: "Researcher",
+          innerLink: []
+        },
+        { 
+          url: "all",
+          data: "Alumni(Docter)",
+          innerLink: []
+        },
+        { 
+          url: "all",
+          data: "Alumni(Master)",
+          innerLink: []
+        },
+        { 
+          url: "all",
+          data: "Former",
+          innerLink: []
+        },
       ]
     },
     {
@@ -119,16 +150,16 @@ export class MainSidebarComponent {
   @Input() state;
   @Output() clicked = new EventEmitter<string>();
   
-  constructor(public el:ElementRef){
+  constructor(public el:ElementRef, private scrollAbleService:ScrollAbleService){
 
   }
 
-  // sendMessage() { 
-    // this.scrollAbleService.sendMessage('message from sidebar');
-  // }
-  // clearMessage() {
-  //   this.scrollAbleService.clearMessage();
-  // }
+  setScroll(data) { 
+    this.scrollAbleService.setScroll(data);
+  }
+  clearMessage() {
+    this.scrollAbleService.clearMessage();
+  }
 
   sidebarNavConnect() {
     this.state = !this.state;
@@ -142,14 +173,19 @@ export class MainSidebarComponent {
       this.activeLink = null;
     }
   }
-
   toggleSubMenu(data) {
     if (this.subActiveLink != data) {
       this.subActiveLink = data;
     } else {
       this.subActiveLink = null;
     }
+    // if there is anything to scroll
+    this.setScroll(data);
+  }
 
+  clickSubSubMenu(data) {
+    // if there is anything to scroll
+    this.setScroll(data);
   }
 
 }

@@ -6,11 +6,11 @@
           <div class="hideOverflow">
             <dd [ngClass]="{'open': activeLink == link.firstLink[1]}" >
               <dl (click)="toggleSubMenu(subLink.data)" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
-                <a [routerLink]="['content', subLink.url]" class="menu01 secondMenu" >{{subLink.data}}</a>
+                <a [routerLink]="[subLink.url]" class="menu01 secondMenu" >{{subLink.data}}</a>
                 <div class="hideOverflow">
                     <dd [ngClass]="{'open': subActiveLink == subLink.data }" >
-                      <dl routerLinkActive="active" *ngFor="let inner of subLink.innerLink" (click)="sidebarNavConnect()" >
-                        <a [routerLink]="['content', subLink.url, inner]" class="thirdMenu" >{{inner}}</a>
+                      <dl *ngFor="let inner of subLink.innerLink" (click)="sidebarNavConnect()" >
+                        <a (click)="clickSubSubMenu(inner)" [routerLink]="['content', subLink.url, inner]" class="thirdMenu" >{{inner}}</a>
                       </dl>
                     </dd>
                 </div>
