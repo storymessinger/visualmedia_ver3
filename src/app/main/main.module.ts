@@ -1,15 +1,15 @@
+import { AgmCoreModule } from 'angular2-google-maps/core';
+import { SearchService } from './../shared/search.service';
 import { PageScrollService } from 'ng2-page-scroll';
-import { PartnersService } from './main-content/shared/partners.service';
-import { PublicationsService } from './main-content/shared/publications.service';
-import { PostsService } from './main-content/shared/posts.service';
-import { ProjectsService } from './main-content/shared/projects.service';
-import { SeminarService } from './main-content/shared/seminars.service';
-import { DownloadService } from './main-content/shared/downloads.service';
-import { MediaService } from './main-content/shared/media.service';
-import { NewsService } from './main-content/shared/news.service';
-import { MemberService } from './main-content/shared/member.service';
+import { PartnersService } from '../shared/partners.service';
+import { PublicationsService } from '../shared/publications.service';
+import { PostsService } from '../shared/posts.service';
+import { ProjectsService } from '../shared/projects.service';
+import { SeminarService } from '../shared/seminars.service';
+import { DownloadService } from '../shared/downloads.service';
+import { MemberService } from '../shared/member.service';
 
-import { KeysPipe } from './main-content/shared/keys-pipe';
+import { KeysPipe } from '../shared/keys-pipe';
 
 import { ArchiveSeminarComponent } from './main-content/archive-seminar/archive-seminar.component';
 import { ArchiveDownloadsComponent } from './main-content/archive-downloads/archive-downloads.component';
@@ -32,7 +32,7 @@ import { AboutAdmissionComponent } from './main-content/about-admission/about-ad
 import { SidebarBtnDirective } from './main-sidebar/sidebar-btn.directive';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
-import { ScrollAbleService } from './main-content/shared/scroll-able.service';
+import { ScrollAbleService } from '../shared/scroll-able.service';
 import { MainComponent } from './main.component';
 
 import { MainRoutingModule } from './main-routing.module';
@@ -73,12 +73,11 @@ import { HttpModule } from '@angular/http';
     CommonModule, 
     FormsModule, 
     HttpModule, 
-    MainRoutingModule
+    MainRoutingModule,
+    AgmCoreModule
   ],
   providers: [
     MemberService, 
-    NewsService, 
-    MediaService, 
     DownloadService, 
     SeminarService, 
     ProjectsService, 
@@ -86,6 +85,7 @@ import { HttpModule } from '@angular/http';
     PublicationsService, 
     PartnersService, 
     ScrollAbleService,
-    PageScrollService]
+    PageScrollService,
+    SearchService]
 })
 export class MainModule { }

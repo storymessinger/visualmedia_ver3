@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,600');
 @import '_variables.scss';
 
 body {
@@ -38,7 +38,7 @@ body {
     margin-left: $sidebar-width;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1479px) {
     .flex-content {
         margin-left: 0;
     }
@@ -49,6 +49,17 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
+
+    // Speical
+    background-color:#fafafa;
+
+
+    .row {
+        // margin-right:0;
+        // margin-left:0;
+        padding: 1.5rem 6rem 3rem 6rem;
+        flex-flow:column;
+    }
 }
 
 ///// hide the scroll but able to scroll 

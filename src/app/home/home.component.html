@@ -8,10 +8,39 @@
 </head>
 
 <body>
-  <app-home-nav></app-home-nav>
+  <nav class="navbar navbar-light fixed-top" id="navbar">
+    <img class="menu_btn" (click)=clickMenuBtn($event) [src]=menuIconPath fill-opacity="0" width="30px">
+    <a class="indexpage-nav-btn navbar-brand" routerLink="/">
+      <img alt="brand" [src]=logoIconPath height="56">
+    </a>
+    <ul class="nav navbar-nav">
+      <li class="menu01 nav-item active"><a class="nav-link" routerLInk="/main/info">About</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" [routerLink]="['/main/all']" >People</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/area">Research</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/news" >News & Events</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/downloads" >Archive</a></li>
+    </ul>
+    <ul class="search-nav">
+      <li class="search">
+        <img class="search_btn" (click)=clickSearchBtn($event) [src]=searchIconPath fill-opacity="0" width="30px">
+        <input id="searchBar">
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="indexPage-nav">
+    <div class="list-group">
+      <a class="menu01 list-group-item" routerLink="/main/info">About</a>
+      <a class="menu01 list-group-item" href="/member/professor">Member</a>
+      <a class="menu01 list-group-item" href="/project">Research</a>
+      <a class="menu01 list-group-item" href="/news">News and Events</a>
+      <a class="menu01 list-group-item" href="/archive/download">Archive</a>
+    </div>
+  </div>
 
   <div class="main">
-    <div class="col-xs">
+    <div class="col-sm">
       <div class="row header" [style.background-image]="'url(' + mainImgPath + ')'">
         <div class="title text-center">
           <h1>Visual Media Lab.</h1>
@@ -25,7 +54,7 @@
       </div>
       <div class="row content">
 
-        <div class="Heading col-xs-12 text-center">
+        <div class="Heading col-sm-12 text-center">
           <h1>Reseach Area</h1>
           <p>The main research area includes motion and facial animation of virtual chararcter, immersive display system and
             human interaction system</p>
@@ -55,7 +84,7 @@
               <img class="card-img-top img-fluid" [src]='issue.img'>
               <div class="card-block">
                 <h4 class="card-title">{{issue.title}}</h4>
-                <p class="card-text">{{issue.desc}}</p>
+                <p class="card-text desc">{{issue.desc}}</p>
                 <p class="card-text"><small class="text-muted">{{issue.date}}</small></p>
               </div>
             </div>
@@ -69,7 +98,7 @@
 
 
   <div class="footer row container-fluid">
-    <div class="col-xs-12">
+    <div class="col-sm-12">
     </div>
   </div>
 </body>

@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { PublicationsService } from './../shared/publications.service';
+import { PublicationsService } from '../../../shared/publications.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs/Rx';
 

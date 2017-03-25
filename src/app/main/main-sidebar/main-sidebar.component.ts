@@ -1,4 +1,4 @@
-import { ScrollAbleService } from './../main-content/shared/scroll-able.service';
+import { ScrollAbleService } from '../../shared/scroll-able.service';
 import {
   Component,
   Output,

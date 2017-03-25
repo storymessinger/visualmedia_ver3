@@ -90,8 +90,9 @@
     display: none;
 }
 
-//// Sidebar under 1200px
-@media (max-width: 1199px) {
+//// Sidebar under 1480px
+//// Based on Google
+@media (max-width: 1479px) {
 
     .sidebar {
         left:-$sidebar-width;

@@ -9,14 +9,16 @@
     margin:0;
 }
 
+
 .breadcrumb-row {
     // flexbox
     display: flex;
     align-items: center;
 
-    padding: 0 0 0 60px;
+    padding: 0 0 0 28px;
     height: $navbar_height;
 
+    // background-image: linear-gradient(to right, #f05a29 0%,#ffffff 100%);
     background-color: $primary_orange;
 
     //font-relate
@@ -26,10 +28,12 @@
     @include card(1);
 
     .breadcrumb {
+        background-color: rgba(255,255,255,0);
         height: 3.6rem;
         display: flex;
         align-items: center;
         margin: 0;
+
         padding: 0;
 
         a {
@@ -38,6 +42,12 @@
 
 
         .search {
+            
+
+            display: none !important;
+
+
+
             position: absolute;
             right: 3rem;
             .search_btn {
@@ -70,11 +80,12 @@
 .logo-white {
     margin-right: 3rem;
 }
-@media (max-width: 1199px) {
+
+@media (max-width: 1479px) {
     .sb_menu {
         display: inherit;
         color: rgba(255,255,255,1);
-        background-color: $primary-orange;
+        background-color: rgba(255,255,255,0);
         margin-right: 2rem;
 
         cursor: pointer;

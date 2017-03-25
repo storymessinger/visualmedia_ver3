@@ -1,5 +1,6 @@
+import { IssuesService } from '../../../shared/Issues.service';
 import { Subscription } from 'rxjs/Rx';
-import { Media, MediaService } from './../shared/media.service';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,12 +12,12 @@ export class IssuesMediaComponent implements OnInit {
 
   private subscription: Subscription;
 
-  getDatas:Media[];
+  getDatas:any;
   datas:any;
   aYearDatas:any;
   id: string;
 
-  constructor(private mediaService:MediaService) {
+  constructor(private issuesService:IssuesService) {
     // this.getDatas= this.downloadService.getIssues();
     // this.subscription = activatedRoute.params //
     //   .subscribe(

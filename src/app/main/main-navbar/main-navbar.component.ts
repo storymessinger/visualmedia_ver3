@@ -1,6 +1,9 @@
-import { Component, Output, Input, EventEmitter, OnInit } from '@angular/core';
+import { SearchService } from './../../shared/search.service';
+import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild} from '@angular/core';
 import { Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router'; 
 import "rxjs/add/operator/filter";
+
+import { TweenLite, TimelineLite, TweenMax, TimelineMax } from 'gsap';
 
 interface IBreadcrumb {
   label: string;
@@ -10,30 +13,7 @@ interface IBreadcrumb {
 
 @Component({
   selector: 'app-main-navbar',
-  template: `
-  <div class="breadcrumb-row row">
-    <ol class="breadcrumb col-xs">
-      <a routerLink="">
-        <img [src]='logoPath' height="56" class="logo-white">
-      </a>
-      <li>
-        <img [src]='menuIconPath' (click)='onClicked()' fill-opacity="0" width="30px" class="sb_menu">
-      </li>
-
-      <li class="search">
-        <img [src]='searchIconPath' fill-opacity="0" width="30px" class="search_btn" />
-        <input class="search_bar" />
-      </li>
-
-      <li class="breadcrumb-item"><a class="bodyText" routerLink="">Home</a></li>
-
-      <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
-        <a class="bodyText" routerLink="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
-      </li>
-
-    </ol>
-  </div>
-  `,
+  templateUrl: './main-navbar.component.html',
   styleUrls: ['./main-navbar.component.scss']
 })
 export class MainNavbarComponent implements OnInit { 
@@ -44,19 +24,66 @@ export class MainNavbarComponent implements OnInit {
   public menuIconPath:string = this.relPath + "imgs/ic_menu_white_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_white_36px.svg";
 
+  //Tweenlite test
+  public test = {
+    number : 1
+  };
+  test2 :any;
+
+
   //
   breadcrumbs:IBreadcrumb[];
   myChildren:any;
 
-  constructor( private router:Router, private activatedRoute:ActivatedRoute ) {
-    // this.breadcrumbs =  ['home', ...this.router.url.split('/').slice(2)]
-    // this.breadcrumbs = this.router.url.split('/');
-    this.breadcrumbs = [];
+  @ViewChild('someVar') testEl:ElementRef;
+
+  constructor( 
+    private router:Router, 
+    private activatedRoute:ActivatedRoute, 
+    private el:ElementRef,
+    private searchService:SearchService ) {
+
+      console.log(searchService.startSearch('Bum'));
+      // this.breadcrumbs =  ['home', ...this.router.url.split('/').slice(2)]
+      // this.breadcrumbs = this.router.url.split('/');
+      this.breadcrumbs = [];
   }
 
-  ngOnInit() {
-    const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
+  // loop() {
+  //   console.log(this.test2);
+  // }
+  // init() {
+  //   TweenLite.to(this.test, 2, {number:100} );
+  //   TweenLite.ticker.addEventListener("tick",this.loop);
+  // }
 
+  ngOnInit() {
+    const self = this;
+    const test3 = this.test2;
+    
+    this.test2 =  (this.el.nativeElement.querySelector('#tween'));
+    // const tweenTest = (this.el.nativeElement.querySelector('#tween'));
+    // TweenLite.to( tweenTest, 3, {backgroundColor:"#ff0000"});
+
+    const tl = new TimelineMax()
+      .from( this.test2, 1.5, {
+        backgroundColor: "#ffffff",
+        boxShadow: "0 1.5px 4px rgba(0,0,0,0.05)",
+        right: "100vw",
+        ease: "Expo.easeInOut"
+      })
+      .from (this.test2, 0.3, {
+        color: "rgba(255,255,255,0)"
+      })
+
+
+    TweenLite.ticker.addEventListener("tick",loop);
+    function loop() {
+      // console.log(self.test2);
+    }
+    
+
+    const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
     //subscribe to the NavigationEnd event
     this.router.events.filter(event => event instanceof NavigationEnd).subscribe(event => {
       //set breadcrumbs
@@ -64,6 +91,7 @@ export class MainNavbarComponent implements OnInit {
       this.breadcrumbs = this.getBreadcrumbs(root);
     });
   }
+
 
   @Input() state;
   @Output() sidebarClick = new EventEmitter<string>();

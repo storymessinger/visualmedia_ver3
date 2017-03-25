@@ -10,7 +10,7 @@
                 <div class="hideOverflow">
                     <dd [ngClass]="{'open': subActiveLink == subLink.data }" >
                       <dl *ngFor="let inner of subLink.innerLink" (click)="sidebarNavConnect()" >
-                        <a (click)="clickSubSubMenu(inner)" [routerLink]="['content', subLink.url, inner]" class="thirdMenu" >{{inner}}</a>
+                        <a (click)="clickSubSubMenu(inner)" [routerLink]="[subLink.url, inner]" class="thirdMenu" >{{inner}}</a>
                       </dl>
                     </dd>
                 </div>

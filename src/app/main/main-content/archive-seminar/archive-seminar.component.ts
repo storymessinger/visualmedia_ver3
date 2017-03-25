@@ -1,5 +1,5 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { Seminar, SeminarService } from './../shared/seminars.service';
+import { SeminarService } from '../../../shared/seminars.service';
 import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
 
@@ -21,11 +21,14 @@ export class ArchiveSeminarComponent implements OnInit, DoCheck, OnDestroy {
   }
 
   ngOnInit() {
-    // Retrieve posts from the API
-    this.seminarService.getSeminars()
-     .subscribe(items => {
-        this.getSeminars = items;
-      });
+    this.getSeminars = this.seminarService.getSeminars();
+    
+    //* use this later
+    // this.seminarService.getSeminars()
+    //  .subscribe(items => {
+    //     this.getSeminars = items;
+    //   });
+    //* use this later
   }
 
   ngDoCheck() {

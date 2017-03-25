@@ -1,19 +1,126 @@
 @import '../../assets/css/_variables.scss';
+@import '../../assets/css/_materialShadow.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-body {
-    font-family: 'Lato', sans-serif;
+.main {
+    margin-top: 0 !important;
 }
+
+.indexPage-nav {
+        display: none;
+}
+
+.menu_btn {
+    display:none;
+}
+
+.search-nav {
+    list-style: none;
+    
+    .search {
+
+
+        display: none !important;
+
+
+        position: absolute;
+        right: 3rem;
+        .search_btn {
+            cursor: pointer;
+        }
+        input {
+            width: 55px;
+            transition: width 0.25s ease-in-out;
+
+            border: none;
+            background: transparent;
+            margin-left: 0.5rem;
+            border-bottom: 1.8px $primary_orange solid;
+            color: $primary_orange;
+            font-weight:300;
+            font-size: 0.95rem;
+        }
+        input:focus {
+            outline: none;
+            width: 150px;
+        }
+    }
+}
+
+
+.navbar {
+    opacity: 0;
+    top: -80px;
+    
+    // flexbox
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+
+    // material-like shadow
+    @include card(1);
+
+    padding-bottom: 0;
+    padding-top: 0;
+    height: $navbar_height;
+
+    background-color: rgba(255,255,255,0);
+    border-bottom: 1px solid #ccc;
+
+    img {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        cursor:pointer;
+    }
+
+    ul.navbar-nav {
+        flex-grow: 1;
+        flex-flow:row;
+    }
+
+    .form {
+        flex-grow: 0;
+    }
+
+    .nav-link {
+        // color: $primary_dark_grey;
+        padding: 0 1.5rem;
+    }
+}
+// From under 750px,
+// Navbar leaves only the logo and the menu btn
+@media (max-width: 900px) {
+    .navbar {
+        .menu_btn {
+            display: unset;
+            position: absolute;
+            top:2rem;
+            left: 2rem;
+            margin: 0;
+        }
+        .menu_btn:active {
+            top: 2rem;
+        }
+        .navbar-brand, .navbar-nav {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 544px) {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+
+
 
 // for overlay noscroll issue
 .noscroll {
     overflow: hidden;
     // this is for ios
     height: 100%;
-}
-
-.menu_btn {
-    display: none;
 }
 
 .header {
@@ -70,6 +177,15 @@ body {
         }
     }
 }
+@media (min-width: 576px) and (max-width: 800px) {
+    .card {
+        .desc {
+            font-size: 11px;
+        }
+    }
+}
+
+
 
 .footer {
     // need some space around the footer box
@@ -79,3 +195,4 @@ body {
     margin: 0;
     height: 400px;
 }
+

@@ -104,7 +104,8 @@ import { NgModule } from '@angular/core';
                 },
                 {   path: 'downloads', 
                     component: ArchiveDownloadsComponent, 
-                    data: { breadcrumb: "Downloads" }
+                    data: { breadcrumb: "Downloads" },
+                    pathMatch: 'full'
                 },
                 {   path: 'seminar/:id', 
                     component: ArchiveSeminarComponent, 

@@ -46,24 +46,6 @@
     }
 }
 
-.year {
-    padding: 2rem 3rem 3rem;
-    flex-flow:column;
-    align-items: center;
-}
-.about-title {
-    color: $primary_grey;
-}
-hr {
-    width: 100px;
-    border-top: 3px $primary_orange solid;
-}
-.about-text {
-    color: $primary_grey;
-    margin-top:1rem;
-}
-
-
 @media (max-width: 991px) {
 
 }

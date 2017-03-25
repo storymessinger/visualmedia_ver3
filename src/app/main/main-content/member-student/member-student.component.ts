@@ -1,6 +1,6 @@
 import { Subscription } from 'rxjs/Rx';
-import { ScrollAbleService } from './../shared/scroll-able.service';
-import { MemberService } from './../shared/member.service';
+import { ScrollAbleService } from '../../../shared/scroll-able.service';
+import { MemberService } from '../../../shared/member.service';
 import { Component, OnDestroy, ElementRef, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollConfig, PageScrollInstance, PageScrollService } from 'ng2-page-scroll';
@@ -11,6 +11,9 @@ import { PageScrollConfig, PageScrollInstance, PageScrollService } from 'ng2-pag
   styleUrls: ['./member-student.component.scss']
 })
 export class MemberStudentComponent implements OnDestroy {
+
+  // private imgPath = "../../../../assets/imgs/people/";
+  public imgPath = "../../../../assets/imgs/people/";
 
   public getDatas:any[];
   public datas:any;

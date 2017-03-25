@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { Download, DownloadService } from './../shared/downloads.service';
+import { DownloadService } from '../../../shared/downloads.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
 
@@ -12,7 +12,7 @@ export class ArchiveDownloadsComponent implements OnInit {
 
   private subscription: Subscription;
 
-  getDatas:Download[];
+  getDatas:any;
   datas:any;
   aYearDatas:any;
   id: string;

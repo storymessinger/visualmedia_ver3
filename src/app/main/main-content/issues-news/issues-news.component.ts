@@ -1,4 +1,4 @@
-import { New, NewsService } from './../shared/news.service';
+import { IssuesService } from '../../../shared/Issues.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IssuesNewsComponent implements OnInit {
 
-  public news:New[];
+  public news:any;
 
-  constructor(private newsService:NewsService) {
-    this.news = this.newsService.getNews();
+  constructor(private issuesService:IssuesService) {
+    this.news = this.issuesService.getNews();
    }
 
   ngOnInit() {

@@ -1,0 +1,22 @@
+  <div #tween id="tween" class="breadcrumb-row row">
+    <ol class="breadcrumb col-xs">
+      <a routerLink="">
+        <img [src]='logoPath' height="78" class="logo-white">
+      </a>
+      <li>
+        <img [src]='menuIconPath' (click)='onClicked()' fill-opacity="0" width="24px" class="sb_menu">
+      </li>
+
+      <li class="search">
+        <img [src]='searchIconPath' fill-opacity="0" width="30px" class="search_btn" />
+        <input class="search_bar" />
+      </li>
+
+      <li class="breadcrumb-item"><a class="h5" routerLink="">Home</a></li>
+
+      <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs">
+        <a class="h5" routerLink="{{breadcrumb.url}}">{{breadcrumb.label}}</a>
+      </li>
+
+    </ol>
+  </div>
