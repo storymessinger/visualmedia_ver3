@@ -5,7 +5,7 @@ export const Partners =
         "mou": 1,
         "type": "Government",
         "name": "Ministry of Culture, Sports and Tourism",
-        "logo": "logo/Government_1.png",
+        "logo": "Government_1.png",
         "link": "http://www.mcst.go.kr/main.jsp"
     },
     {
@@ -13,7 +13,7 @@ export const Partners =
         "mou": 1,
         "type": "Government",
         "name": "KOCCA (Korea Creative Content Agency)",
-        "logo": "logo/Government_2.png",
+        "logo": "Government_2.png",
         "link": "http://www.kocca.kr/cop/main.do"
     },
     {
@@ -21,7 +21,7 @@ export const Partners =
         "mou": 1,
         "type": "Government",
         "name": "Chungcheongnam-Do",
-        "logo": "logo/Government_3.png",
+        "logo": "Government_3.png",
         "link": "http://http://www.chungnam.go.kr/"
     },
     {
@@ -29,7 +29,7 @@ export const Partners =
         "mou": 1,
         "type": "Government",
         "name": "DICA (Daejeon Information & Culture Industry Promotion Agency)",
-        "logo": "logo/Government_4.png",
+        "logo": "Government_4.png",
         "link": "http://dicia.or.kr"
     },
     {
@@ -37,7 +37,7 @@ export const Partners =
         "mou": 1,
         "type": "Institutions",
         "name": "ETRI (Electronics and Telecommunications Research Institute)",
-        "logo": "logo/Institutions_1.png",
+        "logo": "Institutions_1.png",
         "link": "https://www.etri.re.kr/eng/main/main.etri"
     },
     {
@@ -45,7 +45,7 @@ export const Partners =
         "mou": 1,
         "type": "Institutions",
         "name": "SK Telecom",
-        "logo": "logo/Institutions_2.png",
+        "logo": "Institutions_2.png",
         "link": "http://www.sktelecom.com/index_real.html"
     },
     {
@@ -53,7 +53,7 @@ export const Partners =
         "mou": 1,
         "type": "Institutions",
         "name": "CJ",
-        "logo": "logo/Institutions_3.png",
+        "logo": "Institutions_3.png",
         "link": "http://http://english.cj.net/"
     },
     {
@@ -61,7 +61,7 @@ export const Partners =
         "mou": 1,
         "type": "Academies",
         "name": "UHA (University of Haute-Alsace, France)",
-        "logo": "logo/Academies_1.png",
+        "logo": "Academies_1.png",
         "link": "http://www.uha.fr"
     },
     {
@@ -69,7 +69,7 @@ export const Partners =
         "mou": 1,
         "type": "Academies",
         "name": "Dept. Multimedia, Namseoul University, Korea",
-        "logo": "logo/Academies_2.png",
+        "logo": "Academies_2.png",
         "link": "http://nsu.ac.kr"
     },
     {
@@ -77,7 +77,7 @@ export const Partners =
         "mou": 1,
         "type": "Academies",
         "name": "Bielefeld University, Germany",
-        "logo": "logo/Academies_3.png",
+        "logo": "Academies_3.png",
         "link": "http://graphics.uni-bielefeld.de/"
     },
     {
@@ -85,7 +85,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "WETA Digital",
-        "logo": "logo/Productions_1.png",
+        "logo": "Productions_1.png",
         "link": "http://www.wetafx.co.nz/"
     },
     {
@@ -93,7 +93,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "GearRobot",
-        "logo": "logo/Productions_2.png",
+        "logo": "Productions_2.png",
         "link": "http://www.gearrobot.com/"
     },
     {
@@ -101,7 +101,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "AR Vision",
-        "logo": "logo/Productions_3.png",
+        "logo": "Productions_3.png",
         "link": "http://www.ar-vision.com/"
     },
     {
@@ -109,7 +109,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "Dreamsearch C&C",
-        "logo": "logo/Productions_4.png",
+        "logo": "Productions_4.png",
         "link": "http://www.dreamsearchcnc.com/"
     },
     {
@@ -117,7 +117,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "SBS",
-        "logo": "logo/Productions_5.png",
+        "logo": "Productions_5.png",
         "link": "http://www.sbs.co.kr/"
     },
     {
@@ -125,7 +125,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "KAI Studio",
-        "logo": "logo/Productions_6.png",
+        "logo": "Productions_6.png",
         "link": "http://www.kaistudio.co.kr/"
     },
     {
@@ -133,7 +133,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "Macrograph",
-        "logo": "logo/Productions_7.png",
+        "logo": "Productions_7.png",
         "link": "http://www.macrograph.co.kr/"
     },
     {
@@ -141,7 +141,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "Olive Studio",
-        "logo": "logo/Productions_8.png",
+        "logo": "Productions_8.png",
         "link": "http://www.olivestudio.co.kr/"
     },
     {
@@ -149,7 +149,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "Digital Idea",
-        "logo": "logo/Productions_9.png",
+        "logo": "Productions_9.png",
         "link": "http://www.digitalidea.co.kr/main"
     },
     {
@@ -157,7 +157,7 @@ export const Partners =
         "mou": 1,
         "type": "Productions",
         "name": "OLM Digital",
-        "logo": "logo/Productions_10.png",
+        "logo": "Productions_10.png",
         "link": "http://olm.co.jp/?lang=en"
     },
     {
@@ -165,7 +165,7 @@ export const Partners =
         "mou": 0,
         "type": "Government",
         "name": "IITP (Institute for Information & communications Technology Promotion)",
-        "logo": "logo/Funding_1.png",
+        "logo": "Funding_1.png",
         "link": "https://www.iitp.kr/main.it"
     }
 ]

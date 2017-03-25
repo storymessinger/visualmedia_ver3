@@ -5,1027 +5,1523 @@ export const Publications =
         "type": "international",
         "year": 2017,
         "title": "Sparse Rig Parameter Optimization for Character Animation",
-        "authors": "Jaewon Song, Roger Blanco i Ribera, Kyungmin Cho, Mi You, J. P. Lewis, Byungkuk Choi, and Junyong Noh",
+        "authors": "4+2+16+26+76+24+1",
         "conference": "Eurographics, 2017 (To Appear) ",
-        "journal": " Computer Graphics Forum, 2017 (To Appear)"
+        "journal": " Computer Graphics Forum, 2017 (To Appear)",
+        "paper": "Publications/International/2017JaewonSong_CGF/2017JaewonSong_CGF.pdf",
+        "team": "Character",
+        "img": "Publications/International/2017JaewonSong_CGF/2017JaewonSong_CGF.png",
+        "smallimg": "Publications/International/2017JaewonSong_CGF/2017JaewonSong_CGF_small.png"
     },
     {
         "id": 2,
         "type": "international",
-        "year": 2016,
+        "year": 2011,
         "title": "SketchiMo: Sketch-based Motion Editing for Articulated Characters",
-        "authors": "Byungkuk Choi, Roger Blanco i Ribera, J. P. Lewis, Yeongho Seol, Seokpyo Hong, Haegwang Eom, Sunjin Jung, and Junyong Noh",
+        "authors": "24+2+76+29+10+11+18+1",
         "conference": "ACM SIGGRAPH, 2016",
-        "journal": "ACM Transaction on Graphics, Volume 35, Issue 4, p.146:1-146:12, July 2016"
+        "journal": "ACM Transaction on Graphics, Volume 35, Issue 4, p.146:1-146:12, July 2016",
+        "paper": "Publications/International/2016ByungkukChoi_TOG/2016ByungkukChoi_TOG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2016ByungkukChoi_TOG/2016ByungkukChoi_TOG.png",
+        "smallimg": "Publications/International/2016ByungkukChoi_TOG/2016ByungkukChoi_TOG_small.png"
     },
     {
         "id": 3,
         "type": "international",
         "year": 2016,
         "title": "Rich360: Optimized Spherical Representation from Structured Panoramic Camera Arrays",
-        "authors": "Jungjin Lee, Bumki Kim, Kyehyun Kim, Younghui Kim, and Junyong Noh",
+        "authors": "5+12+8+25+1",
         "conference": "ACM SIGGRAPH, 2016",
-        "journal": "ACM Transaction on Graphics, Volume 35, Issue 4, p.63:1-63:11, July 2016"
+        "journal": "ACM Transaction on Graphics, Volume 35, Issue 4, p.63:1-63:11, July 2016",
+        "paper": "Publications/International/2016JungjinLee_TOG/2016JungjinLee_TOG.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2016JungjinLee_TOG/2016JungjinLee_TOG.png",
+        "smallimg": "Publications/International/2016JungjinLee_TOG/2016JungjinLee_TOG_small.png"
     },
     {
         "id": 4,
         "type": "international",
         "year": 2016,
         "title": "Online Real-time Locomotive Motion Transformation Based on Biomechanical Observations",
-        "authors": "Daseong Han, Seokpyo Hong, Junyong Noh, Xiaogang Jin, and Joseph S. Shin(formerly Sung Yong Shin)",
+        "authors": "55+10+1+77+78",
         "conference": "Computer Animation and Social Agents (CASA), 2016 ",
-        "journal": "Computer Animation and Virtual Worlds, Volume 27, Issue 3-4, Pages 378-384, May-August 2016"
+        "journal": "Computer Animation and Virtual Worlds, Volume 27, Issue 3-4, Pages 378-384, May-August 2016",
+        "paper": "Publications/International/2016DaseongHan_CASA/2016DaseongHan_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2016DaseongHan_CASA/2016DaseongHan_CASA.png",
+        "smallimg": "Publications/International/2016DaseongHan_CASA/2016DaseongHan_CASA.png"
     },
     {
         "id": 5,
         "type": "international",
         "year": 2016,
         "title": "ScreenX: Public Immersive Theatres with Uniform Movie Viewing Experiences",
-        "authors": "Jungjin Lee, Sangwoo Lee, Younghui Kim, and Junyong Noh",
-        "journal": " IEEE Transactions on Visualization and Computer Graphics, Volume: PP, Issue: 99, February 2016"
+        "authors": "5+7+25+1",
+        "journal": " IEEE Transactions on Visualization and Computer Graphics, Volume: PP, Issue: 99, February 2016",
+        "paper": "Publications/International/2016JungjinLee_TVCG/2016JungjinLee_TVCG.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2016JungjinLee_TVCG/2016JungjinLee_TVCG.jpg",
+        "smallimg": "Publications/International/2016JungjinLee_TVCG/2016JungjinLee_TVCG.jpg"
     },
     {
         "id": 6,
         "type": "international",
         "year": 2016,
         "title": "Data-guided Model Predictive Control Based on Smoothed Contact Dynamics",
-        "authors": "Daseong Han, Haegwang Eom, Junyong Noh, and Joseph S. Shin (Formerly Sung Yong Shin)",
+        "authors": "55+11+1+78",
         "conference": " Eurographics, 2016 ",
-        "journal": " Computer Graphics Forum, Volume 35, Issue 2, Pages 533-543, May 2016"
+        "journal": " Computer Graphics Forum, Volume 35, Issue 2, Pages 533-543, May 2016",
+        "paper": "Publications/International/2016DaseongHan_CGF/2016DaseongHan_CGF.pdf",
+        "team": "Character",
+        "img": "Publications/International/2016DaseongHan_CGF/2016DaseongHan_CGF.png",
+        "smallimg": "Publications/International/2016DaseongHan_CGF/2016DaseongHan_CGF.png"
     },
     {
         "id": 7,
         "type": "international",
         "year": 2015,
         "title": "Auto-Calibration of Multi-Projector Displays with a Single Handheld Camera",
-        "authors": "Sanghun Park, Hyunggoog Seo, Seunghoon Cha, and Junyong Noh",
-        "conference": " IEEE Visualization Conference (VIS), 2015"
+        "authors": "14+9+6+1",
+        "conference": " IEEE Visualization Conference (VIS), 2015",
+        "paper": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS.jpg",
+        "smallimg": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS_small.png"
     },
     {
         "id": 8,
         "type": "international",
         "year": 2015,
         "title": "Interactive Rigging with Intuitive Tools",
-        "authors": "Seungbae Bang, Byungkuk Choi, Roger Blanco i Ribera, Meekyoung Kim, Sung-Hee Lee, Junyong Noh",
-        "conference": "ACM SIGGRAPH, 2015 (Best Student Poster Paper)"
+        "authors": "33+24+2+79+80+1",
+        "conference": "ACM SIGGRAPH, 2015 (Best Student Poster Paper)",
+        "paper": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.pdf",
+        "team": "Character",
+        "img": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.jpg",
+        "smallimg": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.jpg"
     },
     {
         "id": 9,
         "type": "international",
         "year": 2015,
         "title": "Interactive Rigging with Intuitive Tools",
-        "authors": "Seungbae Bang, Byungkuk Choi, Roger Blanco i Ribera, Meekyoung Kim, Sung-Hee Lee, Junyong Noh",
+        "authors": "33+24+2+79+80+1",
         "conference": "Pacific Graphics, 2015 (Best Student Paper)",
-        "journal": "Computer Graphics Forum, Volume 34, Issue 7, Pages 123–132, October 2015"
+        "journal": "Computer Graphics Forum, Volume 34, Issue 7, Pages 123–132, October 2015",
+        "paper": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.pdf",
+        "team": "Character",
+        "img": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.jpg",
+        "smallimg": "Publications/International/2015SeungbaeBang_CGF/2015SeungbaeBang_CGF.jpg"
     },
     {
         "id": 10,
         "type": "international",
         "year": 2015,
-        "title": "Simulating Drops Settling in a Still Liquid",
-        "authors": "Donghoon Sagong, Nahyup Kang, Junyong Noh, Xiaogang Jin, and Joseph S. Shin (formerly Sung Y. Shin)",
-        "journal": "IEEE Computer Graphics & Applications, Vol. 35, No. 1, pp.46-55, 2015"
+        "title": "On Simulating a Miscible Liquid Drop Settling in an Initially Still Surrounding Liquid for Mixing Pattern Generation",
+        "authors": "81+82+1+77+78",
+        "journal": "IEEE Computer Graphics & Applications, Vol. 35, No. 1, pp.46-55, 2015",
+        "paper": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA.jpg",
+        "smallimg": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA_small.jpg"
     },
     {
         "id": 11,
         "type": "international",
         "year": 2015,
         "title": "A Geometric Approach to Animating Thin Surface Features in Smoothed Particle Hydrodynamics Water",
-        "authors": "Taekwon Jang and Junyong Noh",
-        "journal": "Computer Animation and Virtual Worlds, Volume 26, Issue 2, pages 161?172, March/April 2015"
+        "authors": "28+1",
+        "journal": "Computer Animation and Virtual Worlds, Volume 26, Issue 2, pages 161?172, March/April 2015",
+        "paper": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV.jpg",
+        "smallimg": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV_small.jpg"
     },
     {
         "id": 12,
         "type": "international",
         "year": 2015,
         "title": "High-quality Depth Estimation Using an Exemplar 3D Model for Stereo Conversion",
-        "authors": "Jungjin Lee, Younghui Kim, Sangwoo Lee, Bumki Kim, and Junyong Noh",
+        "authors": "5+25+7+12+1",
         "conference": "Pacific Graphics, 2015",
-        "journal": " IEEE Transactions on Visualization and Computer Graphics vol.21, no.7, pages 835-847, July 2015"
+        "journal": " IEEE Transactions on Visualization and Computer Graphics vol.21, no.7, pages 835-847, July 2015",
+        "paper": "Publications/International/2015JungjinLee_TVCG/2015JungjinLee_TVCG.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2015JungjinLee_TVCG/2015JungjinLee_TVCG.jpg",
+        "smallimg": "Publications/International/2015JungjinLee_TVCG/2015JungjinLee_TVCG.jpg"
     },
     {
         "id": 13,
         "type": "international",
         "year": 2014,
         "title": "Data-Driven Reconstruction of Human Locomotion Using a Single Smartphone",
-        "authors": "Haegwang Eom, Byungkuk Choi and Junyong Noh",
+        "authors": "11+24+1",
         "conference": "Pacific Graphics, 2014",
-        "journal": "Computer Graphics Forum, Volume 33, Issue 7, pages 11–19O, October 2014"
+        "journal": "Computer Graphics Forum, Volume 33, Issue 7, pages 11–19O, October 2014",
+        "paper": "Publications/International/2014Haegwang_PG/2014Haegwang_PG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2014Haegwang_PG/2014Haegwang_PG.png",
+        "smallimg": "Publications/International/2014Haegwang_PG/2014Haegwang_PG.png"
     },
     {
         "id": 14,
         "type": "international",
         "year": 2014,
         "title": "Data-driven Control of Flapping Flight",
-        "authors": "Eunjung Ju, Jungdam Won, Jehee Lee, Byungkuk Choi, Junyong Noh, Min Gyu Choi",
-        "conference": "ACM SIGGRAPH, 2014"
+        "authors": "83+84+85+24+1+86",
+        "conference": "ACM SIGGRAPH, 2014",
+        "paper": "Publications/International/2014Bird_TOG/2014Bird_TOG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2014Bird_TOG/2014Bird_TOG.jpg",
+        "smallimg": "Publications/International/2014Bird_TOG/2014Bird_TOG.jpg"
     },
     {
         "id": 15,
         "type": "international",
         "year": 2014,
         "title": "Data-Driven Motion Capture Using A Single Smartphone",
-        "authors": "Haegwang Eom, Byungkuk Choi, Junyong Noh",
-        "conference": "Computer Graphics International, 2014, Short Paper"
+        "authors": "11+24+1",
+        "conference": "Computer Graphics International, 2014, Short Paper",
+        "paper": "Publications/International/2014Haegwang_PG/2014Haegwang_PG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2014Haegwang_PG/2014Haegwang_PG.png",
+        "smallimg": "Publications/International/2014Haegwang_PG/2014Haegwang_PG_small.png"
     },
     {
         "id": 16,
         "type": "international",
         "year": 2014,
         "title": "On-line Real-time Physics-based Predictive Motion Control with Balance Recovery",
-        "authors": "Daseong Han, Junyong Noh, Xiaogang Jin, Joseph S. Shin (formerly Sung Y. Shin)",
+        "authors": "55+1+77+78",
         "conference": "Eurographics, 2014",
-        "journal": "Computer Graphics Forum, Volume 33, Issue 2, June 2014"
+        "journal": "Computer Graphics Forum, Volume 33, Issue 2, June 2014",
+        "paper": "Publications/International/2014Daseong_CGF/2014Daseong_CGF.pdf",
+        "team": "Character",
+        "img": "Publications/International/2014Daseong_CGF/2014Daseong_CGF.jpg",
+        "smallimg": "Publications/International/2014Daseong_CGF/2014Daseong_CGF_small.jpg"
     },
     {
         "id": 17,
         "type": "international",
         "year": 2014,
         "title": "Visual Fluid Animation via Lifting Wavelet Transform",
-        "authors": "Shiguang Liu, Yixin Xu, Junyong Noh and Yiying Tong",
+        "authors": "87+88+1+89",
         "conference": "Computer Animation and Social Agents (CASA), 2014 ",
-        "journal": "Computer Animation and Virtual Worlds, Volume 25, Issue 3-4, pages 475–485, May-August 2014"
+        "journal": "Computer Animation and Virtual Worlds, Volume 25, Issue 3-4, pages 475–485, May-August 2014",
+        "paper": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW.jpg",
+        "smallimg": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW_small.jpg"
     },
     {
         "id": 18,
         "type": "international",
         "year": 2014,
         "title": "Depth Manipulation using Disparity Histogram Analysis for Stereoscopic 3D",
-        "authors": "Sangwoo Lee, Younghui Kim, Jungjin Lee, Kyehyun Kim, Kyunghan Lee, Junyong Noh",
-        "journal": "The Visual Computer, pp 455-465, Volume 30, Issue 4, April 2014"
+        "authors": "7+25+5+8+37+1",
+        "journal": "The Visual Computer, pp 455-465, Volume 30, Issue 4, April 2014",
+        "paper": "Publications/International/2014Sangwoo_VC/2014Sangwoo_VC.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2014Sangwoo_VC/2014Sangwoo_VC.jpg",
+        "smallimg": "Publications/International/2014Sangwoo_VC/2014Sangwoo_VC.jpg"
     },
     {
         "id": 19,
         "type": "international",
         "year": 2013,
         "title": "A Geometric Approach to Animating Thin Surface Features in SPH Water",
-        "authors": "Taekwon Jang, Doyub Kim, Mi You, Shiguang Liu, Junyong Noh",
-        "conference": "Computer Animation and Social Agents (CASA), 2013"
+        "authors": "28+90+26+87+1",
+        "conference": "Computer Animation and Social Agents (CASA), 2013",
+        "paper": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.jpg",
+        "smallimg": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.jpg"
     },
     {
         "id": 20,
         "type": "international",
         "year": 2013,
         "title": "Data-driven Control of Flapping Flight",
-        "authors": "Eunjung Ju, Jungdam Won, Jehee Lee, Byungkuk Choi, Junyong Noh, Min Gyu Choi",
-        "journal": "ACM Transactions on Graphics, Volume 32, Issue 5, Article No. 151, September 2013"
+        "authors": "83+84+85+24+1+86",
+        "journal": "ACM Transactions on Graphics, Volume 32, Issue 5, Article No. 151, September 2013",
+        "paper": "Publications/International/2014Bird_TOG/2014Bird_TOG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2014Bird_TOG/2014Bird_TOG.jpg",
+        "smallimg": "Publications/International/2014Bird_TOG/2014Bird_TOG_small.jpg"
     },
     {
         "id": 21,
         "type": "international",
         "year": 2013,
         "title": "Depth Map Generation for Building Images",
-        "authors": "Kyehyun Kim, Sangwoo Lee, Jungjin Lee, Younghui Kim, Kyunghan Lee, Junyong Noh",
-        "conference": "Computer Graphics International, 2013, Short Paper"
+        "authors": "8+7+5+25+37+1",
+        "conference": "Computer Graphics International, 2013, Short Paper",
+        "paper": "Publications/International/2013Kyehyun_CGI/2013Kyehyun_CGI.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2013Kyehyun_CGI/2013Kyehyun_CGI.jpg",
+        "smallimg": "Publications/International/2013Kyehyun_CGI/2013Kyehyun_CGI_small.jpg"
     },
     {
         "id": 22,
         "type": "international",
         "year": 2013,
         "title": "Depth Manipulation using Disparity Histogram Analysis for Stereoscopic 3D",
-        "authors": "Sangwoo Lee, Younghui Kim, Jungjin Lee, Kyehyun Kim, Kyunghan Lee, Junyong Noh",
-        "conference": " Computer Animation and Social Agents (CASA), 2013, Poster Paper"
+        "authors": "7+25+5+8+37+1",
+        "conference": " Computer Animation and Social Agents (CASA), 2013, Poster Paper",
+        "paper": "Publications/International/2013Sangwoo_CASA/2013Sangwoo_CASA.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2013Sangwoo_CASA/2013Sangwoo_CASA.jpg",
+        "smallimg": "Publications/International/2013Sangwoo_CASA/2013Sangwoo_CASA_small.jpg"
     },
     {
         "id": 23,
         "type": "international",
         "year": 2013,
         "title": "Heterogeneous CPU-GPU Parallel Approach to a Multigrid Poisson Solver for Incompressible Fluid Simulation",
-        "authors": "Hwi-Ryong Jung, Sun-Tae Kim, Junyong Noh, Jeong-Mo Hong",
+        "authors": "27+91+1+92",
         "conference": "Computer Animation and Social Agents (CASA), 2013",
-        "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 185-193, May-August 2013"
+        "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 185-193, May-August 2013",
+        "paper": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA.jpg",
+        "smallimg": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA_small.jpg"
     },
     {
         "id": 24,
         "type": "international",
         "year": 2013,
         "title": "Realistic Paint Simulation based on Fluidity, Diffusion, and Absorption",
-        "authors": "Mi You, Taekwon Jang, Seunghoon Cha, Jihwan Kim, Junyong Noh",
+        "authors": "26+28+6+36+1",
         "conference": "Computer Animation and Social Agents (CASA), 2013",
-        "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 297-306, May-August 2013"
+        "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 297-306, May-August 2013",
+        "paper": "Publications/International/2013Youmi_CASA/2013Youmi_CASA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2013Youmi_CASA/2013Youmi_CASA.jpg",
+        "smallimg": "Publications/International/2013Youmi_CASA/2013Youmi_CASA_small.jpg"
     },
     {
         "id": 25,
         "type": "international",
         "year": 2012,
         "title": "Video Panorama for 2D to 3D Conversion",
-        "authors": "Roger Blanco i Ribera, Sungwoo Choi, Younghui Kim, Jungjin Lee, Junyong Noh",
+        "authors": "2+93+25+5+1",
         "conference": "Pacific Graphics, 2012",
-        "journal": "Computer Graphics Forum, Volume 31(7pt2), p.2213-2222, 2012"
+        "journal": "Computer Graphics Forum, Volume 31(7pt2), p.2213-2222, 2012",
+        "paper": "Publications/International/2012Roger_PG(Final)/2012Roger_PG(Final).pdf",
+        "team": "Character",
+        "img": "Publications/International/2012Roger_PG(Final)/2012Roger_PG(Final).jpg",
+        "smallimg": "Publications/International/2012Roger_PG(Final)/2012Roger_PG(Final)_small.jpg"
     },
     {
         "id": 26,
         "type": "international",
         "year": 2012,
         "title": "Spacetime Expression Cloning for Blendshapes",
-        "authors": "Yeongho Seol, J.P.Lewis, Jaewoo Seo, Byungkuk Choi, Ken Anjyo, Junyong Noh",
+        "authors": "29+76+30+24+94+1",
         "conference": "ACM SIGGRAPH, 2012",
-        "journal": " ACM Transaction On Graphics, Volume 31(2), p.14:1-14:12, 2012"
+        "journal": " ACM Transaction On Graphics, Volume 31(2), p.14:1-14:12, 2012",
+        "paper": "Publications/International/2012Yeongho_TOG/2012Yeongho_TOG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2012Yeongho_TOG/2012Yeongho_TOG.jpg",
+        "smallimg": "Publications/International/2012Yeongho_TOG/2012Yeongho_TOG.jpg"
     },
     {
         "id": 27,
         "type": "international",
         "year": 2012,
         "title": "A procedural flow generation method using coordinate transformation",
-        "authors": "Jihyung Kang, Jinho Park, Jaewoo Seo, Junyong Noh",
-        "conference": "Computer Graphics International, 2012 "
+        "authors": "41+59+30+1",
+        "conference": "Computer Graphics International, 2012 ",
+        "paper": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI.jpg",
+        "smallimg": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI_small.jpg"
     },
     {
         "id": 28,
         "type": "international",
         "year": 2012,
         "title": "An Efficient Diffusion Model for Viscous Fingering",
-        "authors": "Seunghoon Cha, Jinho Park, Jonghyun Hwang, Junyong Noh",
+        "authors": "6+59+66+1",
         "conference": "Computer Graphics International, 2012 ",
-        "journal": "The Visual Computer: Volume 28, Issue 6-8 (2012), p.563-571"
+        "journal": "The Visual Computer: Volume 28, Issue 6-8 (2012), p.563-571",
+        "paper": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI.jpg",
+        "smallimg": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI_small.jpg"
     },
     {
         "id": 29,
         "type": "international",
         "year": 2012,
         "title": "Simulating Water Turbulence in Particle Fluids",
-        "authors": "Taekwon Jang, Huicheol Hwang, Seunghoon Cha, Mi You, Jonghyun Hwang, Junyong Noh",
-        "conference": "Computer Graphics International, 2012 "
+        "authors": "28+48+6+26+66+1",
+        "conference": "Computer Graphics International, 2012 ",
+        "paper": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.jpg",
+        "smallimg": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.jpg"
     },
     {
         "id": 30,
         "type": "international",
         "year": 2012,
         "title": "Weighted Pose Space Editing for Facial Animation",
-        "authors": "Yeongho Seol, Jaewoo Seo, Paul Hyunjin Kim, J.P. Lewis, Junyong Noh",
-        "journal": "The Visual Computer: Volume 28, Issue 3 (2012), p.319-327 "
+        "authors": "29+30+44+76+1",
+        "journal": "The Visual Computer: Volume 28, Issue 3 (2012), p.319-327 ",
+        "paper": "Publications/International/2012Yeongho_VC/2012Yeongho_VC.pdf",
+        "team": "Character",
+        "img": "Publications/International/2012Yeongho_VC/2012Yeongho_VC.jpg",
+        "smallimg": "Publications/International/2012Yeongho_VC/2012Yeongho_VC.jpg"
     },
     {
         "id": 31,
         "type": "international",
         "year": 2011,
         "title": "Compression and Direct Manipulation of Complex Blendshape Models",
-        "authors": "Jaewoo Seo, Geoffrey Irving, J.P. Lewis, Junyong Noh",
+        "authors": "30+95+76+1",
         "conference": "ACM SIGGRAPH ASIA, 2011 ",
-        "journal": "ACM Transaction On Graphics, Volume 30 Issue 6, p.164:1-164:10, December 2011"
+        "journal": "ACM Transaction On Graphics, Volume 30 Issue 6, p.164:1-164:10, December 2011",
+        "paper": "Publications/International/2011Jaewoo_SIGASIA/2011Jaewoo_SIGASIA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2011Jaewoo_SIGASIA/2011Jaewoo_SIGASIA.jpg",
+        "smallimg": "Publications/International/2011Jaewoo_SIGASIA/2011Jaewoo_SIGASIA_small.jpg"
     },
     {
         "id": 32,
         "type": "international",
         "year": 2011,
         "title": "Artist Friendly Facial Animation Retargeting",
-        "authors": "Yeongho Seol, Jaewoo Seo, Paul Hyunjin Kim, J.P. Lewis, Junyong Noh",
+        "authors": "29+30+44+76+1",
         "conference": "ACM SIGGRAPH ASIA, 2011 ",
-        "journal": "ACM Transaction On Graphics, Volume 30 Issue 6, p.162:1-162:10, December 2011"
+        "journal": "ACM Transaction On Graphics, Volume 30 Issue 6, p.162:1-162:10, December 2011",
+        "paper": "Publications/International/2011Yeongho_SIGASIA/2011Yeongho_SIGASIA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2011Yeongho_SIGASIA/2011Yeongho_SIGASIA.jpg",
+        "smallimg": "Publications/International/2011Yeongho_SIGASIA/2011Yeongho_SIGASIA.jpg"
     },
     {
         "id": 33,
         "type": "international",
         "year": 2011,
         "title": "A Single Image Representation Model for Efficient Stereoscopic Image Creation",
-        "authors": "Younghui Kim, Hwi-ryong Jung, Sungwoo Choi, Jungjin Lee, Junyong Noh",
+        "authors": "25+27+93+5+1",
         "conference": "Pacific Graphics, 2011 ",
-        "journal": "Computer Graphics Forum, Vol.30, N0.7, p.2067-2076, September 2011"
+        "journal": "Computer Graphics Forum, Vol.30, N0.7, p.2067-2076, September 2011",
+        "paper": "Publications/International/2011Younghui_PG/2011Younghui_PG.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2011Younghui_PG/2011Younghui_PG.png",
+        "smallimg": "Publications/International/2011Younghui_PG/2011Younghui_PG.png"
     },
     {
         "id": 34,
         "type": "international",
         "year": 2011,
         "title": "Facial Retargeting by Adding Supplemental Blendshapes",
-        "authors": "Paul Hyunjin Kim, Yeongho Seol, Jaewon Song, Junyong Noh",
-        "conference": "Pacific Graphics 2011, Short Paper "
+        "authors": "44+29+4+1",
+        "conference": "Pacific Graphics 2011, Short Paper ",
+        "paper": "Publications/International/2011Paul_PG/2011Paul_PG.pdf",
+        "team": "Character",
+        "img": "Publications/International/2011Paul_PG/2011Paul_PG.png",
+        "smallimg": "Publications/International/2011Paul_PG/2011Paul_PG.jpg"
     },
     {
         "id": 35,
         "type": "international",
         "year": 2011,
         "title": "Pose Space Editing of Blendshape Based Facial Animation",
-        "authors": "Yeongho Seol, Jaewoo Seo, Paul Hyunjin Kim, J.P.Lewis, Junyong Noh",
-        "conference": "Computer Graphics International Workshop, 2011 "
+        "authors": "29+30+44+76+1",
+        "conference": "Computer Graphics International Workshop, 2011 ",
+        "paper": "Publications/International/2011Yeongho_CGI/2011Yeongho_CGI.pdf",
+        "team": "Character",
+        "img": "Publications/International/2011Yeongho_CGI/2011Yeongho_CGI.jpg",
+        "smallimg": "Publications/International/2011Yeongho_CGI/2011Yeongho_CGI.jpg"
     },
     {
         "id": 36,
         "type": "international",
         "year": 2011,
         "title": "Disparity Graph Editing for Stereoscopic Contents Creation",
-        "authors": "Soyoung Kim, Yeongho Seol, Roger Blanco i Ribera, Junyong Noh",
-        "conference": "Computer Graphics International Workshop, 2011 "
+        "authors": "45+29+2+1",
+        "conference": "Computer Graphics International Workshop, 2011 ",
+        "paper": "Publications/International/2011Soyoung_CGI/2011Soyoung_CGI.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2011Soyoung_CGI/2011Soyoung_CGI.jpg",
+        "smallimg": "Publications/International/2011Soyoung_CGI/2011Soyoung_CGI_small.jpg"
     },
     {
         "id": 37,
         "type": "international",
         "year": 2011,
         "title": "Multilinear Fluid Simulation with Model Reduction for Pressure Projection",
-        "authors": "Jinhyuk Bae, Jinho Park, Sehwi Park, Junyong Noh",
-        "conference": "Computer Animation and Social Agents (CASA), 2011, Short Paper"
+        "authors": "47+59+49+1",
+        "conference": "Computer Animation and Social Agents (CASA), 2011, Short Paper",
+        "paper": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA.png",
+        "smallimg": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA_small.jpg"
     },
     {
         "id": 38,
         "type": "international",
         "year": 2011,
         "title": "A Smoke Visualization Model for Capturing Surface-like Features",
-        "authors": "Jinho Park, Yeongho Seol, Frederic Cordier, Junyong Noh",
+        "authors": "59+29+57+1",
         "conference": "Eurographics, 2011 ",
-        "journal": "Computer Graphics Forum, Volume 29, Issue 8, pages 2352–2362, December 2011"
+        "journal": "Computer Graphics Forum, Volume 29, Issue 8, pages 2352–2362, December 2011",
+        "paper": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2011Jinho_EG/2011Jinho_EG.png",
+        "smallimg": "Publications/International/2010Jinho_EG/2011Jinho_EG_small.jpg"
     },
     {
         "id": 39,
         "type": "international",
         "year": 2011,
         "title": "Simulating SPH Fluid with Multi-Level Vorticity",
-        "authors": "Taekwon Jang, Roger Blanco i Ribera, Jinhyuk Bae, Junyong Noh",
+        "authors": "28+2+47+1",
         "conference": "Computer Animation and Social Agents (CASA), 2011 ",
-        "journal": "the International Journal of Virtual Reality, 10(1):p.21-27, 2011"
+        "journal": "the International Journal of Virtual Reality, 10(1):p.21-27, 2011",
+        "paper": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR.png",
+        "smallimg": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR_small.jpg"
     },
     {
         "id": 40,
         "type": "international",
         "year": 2011,
         "title": "Stereoscopic Image Generation of Background Terrain Scenes",
-        "authors": "Huicheol Hwang, Kyehyun Kim, Roger Blanco i Ribera, Junyong Noh",
+        "authors": "48+8+2+1",
         "conference": "Computer Animation and Social Agents (CASA), 2011 ",
-        "journal": "Computer Animation and Virtual Worlds, Volume 22, Issue 203, p.317-323, April-May 2011"
+        "journal": "Computer Animation and Virtual Worlds, Volume 22, Issue 203, p.317-323, April-May 2011",
+        "paper": "Publications/International/2011Huicheol_CASA/2011Huicheol_CASA.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2011Huicheol_CASA/2011Huicheol_CASA.png",
+        "smallimg": "Publications/International/2011Huicheol_CASA/2011Huicheol_CASA_small.jpg"
     },
     {
         "id": 41,
         "type": "international",
         "year": 2011,
         "title": "Characteristic Facial Retargeting",
-        "authors": "Jaewon Song, Byungkuk Choi, Yeongho Seol, Junyong Noh",
+        "authors": "4+24+29+1",
         "conference": "Computer Animation and Social Agents (CASA), 2011 ",
-        "journal": " Computer Animation and Virtual Worlds, Volume 22, Issue 2-3, p.187-194, April-May 2011"
+        "journal": " Computer Animation and Virtual Worlds, Volume 22, Issue 2-3, p.187-194, April-May 2011",
+        "paper": "Publications/International/2011Jaewon_CASA/2011Jaewon_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2011Jaewon_CASA/2011Jaewon_CASA.jpg",
+        "smallimg": "Publications/International/2011Jaewon_CASA/2011Jaewon_CASA_small.jpg"
     },
     {
         "id": 42,
         "type": "international",
         "year": 2010,
         "title": "Sketching of Mirror Symmetric Shapes",
-        "authors": "Frederic Cordier, Heywon Seo, Jinho Park, Junyong Noh",
-        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG) Vol 17, Issue 11, p.1650-1662, 2010"
+        "authors": "57+96+59+1",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG) Vol 17, Issue 11, p.1650-1662, 2010",
+        "paper": "Publications/International/2010Frederic_IEEE/2010Frederic_IEEE.pdf",
+        "img": "Publications/International/2010Frederic_IEEE/2010Frederic_IEEE.png",
+        "smallimg": "Publications/International/2010Frederic_IEEE/2010Frederic_IEEE_small.jpg"
     },
     {
         "id": 43,
         "type": "international",
         "year": 2010,
         "title": "A Smoke Visualization Model for Capturing Surface-like Features",
-        "authors": "Jinho Park, Yeongho Seol, Frederic Cordier, Junyong Noh",
-        "journal": " Computer Graphics Forum Volume 29, Issue 8, p.2352-2362, December 2010"
+        "authors": "59+29+57+1",
+        "journal": " Computer Graphics Forum Volume 29, Issue 8, p.2352-2362, December 2010",
+        "paper": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.png",
+        "smallimg": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.jpg"
     },
     {
         "id": 44,
         "type": "international",
         "year": 2010,
         "title": "Multilevel vorticity confinement for water turbulence simulation",
-        "authors": "Taekwon Jang, Heeyoung Kim, Jinhyuk Bae, Jaewoo Seo, Junyong Noh",
+        "authors": "28+46+47+30+1",
         "conference": "Computer Graphics International 2010",
-        "journal": "The Visual Computer, 26(6):p.873-881, 2010"
+        "journal": "The Visual Computer, 26(6):p.873-881, 2010",
+        "paper": "Publications/International/2010Taekwon_VC/2010Taekwon_VC.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2010Taekwon_VC/2010Taekwon_VC.png",
+        "smallimg": "Publications/International/2010Taekwon_VC/2010Taekwon_VC_small.jpg"
     },
     {
         "id": 45,
         "type": "international",
         "year": 2010,
         "title": "Rigging Transfer",
-        "authors": "Jaewoo Seo, Yeongho Seol, Daehyeon Wi, Younghui Kim, Junyong Noh.",
+        "authors": "30+29+3+25+1.",
         "conference": "Computer Animation and Social Agents (CASA), 2010.",
-        "journal": "Computer Animation and Virtual Worlds, 21(3-4):p.375-386, 2010."
+        "journal": "Computer Animation and Virtual Worlds, 21(3-4):p.375-386, 2010.",
+        "paper": "Publications/International/2010Jaewoo_CASA/2010Jaewoo_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2010Jaewoo_CASA/2010Jaewoo_CASA.png",
+        "smallimg": "Publications/International/2010Jaewoo_CASA/2010Jaewoo_CASA.jpg"
     },
     {
         "id": 46,
         "type": "international",
         "year": 2010,
         "title": "A Hybrid Approach to Multiple Fluid Simulation using Volume Fractions",
-        "authors": "Nahyup Kang, Jinho Park, Junyong Noh, Sung Yong Shin",
+        "authors": "82+59+1+78",
         "conference": "Eurographics 2010 ",
-        "journal": "Computer Graphics Forum, volume 29, p.685-694, 2010"
+        "journal": "Computer Graphics Forum, volume 29, p.685-694, 2010",
+        "team": "CFL"
     },
     {
         "id": 47,
         "type": "international",
         "year": 2009,
         "title": "LightShop: An Interactive Lighting System Incorporating the 2D Image Editing Paradigm",
-        "authors": "Younghui Kim, Junyong Noh",
+        "authors": "25+1",
         "conference": "ISVC 2009 ",
-        "journal": "Advances in Visual Computing, p.59-70, 2009"
+        "journal": "Advances in Visual Computing, p.59-70, 2009",
+        "paper": "Publications/International/2009Younghui_ISVC/2009Younghui_ISVC.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2009Younghui_ISVC/2009Younghui_ISVC.png",
+        "smallimg": "Publications/International/2009Younghui_ISVC/2009Younghui_ISVC_small.jpg"
     },
     {
         "id": 48,
         "type": "international",
         "year": 2009,
         "title": "Cartoon Animation Style Rendering of Water",
-        "authors": "Mi You, Jinho Park, Byungkuk Choi and Junyong Noh",
+        "authors": "26+59+24+1",
         "conference": "ISVC 2009",
-        "journal": "Advances in Visual Computing, p.67-78, 2009"
+        "journal": "Advances in Visual Computing, p.67-78, 2009",
+        "paper": "Publications/International/2009Mi_ISVC/2009Mi_ISVC.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2009Mi_ISVC/2009Mi_ISVC.png",
+        "smallimg": "Publications/International/2009Mi_ISVC/2009Mi_ISVC_small.jpg"
     },
     {
         "id": 49,
         "type": "international",
         "year": 2009,
         "title": "A surface-based model for small-scale smoke visualization",
-        "authors": "Jinho Park, Yeongho Seol, Junyong Noh",
-        "conference": "Poster Paper, Pacific Graphics 2009"
+        "authors": "59+29+1",
+        "conference": "Poster Paper, Pacific Graphics 2009",
+        "paper": "Publications/International/2009Jinho_PG/2009Jinho_PG.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2009Jinho_PG/2009Jinho_PG.png",
+        "smallimg": "Publications/International/2009Jinho_PG/2009Jinho_PG_small.jpg"
     },
     {
         "id": 50,
         "type": "international",
         "year": 2009,
         "title": "An Interactive Lighting System via Data Clustering",
-        "authors": "Younghui Kim, Junyong Noh",
-        "conference": "Poster Paper, Pacific Graphics 2009"
+        "authors": "25+1",
+        "conference": "Poster Paper, Pacific Graphics 2009",
+        "paper": "Publications/International/2009Younghui_PG/2009Younghui_PG.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2009Younghui_PG/2009Younghui_PG.png",
+        "smallimg": "Publications/International/2009Younghui_PG/2009Younghui_PG_small.jpg"
     },
     {
         "id": 51,
         "type": "international",
         "year": 2009,
         "title": "Toon Rendering of Water Animation",
-        "authors": "Mi You, Jinho Park, Byungkuk Choi, Junyong Noh",
-        "conference": "Poster Paper, Pacific Graphics 2009"
+        "authors": "26+59+24+1",
+        "conference": "Poster Paper, Pacific Graphics 2009",
+        "paper": "Publications/International/2009Mi_PG/2009Mi_PG.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2009Mi_PG/2009Mi_PG.png",
+        "smallimg": "Publications/International/2009Mi_PG/2009Mi_PG_small.jpg"
     },
     {
         "id": 52,
         "type": "international",
         "year": 2008,
         "title": "Deformation-based Animation of Snake Locomotion",
-        "authors": "Yeongho Seol, Junyong Noh",
-        "conference": " ISVC 2008 ",
-        "journal": "Advances in Visual Computing, p.646-657, 2008"
+        "authors": "29+1",
+        "conference": "ISVC 2008",
+        "journal": "Advances in Visual Computing, p.646-657, 2008",
+        "paper": "Publications/International/2008Yeongho_ISVC/2008Yeongho_ISVC.pdf",
+        "team": "Character",
+        "img": "Publications/International/2008Yeongho_ISVC/2008Yeongho_ISVC.png",
+        "smallimg": "Publications/International/2008Yeongho_ISVC/2008Yeongho_ISVC_small.jpg"
     },
     {
         "id": 53,
         "type": "international",
         "year": 2008,
         "title": "A Physcially Faithful Multigrid Method for Fast Cloth Simulation",
-        "authors": "SeungWoo Oh, Junyong Noh, Kwangyun Wohn",
+        "authors": "97+1+98",
         "conference": "Computer Animation and Social Agents 2008 ",
-        "journal": "Computer Animation and Virtual Worlds, 19(3-4):p.479-492, 2008"
+        "journal": "Computer Animation and Virtual Worlds, 19(3-4):p.479-492, 2008",
+        "paper": "Publications/International/2008SeungWoo_CASA/2008SeungWoo_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2008SeungWoo_CASA/2008SeungWoo_CASA.png",
+        "smallimg": "Publications/International/2008SeungWoo_CASA/2008SeungWoo_CASA_small.jpg"
     },
     {
         "id": 54,
         "type": "international",
         "year": 2008,
         "title": "A Unified Handling of Immiscible and Miscible Fluids",
-        "authors": "Jinho Park, Younghwi Kim, Daehyeon Wi, Nahyup Kang, Sung Yong Shin, Junyong Noh",
+        "authors": "59+25+3+82+78+1",
         "conference": "Computer Animation and Social Agents 2008 ",
-        "journal": "Computer Animation and Virtual Worlds, 19, (3-4):p.455-467, 2008"
+        "journal": "Computer Animation and Virtual Worlds, 19, (3-4):p.455-467, 2008",
+        "paper": "Publications/International/2008Jinho_CASA/2008Jinho_CASA.pdf",
+        "team": "CFL",
+        "img": "Publications/International/2008Jinho_CASA/2008Jinho_CASA.png",
+        "smallimg": "Publications/International/2008Jinho_CASA/2008Jinho_CASA_small.jpg"
     },
     {
         "id": 55,
         "type": "international",
         "year": 2008,
         "title": "Extended Spatial Keyframing for Complex Character Animation",
-        "authors": "Byungkuk Choi, Mi You, Junyong Noh",
+        "authors": "24+26+1",
         "conference": "CASA 2008 ",
-        "journal": "Journal of Computer Animation and Virtual Worlds, 19(3-4):175-188, 2008."
+        "journal": "Journal of Computer Animation and Virtual Worlds, 19(3-4):175-188, 2008.",
+        "paper": "Publications/International/2008Byungkuk_CASA/2008Byungkuk_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2008Byungkuk_CASA/2008Byungkuk_CASA.png",
+        "smallimg": "Publications/International/2008Byungkuk_CASA/2008Byungkuk_CASA_small.jpg"
     },
     {
         "id": 56,
         "type": "international",
         "year": 2008,
-        "title": "Low Viscosity Flow Simulations for Animation Best Paper Award",
-        "authors": "Jeroen Molemaker, Jonathan M.Cohen, Sanjit Patel, Junyong Noh",
-        "conference": "Symposium on Computer Animation, ACM SIGGRAPH 2008 (Best Paper)"
+        "title": "Low Viscosity Flow Simulations for Animation",
+        "authors": "102+103+104+1",
+        "conference": "Symposium on Computer Animation, ACM SIGGRAPH 2008 (Best Paper)",
+        "paper": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA.PDF",
+        "team": "CFL",
+        "img": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA.png",
+        "smallimg": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA_small.jpg"
     },
     {
         "id": 57,
         "type": "international",
         "year": 2008,
         "title": "Terrain Geometry from Monocular Image Sequences",
-        "authors": "Alexander McKenzie, Eugene Vendrovsky, Junyong Noh",
-        "journal": " Computing in Science and Engineering, 2(1): p.98-108, 2008"
+        "authors": "105+106+1",
+        "journal": " Computing in Science and Engineering, 2(1): p.98-108, 2008",
+        "paper": "Publications/International/2008Alexander_CSE/2008Alexander_CSE.pdf",
+        "team": "EVE",
+        "img": "Publications/International/2008Alexander_CSE/2008Alexander_CSE.png",
+        "smallimg": "Publications/International/2008Alexander_CSE/2008Alexander_CSE_small.jpg"
     },
     {
         "id": 58,
         "type": "international",
         "year": 2008,
         "title": "Deformation-Based Animation of Snake Locomotion",
-        "authors": "Yeongho Seol, Junyong Noh",
-        "conference": "Poster Paper, Computer Animation and Social Agents 2008"
+        "authors": "29+1",
+        "conference": "Poster Paper, Computer Animation and Social Agents 2008",
+        "paper": "Publications/International/2008Yeongho_CASA/2008Yeongho_CASA.pdf",
+        "team": "Character",
+        "img": "Publications/International/2008Yeongho_CASA/2008Yeongho_CASA.png",
+        "smallimg": "Publications/International/2008Yeongho_CASA/2008Yeongho_CASA_small.jpg"
     },
     {
         "id": 59,
         "type": "international",
         "year": 2008,
         "title": "Computer Facial Animation: A Survey in the book \"Data-Driven 3D Facial Animations\"",
-        "authors": "Zhigang Deng, Junyong Noh",
-        "conference": "Springer-Verlag London Limited 2008"
+        "authors": "107+1",
+        "conference": "Springer-Verlag London Limited 2008",
+        "paper": "Publications/International/2008ZhigangDeng_Springer/Survey.pdf",
+        "img": "Publications/International/2008ZhigangDeng_Springer/2008ZhigangDeng_Springer.jpg",
+        "smallimg": "Publications/International/2008ZhigangDeng_Springer/2008ZhigangDeng_Springer_small.jpg"
     },
     {
         "id": 60,
         "type": "international",
         "year": 2008,
         "title": "Facial Animation by Expression Cloning in the book \"Data-Driven 3D Facial Animations\"",
-        "authors": "Junyong Noh, Ulrich Neumann",
-        "conference": "Springer-Verlag London Limited 2008"
+        "authors": "1+108",
+        "conference": "Springer-Verlag London Limited 2008",
+        "paper": "Publications/International/2008JunyongNoh_Springer/Animation_ExpressionCloning.pdf",
+        "img": "Publications/International/2008JunyongNoh_Springer/2008JunyongNoh_Springer.jpg",
+        "smallimg": "Publications/International/2008JunyongNoh_Springer/2008JunyongNoh_Springer.jpg"
     },
     {
         "id": 61,
         "type": "international",
         "year": 2007,
         "title": "Free-Form Sketching of Self-Occluding Objects",
-        "authors": "Frederic Cordier, Hyewon Seo",
-        "journal": "IEEE Computer Graphics and Applications, p. 50-59, 2007"
+        "authors": "57+96",
+        "journal": "IEEE Computer Graphics and Applications, p. 50-59, 2007",
+        "paper": "Publications/International/2007Frederic_IEEE/2007Frederic_IEEE.pdf",
+        "img": "Publications/International/2007Frederic_IEEE/2007Frederic_IEEE.png",
+        "smallimg": "Publications/International/2007Frederic_IEEE/2007Frederic_IEEE_small.jpg"
     },
     {
         "id": 62,
         "type": "international",
         "year": 2006,
         "title": "Modeling of Self-Occluding Objects from 2D Drawings",
-        "authors": "Frederic Cordier, Hyewon Seo, Young-Sang Cho",
-        "journal": "KISS journal, Vol. 33, Issue 9, September 2006"
+        "authors": "57+96+109",
+        "journal": "KISS journal, Vol. 33, Issue 9, September 2006",
+        "paper": "Publications/International/2006Frederic_KISS/2006Frederic_KISS.pdf",
+        "img": "Publications/International/2006Frederic_KISS/2006Frederic_KISS.png",
+        "smallimg": "Publications/International/2006Frederic_KISS/2006Frederic_KISS_small.jpg"
     },
     {
         "id": 63,
         "type": "international",
         "year": 2002,
         "title": "Gesture Driven Facial Animation ",
-        "authors": "Junyong Noh, D. Fidaleo, U. Neumann"
+        "authors": "1+110+108",
+        "conference": "USC Technical Report, 2002",
+        "paper": "Publications/ProfNoh/Noh_gdfa.pdf",
+        "smallimg": "Publications/ProfNoh/Noh_gdfa_small.jpg"
     },
     {
         "id": 64,
         "type": "international",
         "year": 2001,
         "title": "Performance-Driven Facial Animation: Basic Research on Human Judgments of Emotional State in Facial Avatars",
-        "authors": "AA. Rizzo, U. Neumann, R. Enciso, D. Fidaleo, Junyong Noh",
-        "conference": "USC Technical Report, 2002",
-        "journal": "CyberPsychology and Behavior, Vol.4, Issue 4, 471-487, August 2001"
+        "authors": "111+108+112+110+1",
+        "journal": "CyberPsychology and Behavior, Vol.4, Issue 4, 471-487, August 2001",
+        "paper": "Publications/ProfNoh/Journal_PerformanceDrivenFacialAnimation.pdf",
+        "smallimg": "Publications/ProfNoh/Journal_PerformanceDrivenFacialAnimation_small.jpg"
     },
     {
         "id": 65,
         "type": "international",
         "year": 2001,
         "title": "Expression Cloning",
-        "authors": "Junyong Noh, U. Neumann",
-        "journal": "ACM SIGGRAPH, 277-288, USA, August 2001"
+        "authors": "1+108",
+        "conference": "ACM SIGGRAPH, 277-288, USA, August 2001",
+        "paper": "Publications/ProfNoh/ExpressionCloning.pdf",
+        "smallimg": "Publications/ProfNoh/ExpressionCloning_small.jpg"
     },
     {
         "id": 66,
         "type": "international",
         "year": 2000,
         "title": "Animated Deformations with Radial Basis Functions",
-        "authors": "Junyong Noh, D. Fidaleo, U. Neumann",
-        "conference": "ACM Virtual Reality and Software Technology, Korea, October 2000"
+        "authors": "1+110+108",
+        "conference": "ACM Virtual Reality and Software Technology, Korea, October 2000",
+        "paper": "Publications/ProfNoh/Animated Deformations.pdf",
+        "smallimg": "Publications/ProfNoh/Animated Deformations_small.jpg"
     },
     {
         "id": 67,
         "type": "international",
         "year": 2000,
         "title": "Talking Face",
-        "authors": "Junyong Noh, U. Neumann",
-        "conference": " IEEE International Conference on Multimedia and Expo, USA, July 2000"
+        "authors": "1+108",
+        "conference": "IEEE International Conference on Multimedia and Expo, USA, July 2000",
+        "paper": "Publications/ProfNoh/TalkingFaces.pdf",
+        "smallimg": "Publications/ProfNoh/TalkingFaces_small.jpg"
     },
     {
         "id": 68,
         "type": "international",
         "year": 1999,
         "title": "Classification and Volume Morphing for Performance-Driven Facial Animation",
-        "authors": "D. Fidaleo, Junyong Noh, T.Y. Kim, R. Enciso, U. Neumann",
-        "conference": "Digital and Computational Video, USA, 1999"
+        "authors": "110+1+113+112+108",
+        "conference": "Digital and Computational Video, USA, 1999",
+        "paper": "Publications/ProfNoh/ClassificationAndVolumeMorphing.pdf",
+        "smallimg": "Publications/ProfNoh/ClassificationAndVolumeMorphing_small.jpg"
     },
     {
         "id": 69,
         "type": "international",
         "year": 1999,
         "title": "Synthesis of 3D faces",
-        "authors": "R. Enciso, J. Li, D. Fidaleo, T.Y. Kim, Junyong Noh, U. Neumann",
-        "conference": "Digital and Computational Video, USA, 1999"
+        "authors": "112+114+110+113+1+108",
+        "conference": "Digital and Computational Video, USA, 1999",
+        "paper": "Publications/ProfNoh/SynthesisOf3DFaces.pdf",
+        "smallimg": "Publications/ProfNoh/SynthesisOf3DFaces_small.jpg"
     },
     {
         "id": 70,
         "type": "international",
         "year": 1998,
         "title": "A Survey of Facial Modeling and Animation Techniques",
-        "authors": "Junyong Noh, U. Neumann",
-        "conference": "USC Technical Report, 1998(cited 112 times)"
+        "authors": "1+108",
+        "journal": "USC Technical Report, 1998(cited 112 times)",
+        "paper": "Publications/ProfNoh/surveyofFacialModelingAndAnimation.pdf",
+        "smallimg": "Publications/ProfNoh/surveyofFacialModelingAndAnimation_small.jpg"
     },
     {
         "id": 71,
         "type": "domestic",
+        "year": 2015,
         "title": "A Study on Optical Motion Capture Process of Quadruped Animals and Motion Retargeting Pipeline of Quadruped Characters ",
-        "authors": "Jaewon Song, Mi You, Junghee Kim, Junsk Yang, Junyong Noh",
-        "journal": "Journal Of The Animation Society of Korea Vol.11, No.5 (2015), pp.162~179"
+        "authors": "4+26+100+101+1",
+        "journal": "Journal Of The Animation Society of Korea Vol.11, No.5 (2015), pp.162~179",
+        "paper": "Publications/Domestic/2015Jaewon_KCGS/2015Jaewon_KCGS.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2015Jaewon_KCGS/small.png"
     },
     {
         "id": 72,
         "type": "domestic",
+        "year": 2015,
         "title": "Realistic Keyboard Typing Motion Generation Based on Physics Simulation ",
-        "authors": "Yongho Jang, Haegwang Eom, Junyong Noh",
-        "journal": "Journal Of The Korea Computer Graphics Society Vol.21, No.5 (2015), pp.29~36"
+        "authors": "99+11+1",
+        "journal": "Journal Of The Korea Computer Graphics Society Vol.21, No.5 (2015), pp.29~36",
+        "paper": "Publications/Domestic/2015Yongho_KCGS/2015Yongho_KCGS.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2015Yongho_KCGS/small.png"
     },
     {
         "id": 73,
         "type": "domestic",
+        "year": 2015,
         "title": "Shadow Removal in Front Projection System using a Depth Camera ",
-        "authors": "Jaedong Kim, Hyunggoog Seo, Seunghoon Cha, Junyong Noh",
-        "journal": " Journal Of The Korea Computer Graphics Society Vol.21, No.3 (2015), pp.1~10"
+        "authors": "13+9+6+1",
+        "journal": " Journal Of The Korea Computer Graphics Society Vol.21, No.3 (2015), pp.1~10",
+        "paper": "Publications/Domestic/2015Jaedong_KCGS/2015Jaedong_KCGS.pdf",
+        "team": "CFL",
+        "smallimg": "Publications/Domestic/2015Jaedong_KCGS/small.png"
     },
     {
         "id": 74,
         "type": "domestic",
+        "year": 2015,
         "title": "Omnidirectional Environmental Projection Mapping with Single Projector and Single Spherical Mirror ",
-        "authors": "Bumki Kim, Jungjin Lee, Younghui Kim, Seunghwa Jeong, Junyong Noh",
-        "journal": "Journal Of The Korea Computer Graphics Society Vol.21, No.1 (2015), pp.1~11"
+        "authors": "12+5+25+15+1",
+        "journal": "Journal Of The Korea Computer Graphics Society Vol.21, No.1 (2015), pp.1~11",
+        "paper": "Publications/Domestic/2015Bumki_KCGS/2015Bumki_KCGS.pdf",
+        "team": "EVE",
+        "smallimg": "Publications/Domestic/2015Bumki_KCGS/small.png"
     },
     {
         "id": 75,
         "type": "domestic",
+        "year": 2014,
         "title": "High-Quality Depth Map Generation of Humans in Monocular Videos ",
-        "authors": "Jungjin Lee, Sangwoo Lee, Jongjin Park, Junyong Noh",
-        "journal": "Journal Of The Korea Computer Graphics Society Vol.20 No.2 (2014), pp.1-11"
+        "authors": "5+7+42+1",
+        "journal": "Journal Of The Korea Computer Graphics Society Vol.20 No.2 (2014), pp.1-11",
+        "paper": "Publications/Domestic/2014Jungjin_KCGS/2014Jungjin_KCGS.pdf",
+        "team": "EVE",
+        "smallimg": "Publications/Domestic/2014Jungjin_KCGS/small.png"
     },
     {
         "id": 76,
         "type": "domestic",
+        "year": 2014,
         "title": "Body Motion Retargeting to Rig-space ",
-        "authors": "Jaewon Song, Junyong Noh",
-        "journal": "Journal Of The Korea Computer Graphics Society Vol.20, No.3 (2014), pp.9~17"
+        "authors": "4+1",
+        "journal": "Journal Of The Korea Computer Graphics Society Vol.20, No.3 (2014), pp.9~17",
+        "paper": "Publications/Domestic/2014JaeWon_KCGS/2014JaeWon_KCGS.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2014JaeWon_KCGS/small.png"
     },
     {
         "id": 77,
         "type": "domestic",
+        "year": 2013,
         "title": "Realistic Paint Simulation based on Fludity, Diffusion and Absorption",
-        "authors": "Mi You, Jihwan Kim, Taekwon Chang, Seunghoon Cha, Junyong Noh",
-        "conference": "Korea Computer Graphics Society (KCGS), 2013"
+        "authors": "26+36+28+6+1",
+        "conference": "Korea Computer Graphics Society (KCGS), 2013",
+        "paper": "Publications/Domestic/2013MiYou_KCGS/2013MiYou_KCGS.pdf",
+        "smallimg": "Publications/Domestic/2013MiYou_KCGS/small.png"
     },
     {
         "id": 78,
         "type": "domestic",
+        "year": 2013,
         "title": "Depth Map Generation for Building Images",
-        "authors": "Kyehyun Kim, Jaehwan Kwon, Sangwoo Lee, Jungjin Lee, Younghui Kim, Kyunghan Lee, Junyong Noh",
-        "conference": "Korea Computer Graphics Society (KCGS), 2013"
+        "authors": "8+35+7+5+25+37+1",
+        "conference": "Korea Computer Graphics Society (KCGS), 2013",
+        "paper": "Publications/Domestic/2013KyeHyun_KCGS/2013KyeHyun_KCGS.pdf",
+        "team": "EVE",
+        "smallimg": "Publications/Domestic/2013KyeHyun_KCGS/small.png"
     },
     {
         "id": 79,
         "type": "domestic",
+        "year": 2013,
         "title": "Fluid Simulation for Realistic Paint Effects Visualization",
-        "authors": "Jihwan Kim, Mi You, Seunghoon Cha, Junyong Noh",
-        "journal": "Communications of the Korea Information Science Society Vol.31 No.11, pp.29-33"
+        "authors": "36+26+6+1",
+        "journal": "Communications of the Korea Information Science Society Vol.31 No.11, pp.29-33",
+        "paper": "Publications/Domestic/2013Jihwan_CKIS/2013Jihwan_CKIS.pdf",
+        "team": "CFL",
+        "smallimg": "Publications/Domestic/2013Jihwan_CKIS/small.png"
     },
     {
         "id": 80,
         "type": "domestic",
+        "year": 2012,
         "title": "A Single Image Representation Model for Efficient Stereoscopic Image Creation",
-        "authors": "YoungHui Kim, Junyoup Hwang, Hwi-ryong Jung, Sungwoo Choi, Jungjin Lee, Junyong Noh",
+        "authors": "25+38+27+93+5+1",
         "conference": "Korea Computer Graphics Society (KCGS), 2012",
-        "journal": "Journal Of The Korea Computer Graphics Society 2012.6, pp.161-162"
+        "journal": "Journal Of The Korea Computer Graphics Society 2012.6, pp.161-162",
+        "paper": "Publications/Domestic/2012YoungHui_KCGS/2012YoungHui_KCGS.pdf",
+        "team": "EVE",
+        "smallimg": "Publications/Domestic/2012YoungHui_KCGS/small.png"
     },
     {
         "id": 81,
         "type": "domestic",
+        "year": 2012,
         "title": "An Efficient Diffusion Model for Viscous Fingering",
-        "authors": "Seunghoon Cha, Hyunggoog Seo, Jinho Park, Jonghyun Hwang, Junyong Noh",
-        "conference": "Korea Computer Graphics Society (KCGS), 2012"
+        "authors": "6+9+59+66+1",
+        "conference": "Korea Computer Graphics Society (KCGS), 2012",
+        "paper": "Publications/Domestic/2012SeungHoon_KCGS/2012SeungHoon_KCGS.pdf",
+        "team": "CFL",
+        "smallimg": "Publications/Domestic/2012SeungHoon_KCGS/small.png"
     },
     {
         "id": 82,
         "type": "domestic",
+        "year": 2012,
         "title": "Characteristic Facial Retargeting",
-        "authors": "Jaewon Song, Byungkuk Choi, Yeongho Seol, Soyeong Jeon, Junyoung Noh",
-        "conference": "Korea Computer Graphics Society (KCGS), 2012"
+        "authors": "4+24+29+39+1",
+        "conference": "Korea Computer Graphics Society (KCGS), 2012",
+        "paper": "Publications/Domestic/2012JaeWon_KCGS/2012JaeWon_KCGS.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2012JaeWon_KCGS/small.png"
     },
     {
         "id": 83,
         "type": "domestic",
+        "year": 2011,
         "title": "Practice and Application of Modern CG Technology for 3D Contents Making",
-        "authors": "Jaewoo Seo, Byungkuk Choi, Yeongho Seol",
-        "conference": "HCI KOREA, 2011"
+        "authors": "30+24+29",
+        "conference": "HCI KOREA, 2011",
+        "paper": "Publications/Domestic/2011Jaewoo_KHCI/2011Jaewoo_KHCI.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2011Jaewoo_KHCI/small.png"
     },
     {
         "id": 84,
         "type": "domestic",
+        "year": 2011,
         "title": "Practice and Application of Modern CG Technology for 3D Contents Making",
-        "authors": "Byungkuk Choi, Jaewoo Seo, Yeongho Seol, Junyong Noh",
-        "journal": "Computer Graphics and Interaction Society (CG&I) Review 2011.4, pp.5-10"
+        "authors": "24+30+29+1",
+        "journal": "Computer Graphics and Interaction Society (CG&I) Review 2011.4, pp.5-10",
+        "paper": "Publications/Domestic/2011Byungkuk_CGIS/2011Byungkuk_CGIS.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2011Byungkuk_CGIS/small.png"
     },
     {
         "id": 85,
         "type": "domestic",
+        "year": 2009,
         "title": "Believable 3D Tiger from modeling to rendering",
-        "authors": "Junyong Noh, Jiwon Baek, Junghee Kim, Hyungjin Kim, Byungkuk Choi, Younghui Kim, Mi You",
+        "authors": "1+56+100+40+24+25+26",
         "conference": "HCI KOREA, 2009",
-        "journal": "Communications of the Korea Information Science Society Vol.31 No.11, pp.29-33"
+        "journal": "Communications of the Korea Information Science Society Vol.31 No.11, pp.29-33",
+        "paper": "Publications/Domestic/2009_Junyong_KHCI/2009_Junyong_KHCI.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2009_Junyong_KHCI/small.png"
     },
     {
         "id": 86,
         "type": "domestic",
+        "year": 2007,
         "title": "Automatic Pattern Manipulation for Virtual Garment Design",
-        "authors": "HwiRyong Jung, Kwangyun Wohn",
-        "conference": "HCI KOREA 2007"
+        "authors": "27+98",
+        "conference": "HCI KOREA 2007",
+        "team": "CFL"
     },
     {
         "id": 87,
         "type": "domestic",
+        "year": 2007,
         "title": "Synthesis of Near-Regular Vector Texture Patterns",
-        "authors": "JaeWoo Seo, Frederic Cordier",
+        "authors": "30+57",
         "conference": "HCI KOREA, 2007",
-        "journal": " HCI 2007, pp.487-493"
+        "journal": " HCI 2007, pp.487-493",
+        "paper": "Publications/Domestic/2007JaeWoo_KHCI/2007JaeWoo_KHCI.pdf",
+        "team": "Character",
+        "smallimg": "Publications/Domestic/2007JaeWoo_KHCI/small.png"
     },
     {
         "id": 88,
         "type": "domestic",
+        "year": 2007,
         "title": "Special Effects Overview",
-        "authors": "Junyong Noh",
-        "conference": "HCI KOREA, 2007"
+        "authors": 1,
+        "conference": "HCI KOREA, 2007",
+        "paper": "Publications/Domestic/2007_Junyong_KHCI/2007_Junyong_KHCI.pdf",
+        "smallimg": "Publications/Domestic/2007_Junyong_KHCI/small.png"
     },
     {
         "id": 89,
         "type": "thesis",
+        "year": 2015,
         "title": "Sparse Multi-view Object Segmentation using Local Inter-view Consistency",
-        "authors": "Jeong, Seunghwa",
-        "thesisinfo": "KAIST Master's thesis, June 2015."
+        "authors": 15,
+        "thesisinfo": "KAIST Master's thesis, June 2015.",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2015SeunghwaJeong/small.png"
     },
     {
         "id": 90,
         "type": "thesis",
+        "year": 2015,
         "title": "Auto-Calibration of Multi-Projector Displays with a Single Hand-Held Camera ",
-        "authors": "Park, Sanghun",
-        "thesisinfo": "KAIST Master's thesis, January 2015."
+        "authors": 14,
+        "thesisinfo": "KAIST Master's thesis, January 2015.",
+        "paper": "Publication/Thesis/2015SanghunPark/2015SanghunPark.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2015SanghunPark/small.png"
     },
     {
         "id": 91,
         "type": "thesis",
+        "year": 2015,
         "title": "Shadow Removal in Front Projection System using Skeleton Model ",
-        "authors": "Kim, Jaedong",
-        "thesisinfo": "KAIST Master's thesis, January 2015."
+        "authors": 13,
+        "thesisinfo": "KAIST Master's thesis, January 2015.",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2015JaedongKim/small.png"
     },
     {
         "id": 92,
         "type": "thesis",
+        "year": 2014,
         "title": "Interactive Rigging: Editing bone as a weighting tool ",
-        "authors": "Bang, Seungbae",
-        "thesisinfo": "KAIST Master's thesis, June 2014."
+        "authors": 33,
+        "thesisinfo": "KAIST Master's thesis, June 2014.",
+        "paper": "Publication/Thesis/2014SeungbaeBang/2014SeungbaeBang.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2014SeungbaeBang/small.jpg"
     },
     {
         "id": 93,
         "type": "thesis",
+        "year": 2014,
         "title": "Omnidirectional Environmental Projection Mapping with Single Projector and Single Spherical Mirror ",
-        "authors": "Kim, Bumki",
-        "thesisinfo": "KAIST Master's thesis, June 2014."
+        "authors": 12,
+        "thesisinfo": "KAIST Master's thesis, June 2014.",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2014BumkiKim/small.png"
     },
     {
         "id": 94,
         "type": "thesis",
+        "year": 2014,
         "title": "A Single Image Representation Model for Efficient Multi-View Stereoscopic Content Creation ",
-        "authors": "Kim, Younghui",
-        "thesisinfo": "KAIST Ph.D's thesis, January 2014."
+        "authors": 25,
+        "thesisinfo": "KAIST Ph.D's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014YounghuiKim/2014YounghuiKim.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2014YounghuiKim/small.png"
     },
     {
         "id": 95,
         "type": "thesis",
+        "year": 2014,
         "title": "Creation of stereoscopic movies’ previews:focus on the S3D effect with human factors ",
-        "authors": "Kwon, Jae Hwan",
-        "thesisinfo": "KAIST Master's thesis, January 2014."
+        "authors": 35,
+        "thesisinfo": "KAIST Master's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014JaehwanKwon/2014JaehwanKwon.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2014JaehwanKwon/small.png"
     },
     {
         "id": 96,
         "type": "thesis",
+        "year": 2014,
         "title": "Data-Driven Image Expansion Using Structure Aware Image Warping ",
-        "authors": "Kim, Jihwan",
-        "thesisinfo": "KAIST Master's thesis, January 2014."
+        "authors": 36,
+        "thesisinfo": "KAIST Master's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014JihwanKim/2014JihwanKim.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2014JihwanKim/small.jpg"
     },
     {
         "id": 97,
         "type": "thesis",
+        "year": 2014,
         "title": "Data-Driven Motion Capture Using a Single Smartphone ",
-        "authors": "Eom, Haegwang",
-        "thesisinfo": "KAIST Master's thesis, January 2014."
+        "authors": 11,
+        "thesisinfo": "KAIST Master's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014HaegwangEom/2014HaegwangEom.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2014HaegwangEom/small.jpg"
     },
     {
         "id": 98,
         "type": "thesis",
+        "year": 2014,
         "title": "Muscle-driven Motion Path Planning Using Reinforcement Learning ",
-        "authors": "Seokpyo Hong",
-        "thesisinfo": "KAIST Master's thesis, January 2014."
+        "authors": 10,
+        "thesisinfo": "KAIST Master's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014SeokpyoHong/2014SeokpyoHong.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2014SeokpyoHong/small.jpg"
     },
     {
         "id": 99,
         "type": "thesis",
+        "year": 2014,
         "title": "The Creation of Realistic Paint Simulation Reﬂecting the Real Painting Characteristics",
-        "authors": "Mi You",
-        "thesisinfo": "KAIST Ph.D's thesis, January 2014."
+        "authors": 26,
+        "thesisinfo": "KAIST Ph.D's thesis, January 2014.",
+        "paper": "Publication/Thesis/2014Youmi/2014Youmi.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2014Youmi/small.png"
     },
     {
         "id": 100,
         "type": "thesis",
+        "year": 2013,
         "title": "\tVideoVoyage: An E\u000ecient Multi-scale Navigable Codec for Video Viewing",
-        "authors": "Kyunghan Lee",
-        "thesisinfo": "KAIST Master's thesis, June 2013."
+        "authors": 37,
+        "thesisinfo": "KAIST Master's thesis, June 2013.",
+        "paper": "Publication/Thesis/2013Kyunghanlee/2013Kyunghanlee.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2013Kyunghanlee/small.png"
     },
     {
         "id": 101,
         "type": "thesis",
+        "year": 2013,
         "title": "\tVideo Enhancement in Low-Light Condition via Interval Flash",
-        "authors": "Junyoup Hwang",
-        "thesisinfo": "KAIST Master's thesis, January 2013."
+        "authors": 38,
+        "thesisinfo": "KAIST Master's thesis, January 2013.",
+        "paper": "Publication/Thesis/2013Junyouphwang/2013Junyouphwang.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2013Junyouphwang/small.png"
     },
     {
         "id": 102,
         "type": "thesis",
+        "year": 2013,
         "title": "\tParticle Based Snow Simulation Using Dendritic Structure",
-        "authors": "Hyunggoog Seo",
-        "thesisinfo": "KAIST Master's thesis, January 2013."
+        "authors": 9,
+        "thesisinfo": "KAIST Master's thesis, January 2013.",
+        "paper": "Publication/Thesis/2013Hyunggoogseo/2013Hyunggoogseo.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2013Hyunggoogseo/small.png"
     },
     {
         "id": 103,
         "type": "thesis",
+        "year": 2013,
         "title": "\tMotion Editing Using Three-Dimensional As-Rigid-As-Possible (ARAP) Curve Editing",
-        "authors": "Soyeong Jeon",
-        "thesisinfo": "KAIST Master's thesis, January 2013."
+        "authors": 39,
+        "thesisinfo": "KAIST Master's thesis, January 2013.",
+        "paper": "Publication/Thesis/2013SoyeongJeon/2013SoyeongJeon.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2013SoyeongJeon/small.png"
     },
     {
         "id": 104,
         "type": "thesis",
+        "year": 2012,
         "title": "High Quality Depth Maps Generation of Humans in Monocular Videos",
-        "authors": "Jongjin Park",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 42,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Jongjin/2012Jongjin.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Jongjin/small.jpg"
     },
     {
         "id": 105,
         "type": "thesis",
+        "year": 2012,
         "title": "An Example Based Dynamic Disparity Determination from a Scene Context",
-        "authors": "Hyungjin Kim",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 40,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Hyungjin/2012Hyungjin.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Hyungjin/small.jpg"
     },
     {
         "id": 106,
         "type": "thesis",
+        "year": 2012,
         "title": "Depth Map Generation for Building Images",
-        "authors": "Kyehyun Kim",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 8,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Kyehyun/2012Kyehyun.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Kyehyun/small.jpg"
     },
     {
         "id": 107,
         "type": "thesis",
+        "year": 2012,
         "title": "Depth Manipulation using Disparity Histogram Analysis for Stereoscopic 3D",
-        "authors": "Sangwoo Lee",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 7,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Sangwoo/2012Sangwoo.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Sangwoo/small.jpg"
     },
     {
         "id": 108,
         "type": "thesis",
+        "year": 2012,
         "title": "\tAn Efficient Diffusion Model for Viscous Fingering",
-        "authors": "Seunghoon Cha",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 6,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Seunghoon/2012Seunghoon.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2012Seunghoon/small.jpg"
     },
     {
         "id": 109,
         "type": "thesis",
+        "year": 2012,
         "title": "A Procedural Flow Generation Method using Coordinate Transformation",
-        "authors": "Jihyung Kang",
-        "thesisinfo": "KAIST Master's thesis, June 2012."
+        "authors": 41,
+        "thesisinfo": "KAIST Master's thesis, June 2012.",
+        "paper": "Publication/Thesis/2012Jihyung/2012Jihyung.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2012Jihyung/small.jpg"
     },
     {
         "id": 110,
         "type": "thesis",
+        "year": 2012,
         "title": "Template-Driven Depth Estimation for Stereo Conversion",
-        "authors": "Jungjin Lee",
-        "thesisinfo": "KAIST Master's thesis, January 2012."
+        "authors": 5,
+        "thesisinfo": "KAIST Master's thesis, January 2012.",
+        "paper": "Publication/Thesis/2012Jungjin/2012Jungjin.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Jungjin/small.jpg"
     },
     {
         "id": 111,
         "type": "thesis",
+        "year": 2012,
         "title": "Video Panorama for 2D to 3D Conversion",
-        "authors": "Seongwoo Choi",
-        "thesisinfo": "KAIST Master's thesis, January 2012."
+        "authors": 43,
+        "thesisinfo": "KAIST Master's thesis, January 2012.",
+        "paper": "Publication/Thesis/2012Seongwoo/2012Seongwoo.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2012Seongwoo/small.jpg"
     },
     {
         "id": 112,
         "type": "thesis",
+        "year": 2012,
         "title": "An Approach to the Efficient Creation of Creature Animation",
-        "authors": "Jaewoo Seo",
-        "thesisinfo": "KAIST Ph.D's thesis, January 2012."
+        "authors": 30,
+        "thesisinfo": "KAIST Ph.D's thesis, January 2012.",
+        "paper": "Publication/Thesis/2012Jaewoo/2012Jaewoo.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2012Jaewoo/small.jpg"
     },
     {
         "id": 113,
         "type": "thesis",
+        "year": 2012,
         "title": "Artist Friendly Retargeting and Editing in Producing High Quality Facial Animation",
-        "authors": "Yeongho Seol",
-        "thesisinfo": "KAIST Ph.D's thesis, January 2012."
+        "authors": 29,
+        "thesisinfo": "KAIST Ph.D's thesis, January 2012.",
+        "paper": "Publication/Thesis/2012Yeongho/2012Yeongho.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2012Yeongho/small.jpg"
     },
     {
         "id": 114,
         "type": "thesis",
+        "year": 2011,
         "title": "Facial Retargeting by Adding Supplemental Blendshapes",
-        "authors": "Paul Hyunjin Kim",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 44,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Paul/2011Paul.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2011Paul/small.jpg"
     },
     {
         "id": 115,
         "type": "thesis",
+        "year": 2011,
         "title": "Stereoscopic Image Generation of Background Terrain Scenes",
-        "authors": "Huicheol Hwang",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 48,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Huicheol/2011Huicheol.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2011Huicheol/small.jpg"
     },
     {
         "id": 116,
         "type": "thesis",
+        "year": 2011,
         "title": "Multilinear Fluid Simulation with Model Reduction for Pressure Projection",
-        "authors": "Jinhyuk Bae",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 47,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Jinhyuk/2011Jinhyuk.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2011Jinhyuk/small.jpg"
     },
     {
         "id": 117,
         "type": "thesis",
+        "year": 2011,
         "title": "\tCharacteristic Facial Retargeting",
-        "authors": "Jaewon Song",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 4,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Jaewon/2011Jaewon.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2011Jaewon/small.jpg"
     },
     {
         "id": 118,
         "type": "thesis",
+        "year": 2011,
         "title": "Disparity Graph Editing for Stereoscopic Contents Creation",
-        "authors": "Soyoung Kim",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 45,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Soyoung/2011Soyoung.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2011Soyoung/small.jpg"
     },
     {
         "id": 119,
         "type": "thesis",
+        "year": 2011,
         "title": "Position based Foam Simulation",
-        "authors": "Heeyoung Kim",
-        "thesisinfo": "KAIST Master's thesis, June 2011."
+        "authors": 46,
+        "thesisinfo": "KAIST Master's thesis, June 2011.",
+        "paper": "Publication/Thesis/2011Heeyoung/2011Heeyoung.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2011Heeyoung/small.jpg"
     },
     {
         "id": 120,
         "type": "thesis",
+        "year": 2010,
         "title": "Multi-object Video Matting Using 2D Scatter Plot Paradigm",
-        "authors": "Dongock Kim",
-        "thesisinfo": "KAIST Master's thesis, January 2010."
+        "authors": 50,
+        "thesisinfo": "KAIST Master's thesis, January 2010.",
+        "paper": "Publication/Thesis/2010Dongock/2010Dongock.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2010Dongock/small.jpg"
     },
     {
         "id": 121,
         "type": "thesis",
+        "year": 2010,
         "title": "Fast Fluid Simulation with Tensor-Based Model Reduction",
-        "authors": "Sehwi Park",
-        "thesisinfo": "KAIST Master's thesis, January 2010."
+        "authors": 49,
+        "thesisinfo": "KAIST Master's thesis, January 2010.",
+        "paper": "Publication/Thesis/2010Sehwi/2010Sehwi.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2010Sehwi/small.jpg"
     },
     {
         "id": 122,
         "type": "thesis",
+        "year": 2010,
         "title": "Dynamically Evolving Fluid Simulation",
-        "authors": "Daehyeon Wi",
-        "thesisinfo": "KAIST Master's thesis, January 2010."
+        "authors": 3,
+        "thesisinfo": "KAIST Master's thesis, January 2010.",
+        "paper": "Publication/Thesis/2010Daehyeon/2010Daehyeon.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2010Daehyeon/small.jpg"
     },
     {
         "id": 123,
         "type": "thesis",
+        "year": 2009,
         "title": "LightShop: An Interactive Lighting System Incorporating the 2D Image Editing Paradigm",
-        "authors": "Younghui Kim",
-        "thesisinfo": "KAIST Master's thesis, January 2009."
+        "authors": 25,
+        "thesisinfo": "KAIST Master's thesis, January 2009.",
+        "paper": "Publication/Thesis/2009Younghui/2009Younghui.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2009Younghui/small.jpg"
     },
     {
         "id": 124,
         "type": "thesis",
+        "year": 2009,
         "title": "Cartoon Animation Style Rendering of Water",
-        "authors": "Mi You",
-        "thesisinfo": "KAIST Master's thesis, January 2009."
+        "authors": 26,
+        "thesisinfo": "KAIST Master's thesis, January 2009.",
+        "paper": "Publication/Thesis/2009Mi/2009Mi.pdf",
+        "team": "EVE",
+        "smallimg": "Publication/Thesis/2009Mi/small.jpg"
     },
     {
         "id": 125,
         "type": "thesis",
+        "year": 2009,
         "title": "Realistic Modeling of Forest Ecosystems",
-        "authors": "Sara Yoonji Hwang",
-        "thesisinfo": "KAIST Master's thesis, January 2009."
+        "authors": 51,
+        "thesisinfo": "KAIST Master's thesis, January 2009.",
+        "paper": "Publication/Thesis/2009Sara/2009Sara.pdf",
+        "smallimg": "Publication/Thesis/2009Sara/small.jpg"
     },
     {
         "id": 126,
         "type": "thesis",
+        "year": 2008,
         "title": "Deformation-based Animation of Snake Locomotion",
-        "authors": "Yeongho Seol",
-        "thesisinfo": "KAIST Master's thesis, January 2008."
+        "authors": 29,
+        "thesisinfo": "KAIST Master's thesis, January 2008.",
+        "paper": "Publication/Thesis/2008Yeongho/2008Yeongho.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2008Yeongho/small.jpg"
     },
     {
         "id": 127,
         "type": "thesis",
+        "year": 2008,
         "title": "Extended Spatial Keyframing for Complex Character Animation",
-        "authors": "Byungkuk Choi",
-        "thesisinfo": "KAIST Master's thesis, January 2008."
+        "authors": 24,
+        "thesisinfo": "KAIST Master's thesis, January 2008.",
+        "paper": "Publication/Thesis/2008Byungkuk/2008Byungkuk.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2008Byungkuk/small.jpg"
     },
     {
         "id": 128,
         "type": "thesis",
+        "year": 2008,
         "title": "Geometric Texture Placement for Digital Creatures",
-        "authors": "Jiyoung Seo",
-        "thesisinfo": "KAIST Master's thesis, January 2008."
+        "authors": 53,
+        "thesisinfo": "KAIST Master's thesis, January 2008.",
+        "paper": "Publication/Thesis/2008Jiyoung/2008Jiyoung.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2008Jiyoung/small.jpg"
     },
     {
         "id": 129,
         "type": "thesis",
+        "year": 2007,
         "title": "Automatic generation of feature point on texture mapping contours",
-        "authors": "Taekwon Jang",
-        "thesisinfo": "KAIST Master's thesis, June 2007."
+        "authors": 28,
+        "thesisinfo": "KAIST Master's thesis, June 2007.",
+        "paper": "Publication/Thesis/2007Taekwon/2007Taekwon.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2007Taekwon/small.jpg"
     },
     {
         "id": 130,
         "type": "thesis",
+        "year": 2007,
         "title": "Animation Character Rigging Based on Human Skeletal System",
-        "authors": "Taesoo Jang",
-        "thesisinfo": "KAIST Master's thesis, June 2007."
+        "authors": 54,
+        "thesisinfo": "KAIST Master's thesis, June 2007.",
+        "paper": "Publication/Thesis/2007Taesoo/2007Taesoo.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2007Taesoo/small.jpg"
     },
     {
         "id": 131,
         "type": "thesis",
+        "year": 2006,
         "title": "Automatic Pattern Manipulation for Virtual Garment Design",
-        "authors": "Hwiryong Jung",
-        "thesisinfo": "KAIST Master's thesis, January 2006."
+        "authors": 27,
+        "thesisinfo": "KAIST Master's thesis, January 2006.",
+        "paper": "Publication/Thesis/2006Hwiryong/2006Hwiryong.pdf",
+        "team": "CFL",
+        "smallimg": "Publication/Thesis/2006Hwiryong/small.jpg"
     },
     {
         "id": 132,
         "type": "thesis",
+        "year": 2006,
         "title": "Synthesis of Near-Regular Vector Texture Patterns",
-        "authors": "Jaewoo Seo",
-        "thesisinfo": "KAIST Master's thesis, January 2006."
+        "authors": 30,
+        "thesisinfo": "KAIST Master's thesis, January 2006.",
+        "paper": "Publication/Thesis/2006Jaewoo/2006Jaewoo.pdf",
+        "team": "Character",
+        "smallimg": "Publication/Thesis/2006Jaewoo/small.jpg"
     }
 ]

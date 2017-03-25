@@ -6,100 +6,104 @@
     
     <div class="row content-row">
 
-      <div class="member col-sm-12">
-        <h2 class="member-status col-sm-12" id="Professor">
-          Professor
-          <hr/>
-        </h2>
+      <div class="people col-sm-12">
+        <div class="people-status col-sm-12">
+          <h2 id="Professor">
+            FACULTY
+          </h2>
+        </div>
         <!-- card container-->
-        <div *ngFor="let person of datas.professor " class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img">
+        <div *ngFor="let person of datas.professor " class="people-box col-sm-12 col-md-6 col-lg-4">
+          <div class="people-img">
             <img [src]=" imgPath + person.img">
           </div>
-          <div class="student-text">
-            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
-            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
-            <p>{{person.topics}}</p>
-            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
-            <p>{{person.email}}</p>
-            <h6 *ngIf='person.team !== ""'>TEAM</h6>
-            <p>{{person.team}}</p>
-            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
-            <p>{{person.affiliation}}</p>
+
+          <div class="people-text">
+            <h3 class="name">{{person.name}}</h3>
+            <p class="text-center menu01">
+              {{person.topics}} <br>
+              {{person.email}} <br>
+              {{person.team}} <br>
+              {{person.affiliation}}
+            </p>
+            <sub class="menu01">{{person.status}}</sub>
           </div>
+
         </div>
       </div>
 
-      <div class="member col-sm-12">
-        <h2 class="member-status col-sm-12" id="Doctor">
-          Doctor
-          <hr/>
-        </h2>
+
+
+
+      <div class="people col-sm-12">
+        <div class="people-status col-sm-12">
+          <h2 id="Doctor">
+            PH.D STUDENT
+          </h2>
+        </div>
         <!-- card container-->
-        <div *ngFor="let person of datas.doctor" class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img">
+        <div *ngFor="let person of datas.doctor" class="people-box col-sm-12 col-md-6 col-lg-4">
+          <div class="people-img">
             <img [src]=" imgPath + person.img">
           </div>
-          <div class="student-text">
-            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
-            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
-            <p>{{person.topics}}</p>
-            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
-            <p>{{person.email}}</p>
-            <h6 *ngIf='person.team !== ""'>TEAM</h6>
-            <p>{{person.team}}</p>
-            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
-            <p>{{person.affiliation}}</p>
+          <div class="people-text">
+            <h3 class="name">{{person.name}}</h3>
+            <p class="text-center menu01">
+              {{person.topics}} <br>
+              {{person.email}} <br>
+              {{person.team}} <br>
+              {{person.affiliation}}
+            </p>
+            <sub class="menu01">{{person.status}}</sub>
           </div>
+
         </div>
       </div>
 
-      <div class="member col-sm-12">
-        <h2 class="member-status col-sm-12" id="Master">
+      <div class="people col-sm-12">
+        <h2 class="people-status col-sm-12" id="Master">
           Master
-          <hr/>
         </h2>
         <!-- card container-->
-        <div *ngFor="let person of datas.master" class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img">
+        <div *ngFor="let person of datas.master" class="people-box col-sm-12 col-md-6 col-lg-4">
+          <div class="people-img">
             <img [src]=" imgPath + person.img">
           </div>
-          <div class="student-text">
-            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
-            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
-            <p>{{person.topics}}</p>
-            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
-            <p>{{person.email}}</p>
-            <h6 *ngIf='person.team !== ""'>TEAM</h6>
-            <p>{{person.team}}</p>
-            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
-            <p>{{person.affiliation}}</p>
+          <div class="people-text">
+            <h3 class="name">{{person.name}}</h3>
+            <p class="text-center menu01">
+              {{person.topics}} <br>
+              {{person.email}} <br>
+              {{person.team}} <br>
+              {{person.affiliation}}
+            </p>
+            <sub class="menu01">{{person.status}}</sub>
           </div>
+
         </div>
       </div>
 
 
-      <div class="member col-sm-12">
-        <h2 class="member-status col-sm-12" id="Former">
+      <div class="people col-sm-12">
+        <h2 class="people-status col-sm-12" id="Former">
           Former
-          <hr/>
         </h2>
         <!-- card container-->
-        <div *ngFor="let person of datas.former" class="student-box col-sm-12 col-md-6 col-lg-4">
-          <div class="student-img">
+        <div *ngFor="let person of datas.former" class="people-box col-sm-12 col-md-6 col-lg-4">
+          <div class="people-img">
             <img [src]=" imgPath + person.img">
           </div>
-          <div class="student-text">
-            <h5 class="name">{{person.name}}<sub>{{person.status}}</sub></h5>
-            <h6 *ngIf='person.topics !== ""'>INTERESTED TOPICS</h6>
-            <p>{{person.topics}}</p>
-            <h6 *ngIf='person.email !== ""'>E-MAIL</h6>
-            <p>{{person.email}}</p>
-            <h6 *ngIf='person.team !== ""'>TEAM</h6>
-            <p>{{person.team}}</p>
-            <h6 *ngIf='person.affiliation!== ""'>AFFILIATION</h6>
-            <p>{{person.affiliation}}</p>
+          <div class="people-text">
+            <h3 class="name">{{person.name}}</h3>
+            <p class="text-center menu01">
+              {{person.topics}} <br>
+              {{person.email}} <br>
+              {{person.team}} <br>
+              {{person.affiliation}}
+            </p>
+            <sub class="menu01">{{person.status}}</sub>
           </div>
+
         </div>
       </div>
 

@@ -12,19 +12,13 @@
     padding: 2rem 0 2rem 0;
 
     .partners-title {
-        padding: 0 0 1rem 0;
+        padding-bottom: 1rem;
+        padding-left: 0rem;
         border-bottom: 1px solid $primary_orange;
-        color: $primary_grey;
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
     }
     .partner-box {
         margin-bottom: 2rem;
-
-        .partner-text {
-            text-align: center;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
 
         .partner-img img:hover {
             -webkit-filter: grayscale(100%) contrast(80%);

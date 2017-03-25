@@ -1,3 +1,6 @@
+import { PublicationsService } from './../../../shared/publications.service';
+import { Subscription } from 'rxjs/Rx';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchPublicateIndividualComponent implements OnInit {
 
-  constructor() { }
+  private subscription: Subscription;
+  private id: number;
+  private publicationItem: any;
+
+  constructor(private publicationService: PublicationsService, private activatedRoute:ActivatedRoute) { 
+    this.subscription = activatedRoute.params //
+      .subscribe(
+        (param:any) => {
+          this.id = parseInt(param['id']);
+        })
+    this.publicationItem = this.publicationService.getPublications(this.id);
+    console.log(this.publicationItem);
+    this.publicationItem.authorArr = this.publicationItem.authors.split("+");
+    
+  }
 
   ngOnInit() {
   }

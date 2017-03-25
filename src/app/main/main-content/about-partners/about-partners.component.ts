@@ -10,6 +10,7 @@ export class AboutPartnersComponent implements OnInit {
 
   public getDatas:any[];
   public datas:any;
+  private relPath = "./../../../../assets/imgs/partners/";
 
   constructor(private partnersService:PartnersService) { 
     this.getDatas= this.partnersService.getPartners();

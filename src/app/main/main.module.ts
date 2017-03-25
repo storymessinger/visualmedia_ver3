@@ -1,4 +1,3 @@
-import { AgmCoreModule } from 'angular2-google-maps/core';
 import { SearchService } from './../shared/search.service';
 import { PageScrollService } from 'ng2-page-scroll';
 import { PartnersService } from '../shared/partners.service';
@@ -42,6 +41,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
   declarations: [ 
     MainComponent,
@@ -74,7 +75,7 @@ import { HttpModule } from '@angular/http';
     FormsModule, 
     HttpModule, 
     MainRoutingModule,
-    AgmCoreModule
+    MaterialModule
   ],
   providers: [
     MemberService, 

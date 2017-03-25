@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
 @import '_variables.scss';
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 .display-1, .display-2, .display-3, .display-4 {
+        font-family: 'Lato', sans-serif;
+    }
 }
 
 html {
@@ -46,7 +51,7 @@ body {
 
 // This is the part where beside functional aspects, the major contents ALL go in
 .content {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     justify-content: center;
 
@@ -55,10 +60,17 @@ body {
 
 
     .row {
-        // margin-right:0;
-        // margin-left:0;
-        padding: 1.5rem 6rem 3rem 6rem;
+        margin: 3.5rem 6rem 6rem 6rem;
         flex-flow:column;
+    }
+    .divider {
+        border-top: 1px solid $primary_light_grey;
+        margin: 0 6rem;
+        height:1px;
+        width:100%;
+    }
+    .start-row {
+        border-top: 0;
     }
 }
 

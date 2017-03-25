@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutAdmissionComponent implements OnInit {
 
+  public relPath:string = "../../../../assets/imgs/admission/";
+
   constructor() { }
 
   ngOnInit() {

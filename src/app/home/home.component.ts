@@ -1,10 +1,12 @@
 import { ResearchAreaService } from '../shared/researchArea.service';
 import { IssuesService } from '../shared/Issues.service';
-import { Component, OnInit, Inject, ElementRef } from '@angular/core';
+import { Component, OnInit, Inject, ElementRef, AfterViewInit } from '@angular/core';
 
 import { TweenLite } from 'gsap';
 import { TimelineLite } from 'gsap';
 import { TweenMax } from 'gsap';
+
+import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
 
 
 @Component({
@@ -12,7 +14,7 @@ import { TweenMax } from 'gsap';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   
   public relPath:string = "../../assets/";
   public issuesByDate:any;
@@ -22,14 +24,12 @@ export class HomeComponent implements OnInit {
   public menuIconPath:string = this.relPath + "imgs/ic_menu_orange_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_orange_36px.svg";
 
-  public offsetY;
-
-
   constructor(
     private issuesService:IssuesService, 
     public researchAreaService:ResearchAreaService,
-    @Inject("windowObject") {window: Window},
-    private el:ElementRef
+    private el:ElementRef,
+    private scrollSpyService: ScrollSpyService
+
     ) { 
     this.issuesByDate = issuesService.getIssues()
       .sort(fieldSorter(['year','month','day']))
@@ -37,13 +37,14 @@ export class HomeComponent implements OnInit {
       .reverse();
 
     this.researchArea = researchAreaService.getResearchArea();
+
   }
 
   ngOnInit() {
-  // var top  = window.pageYOffset || document.documentElement.scrollTop,
-  //   left = window.pageXOffset || document.documentElement.scrollLeft;
+  }
+
+  setNavbarColor(offsetY) {
     const navbar =  (this.el.nativeElement.querySelector('#navbar'));
-    const tl = 
     navbar.animation = new TimelineLite({paused:true})
       .to(navbar, 0.3, {
         //box-shadow
@@ -53,28 +54,22 @@ export class HomeComponent implements OnInit {
         opacity:1
       })
 
+    let state = navbar.style['opacity'];
+    console.log('on');
 
-    this.offsetY = window.pageYOffset;
-    TweenLite.ticker.addEventListener("tick",testing);
-    function testing() {
-      console.log(window.pageYOffset);
+    if (offsetY > 600 && state == 0) {
+      console.log('on');
+      navbar.animation.play();
+    } else if (offsetY <= 600 && state == 1) {
+      console.log('off');
+      navbar.animation.reverse();
     }
+  }
 
-    // Navbar Change
-    let isColored= false;
-
-    // setNavbarColor
-    TweenLite.ticker.addEventListener("tick",setNavbarColor);
-    function setNavbarColor() {
-      if ( window.pageYOffset > 600 && isColored == false) {
-        navbar.animation.play();
-        isColored = true;
-      } else if (window.pageYOffset < 600 && isColored == true) {
-        navbar.animation.reverse();
-        isColored = false;
-      }
-    }
-
+  ngAfterViewInit() {
+    this.scrollSpyService.getObservable('window').subscribe((e: any) => {
+        this.setNavbarColor(e.path[1].pageYOffset);
+    });
   }
 
   clickMenuBtn(event) {

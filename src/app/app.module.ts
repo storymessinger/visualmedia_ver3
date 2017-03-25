@@ -13,7 +13,8 @@ import { routing } from './app.routing';
 import { MainModule } from './main/main.module';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { MaterialModule } from '@angular/material';
+import { ScrollSpyModule } from 'ng2-scrollspy';
 
 
 @NgModule({
@@ -29,9 +30,8 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
     MainModule,
     routing,
     NgbModule.forRoot(), // Add Bootstrap module here.
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAXWT_uPQIuxP-10SQ5qYjVslLA-WmOmG4'
-    }),
+    MaterialModule,
+    ScrollSpyModule.forRoot()
     
   ],
   providers: [
