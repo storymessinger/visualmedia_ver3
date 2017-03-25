@@ -18,8 +18,6 @@ import { AboutAdmissionComponent } from './main-content/about-admission/about-ad
 import { AboutInfoComponent } from './main-content/about-info/about-info.component';
 
 
-import { CONTENT_ROUTES } from './content/content.routes';
-import { ContentComponent } from './content/content.component';
 import { MainComponent } from './main.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
