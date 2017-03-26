@@ -85,7 +85,7 @@ export const Publications =
         "authors": "14+9+6+1",
         "conference": " IEEE Visualization Conference (VIS), 2015",
         "paper": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS.jpg",
         "smallimg": "Publications/International/2015SanghunPark_VIS/2015SanghunPark_VIS_small.png"
     },
@@ -122,7 +122,7 @@ export const Publications =
         "authors": "81+82+1+77+78",
         "journal": "IEEE Computer Graphics & Applications, Vol. 35, No. 1, pp.46-55, 2015",
         "paper": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA.jpg",
         "smallimg": "Publications/International/2015Donghun_CGNA/2015Donghun_CGNA_small.jpg"
     },
@@ -134,7 +134,7 @@ export const Publications =
         "authors": "28+1",
         "journal": "Computer Animation and Virtual Worlds, Volume 26, Issue 2, pages 161?172, March/April 2015",
         "paper": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV.jpg",
         "smallimg": "Publications/International/2015Taekwon_CAV/2015Taekwon_CAV_small.jpg"
     },
@@ -210,7 +210,7 @@ export const Publications =
         "conference": "Computer Animation and Social Agents (CASA), 2014 ",
         "journal": "Computer Animation and Virtual Worlds, Volume 25, Issue 3-4, pages 475–485, May-August 2014",
         "paper": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW.jpg",
         "smallimg": "Publications/International/2014Shiguang_CAVW/2014Shiguang_CAVW_small.jpg"
     },
@@ -234,7 +234,7 @@ export const Publications =
         "authors": "28+90+26+87+1",
         "conference": "Computer Animation and Social Agents (CASA), 2013",
         "paper": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.jpg",
         "smallimg": "Publications/International/2013Taekwon_CASA/2013Taekwon_CASA.jpg"
     },
@@ -283,7 +283,7 @@ export const Publications =
         "conference": "Computer Animation and Social Agents (CASA), 2013",
         "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 185-193, May-August 2013",
         "paper": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA.jpg",
         "smallimg": "Publications/International/2013Hwiryong_CASA/2013Hwiryong_CASA_small.jpg"
     },
@@ -296,7 +296,7 @@ export const Publications =
         "conference": "Computer Animation and Social Agents (CASA), 2013",
         "journal": " Computer Animation and Virtual Worlds, Volume 24, Issue 3-4, pages 297-306, May-August 2013",
         "paper": "Publications/International/2013Youmi_CASA/2013Youmi_CASA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2013Youmi_CASA/2013Youmi_CASA.jpg",
         "smallimg": "Publications/International/2013Youmi_CASA/2013Youmi_CASA_small.jpg"
     },
@@ -334,7 +334,7 @@ export const Publications =
         "authors": "41+59+30+1",
         "conference": "Computer Graphics International, 2012 ",
         "paper": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI.jpg",
         "smallimg": "Publications/International/2012Jihyung_CGI/2012Jihyung_CGI_small.jpg"
     },
@@ -347,7 +347,7 @@ export const Publications =
         "conference": "Computer Graphics International, 2012 ",
         "journal": "The Visual Computer: Volume 28, Issue 6-8 (2012), p.563-571",
         "paper": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI.jpg",
         "smallimg": "Publications/International/2012Seunghoon_CGI/2012Seunghoon_CGI_small.jpg"
     },
@@ -359,7 +359,7 @@ export const Publications =
         "authors": "28+48+6+26+66+1",
         "conference": "Computer Graphics International, 2012 ",
         "paper": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.jpg",
         "smallimg": "Publications/International/2012Taekwon_CGI/2012Taekwon_CGI.jpg"
     },
@@ -458,7 +458,7 @@ export const Publications =
         "authors": "47+59+49+1",
         "conference": "Computer Animation and Social Agents (CASA), 2011, Short Paper",
         "paper": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA.png",
         "smallimg": "Publications/International/2011Jinhyuk_CASA/2011Jinhyuk_CASA_small.jpg"
     },
@@ -471,7 +471,7 @@ export const Publications =
         "conference": "Eurographics, 2011 ",
         "journal": "Computer Graphics Forum, Volume 29, Issue 8, pages 2352–2362, December 2011",
         "paper": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2011Jinho_EG/2011Jinho_EG.png",
         "smallimg": "Publications/International/2010Jinho_EG/2011Jinho_EG_small.jpg"
     },
@@ -484,7 +484,7 @@ export const Publications =
         "conference": "Computer Animation and Social Agents (CASA), 2011 ",
         "journal": "the International Journal of Virtual Reality, 10(1):p.21-27, 2011",
         "paper": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR.png",
         "smallimg": "Publications/International/2011Taekwon_VR/2011_Taekwon_VR_small.jpg"
     },
@@ -533,7 +533,7 @@ export const Publications =
         "authors": "59+29+57+1",
         "journal": " Computer Graphics Forum Volume 29, Issue 8, p.2352-2362, December 2010",
         "paper": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.png",
         "smallimg": "Publications/International/2010Jinho_CGF/2010Jinho_CGF.jpg"
     },
@@ -546,7 +546,7 @@ export const Publications =
         "conference": "Computer Graphics International 2010",
         "journal": "The Visual Computer, 26(6):p.873-881, 2010",
         "paper": "Publications/International/2010Taekwon_VC/2010Taekwon_VC.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2010Taekwon_VC/2010Taekwon_VC.png",
         "smallimg": "Publications/International/2010Taekwon_VC/2010Taekwon_VC_small.jpg"
     },
@@ -571,7 +571,7 @@ export const Publications =
         "authors": "82+59+1+78",
         "conference": "Eurographics 2010 ",
         "journal": "Computer Graphics Forum, volume 29, p.685-694, 2010",
-        "team": "CFL"
+        "team": "CFL2"
     },
     {
         "id": 47,
@@ -595,7 +595,7 @@ export const Publications =
         "conference": "ISVC 2009",
         "journal": "Advances in Visual Computing, p.67-78, 2009",
         "paper": "Publications/International/2009Mi_ISVC/2009Mi_ISVC.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2009Mi_ISVC/2009Mi_ISVC.png",
         "smallimg": "Publications/International/2009Mi_ISVC/2009Mi_ISVC_small.jpg"
     },
@@ -607,7 +607,7 @@ export const Publications =
         "authors": "59+29+1",
         "conference": "Poster Paper, Pacific Graphics 2009",
         "paper": "Publications/International/2009Jinho_PG/2009Jinho_PG.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2009Jinho_PG/2009Jinho_PG.png",
         "smallimg": "Publications/International/2009Jinho_PG/2009Jinho_PG_small.jpg"
     },
@@ -631,7 +631,7 @@ export const Publications =
         "authors": "26+59+24+1",
         "conference": "Poster Paper, Pacific Graphics 2009",
         "paper": "Publications/International/2009Mi_PG/2009Mi_PG.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2009Mi_PG/2009Mi_PG.png",
         "smallimg": "Publications/International/2009Mi_PG/2009Mi_PG_small.jpg"
     },
@@ -670,7 +670,7 @@ export const Publications =
         "conference": "Computer Animation and Social Agents 2008 ",
         "journal": "Computer Animation and Virtual Worlds, 19, (3-4):p.455-467, 2008",
         "paper": "Publications/International/2008Jinho_CASA/2008Jinho_CASA.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2008Jinho_CASA/2008Jinho_CASA.png",
         "smallimg": "Publications/International/2008Jinho_CASA/2008Jinho_CASA_small.jpg"
     },
@@ -695,7 +695,7 @@ export const Publications =
         "authors": "102+103+104+1",
         "conference": "Symposium on Computer Animation, ACM SIGGRAPH 2008 (Best Paper)",
         "paper": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA.PDF",
-        "team": "CFL",
+        "team": "CFL2",
         "img": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA.png",
         "smallimg": "Publications/International/2008Jeroen_SCA/2008Jeroen_SCA_small.jpg"
     },
@@ -877,7 +877,7 @@ export const Publications =
         "authors": "13+9+6+1",
         "journal": " Journal Of The Korea Computer Graphics Society Vol.21, No.3 (2015), pp.1~10",
         "paper": "Publications/Domestic/2015Jaedong_KCGS/2015Jaedong_KCGS.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publications/Domestic/2015Jaedong_KCGS/small.png"
     },
     {
@@ -942,7 +942,7 @@ export const Publications =
         "authors": "36+26+6+1",
         "journal": "Communications of the Korea Information Science Society Vol.31 No.11, pp.29-33",
         "paper": "Publications/Domestic/2013Jihwan_CKIS/2013Jihwan_CKIS.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publications/Domestic/2013Jihwan_CKIS/small.png"
     },
     {
@@ -965,7 +965,7 @@ export const Publications =
         "authors": "6+9+59+66+1",
         "conference": "Korea Computer Graphics Society (KCGS), 2012",
         "paper": "Publications/Domestic/2012SeungHoon_KCGS/2012SeungHoon_KCGS.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publications/Domestic/2012SeungHoon_KCGS/small.png"
     },
     {
@@ -1020,7 +1020,7 @@ export const Publications =
         "title": "Automatic Pattern Manipulation for Virtual Garment Design",
         "authors": "27+98",
         "conference": "HCI KOREA 2007",
-        "team": "CFL"
+        "team": "CFL2"
     },
     {
         "id": 87,
@@ -1062,7 +1062,7 @@ export const Publications =
         "authors": 14,
         "thesisinfo": "KAIST Master's thesis, January 2015.",
         "paper": "Publication/Thesis/2015SanghunPark/2015SanghunPark.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2015SanghunPark/small.png"
     },
     {
@@ -1072,7 +1072,7 @@ export const Publications =
         "title": "Shadow Removal in Front Projection System using Skeleton Model ",
         "authors": 13,
         "thesisinfo": "KAIST Master's thesis, January 2015.",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2015JaedongKim/small.png"
     },
     {
@@ -1126,7 +1126,7 @@ export const Publications =
         "authors": 36,
         "thesisinfo": "KAIST Master's thesis, January 2014.",
         "paper": "Publication/Thesis/2014JihwanKim/2014JihwanKim.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2014JihwanKim/small.jpg"
     },
     {
@@ -1159,7 +1159,7 @@ export const Publications =
         "authors": 26,
         "thesisinfo": "KAIST Ph.D's thesis, January 2014.",
         "paper": "Publication/Thesis/2014Youmi/2014Youmi.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2014Youmi/small.png"
     },
     {
@@ -1192,7 +1192,7 @@ export const Publications =
         "authors": 9,
         "thesisinfo": "KAIST Master's thesis, January 2013.",
         "paper": "Publication/Thesis/2013Hyunggoogseo/2013Hyunggoogseo.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2013Hyunggoogseo/small.png"
     },
     {
@@ -1258,7 +1258,7 @@ export const Publications =
         "authors": 6,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
         "paper": "Publication/Thesis/2012Seunghoon/2012Seunghoon.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2012Seunghoon/small.jpg"
     },
     {
@@ -1269,7 +1269,7 @@ export const Publications =
         "authors": 41,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
         "paper": "Publication/Thesis/2012Jihyung/2012Jihyung.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2012Jihyung/small.jpg"
     },
     {
@@ -1346,7 +1346,7 @@ export const Publications =
         "authors": 47,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
         "paper": "Publication/Thesis/2011Jinhyuk/2011Jinhyuk.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2011Jinhyuk/small.jpg"
     },
     {
@@ -1401,7 +1401,7 @@ export const Publications =
         "authors": 49,
         "thesisinfo": "KAIST Master's thesis, January 2010.",
         "paper": "Publication/Thesis/2010Sehwi/2010Sehwi.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2010Sehwi/small.jpg"
     },
     {
@@ -1488,7 +1488,7 @@ export const Publications =
         "authors": 28,
         "thesisinfo": "KAIST Master's thesis, June 2007.",
         "paper": "Publication/Thesis/2007Taekwon/2007Taekwon.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2007Taekwon/small.jpg"
     },
     {
@@ -1510,7 +1510,7 @@ export const Publications =
         "authors": 27,
         "thesisinfo": "KAIST Master's thesis, January 2006.",
         "paper": "Publication/Thesis/2006Hwiryong/2006Hwiryong.pdf",
-        "team": "CFL",
+        "team": "CFL2",
         "smallimg": "Publication/Thesis/2006Hwiryong/small.jpg"
     },
     {

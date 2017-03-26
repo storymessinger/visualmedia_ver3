@@ -84,7 +84,7 @@ export class MainSidebarComponent {
         { 
           url: "area",
           data: "Research Area",
-          innerLink: ["ABC", "CDF", "DEV"]
+          innerLink: ["CFL2", "EVE", "Character"]
         },
         { 
           url: "projects",

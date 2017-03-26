@@ -72,6 +72,15 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .content {
+        .row {
+            margin: 3.5rem 1.5rem 6rem 1.5rem;
+        }
+    }
+}
+
+
 ///// hide the scroll but able to scroll 
 html {
     overflow: scroll;

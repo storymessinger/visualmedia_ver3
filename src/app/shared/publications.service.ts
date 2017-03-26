@@ -7,6 +7,7 @@ export class PublicationsService {
 
   id: any;
   groupedPublication = _.groupBy(Publications, 'type');
+  teamedPublication = _.groupBy(Publications, 'team');
 
   international = this.groupedPublication['international'];
   domestic = this.groupedPublication['domestic'];
@@ -39,6 +40,10 @@ export class PublicationsService {
     } else {
       return this.thesis.find( item => item.id === id);
     }
+  }
+
+  getPublicationsByTeam(team:any):any {
+    return this.teamedPublication[team];
   }
 
 }

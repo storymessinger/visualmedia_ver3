@@ -1,20 +1,26 @@
-<div class="flex-content publication-box">
-  <div class="make_dimmer"></div>
+<div class="flex-content">
   <div class="content col-sm container-fluid">
-    <div class="row">
-      <div class="col-sm-12 part imgDiv">
-        <div class="title">
-          <h1>Computing for lazy life</h1>
+
+    <div class="col-sm-12 imgDiv" [style.background-image]="'url(' + mainImgPath + datas.img + ')'">
+      <h1 class="title">{{datas.area | uppercase }}</h1>
+    </div>
+    <div class="row no-gutters">
+
+      <div class="col-sm-12 team">
+        <h2>{{datas.team}} Team</h2>
+
+        <p class="yellow">{{datas.teamdesc01}}</p>
+        <p>{{datas.teamdesc02}}</p>
+      </div>
+
+      <div class="col-sm-12 related">
+        <h2>Related Thesis</h2>
+
+        <div *ngFor='let name of paperNames'>
+          <a href="#" class="links">{{name}}</a>
         </div>
-      </div>
-      <div class="col-sm-12 part">
-        <h3>CFL2</h3>
-        <hr/><strong>Human Computer Interaction, Image Processing, Physically-based Simulation</strong>
-        <p>CFL2 stands for Computing For Lazy Life. Lazy life in this term denotes comfortable life obtained from technology. We develop interactive techniques to enrich user experiences, especially through computer graphics and vision technology. Our current research addresses modeling an immersive home entertainment environment through video analysis, 3D geometry reconstruction, new paradigm visualization, and exploration of unique hardware setups that work with human sensing-based interaction</p>
-      </div>
-      <div class="col-sm-12 part">
-        <h3>Related Thesis</h3>
-        <hr/><strong>"Auto-Calibration of Multi-Projector Displays with a Single Handheld Camera", 2015</strong>
+
+        <!--"Auto-Calibration of Multi-Projector Displays with a Single Handheld Camera", 2015
         <p>"Heterogeneous CPU-GPU Parallel Approach to a Multigrid Poisson Solver for Incompressible Fluid Simulation", 2013</p>
         <p>"Realistic Paint Simulation based on Fluidity, Diffusion, and A   l for Viscous Fingering", 2012</p>
         <p>"Multilinear Fluid Simulation with Model Reduction for Pressure Projection", 2011</p>
@@ -26,46 +32,32 @@
         <p>"A surface-based model for small-scale smoke visualization", 2009</p>
         <p>"Toon Rendering of Water Animation", 2009</p>
         <p>"A Unified Handling of Immiscible and Miscible Fluids", 2008</p>
-        <p>"Low Viscosity Flow Simulations for Animation", 2008</p>
+        <p>"Low Viscosity Flow Simulations for Animation", 2008</p>-->
       </div>
-      <div class="col-sm-12 part">
-        <h3>Members</h3>
-        <hr/>
-        <div class="col-sm-12 member_image_box">
-          <!-- card container-->
-          <div class="student-box col-sm-12 col-md-6 col-lg-4">
-            <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img"/></div>
-            <div class="student-text">
-              <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-              <h6>INTERESTED TOPICS</h6>
-              <p>Computer Graphics / Video Projection</p>
-              <h6>E-MAIL</h6>
-              <p>bumkikim@kaist.ac.kr</p>
-            </div>
+
+
+      <div class="col-sm-12 people">
+        <h2 class="people-status col-sm-12">
+          Members
+        </h2>
+        <div *ngFor="let person of people" class="people-box col-sm-12 col-md-6 col-lg-4">
+          <div class="people-img">
+            <img [src]=" imgPath + person.img">
+            <button md-fab routerLink="#">More</button>
           </div>
-          <!-- card container-->
-          <div class="student-box col-sm-12 col-md-6 col-lg-4">
-            <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img"/></div>
-            <div class="student-text">
-              <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-              <h6>INTERESTED TOPICS</h6>
-              <p>Computer Graphics / Video Projection</p>
-              <h6>E-MAIL</h6>
-              <p>bumkikim@kaist.ac.kr</p>
-            </div>
-          </div>
-          <!-- card container-->
-          <div class="student-box col-sm-12 col-md-6 col-lg-4">
-            <div class="student-img"><img src="img2/member_student.jpg" alt="Professor profile img"/></div>
-            <div class="student-text">
-              <h5 class="name">Bumki Kim <sub>Head Student</sub></h5>
-              <h6>INTERESTED TOPICS</h6>
-              <p>Computer Graphics / Video Projection</p>
-              <h6>E-MAIL</h6>
-              <p>bumkikim@kaist.ac.kr</p>
-            </div>
+
+          <div class="people-text">
+            <h3 class="name">{{person.name}}</h3>
+            <p class="text-center menu01">
+              {{person.topics}} <br>
+              {{person.email}} <br>
+              {{person.team}} <br>
+              {{person.affiliation}}
+            </p>
+            <sub class="menu01">{{person.status}}</sub>
           </div>
         </div>
+
       </div>
     </div>
   </div>

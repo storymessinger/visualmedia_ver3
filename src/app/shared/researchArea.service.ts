@@ -6,8 +6,12 @@ export class ResearchAreaService {
 
   constructor() { }
 
-  getResearchArea():any {
-    return ResearchArea;
+  getResearchArea(team = null):any {
+    if (team == null) {
+      return ResearchArea;
+    } else {
+      return ResearchArea.find( item => item.team === team);
+    }
   }
 
 }
