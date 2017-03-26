@@ -37,6 +37,24 @@
                 width: 240px;
             }
         }
+        .people-img:hover button {
+            display: block;
+        } 
+        .people-img button {
+            background-color: $primary_light_grey;
+            color: $primary_dark_grey;
+            font-weight: 400;
+            opacity:0.85;
+
+            position: absolute;
+            display:none;
+            left:140px;
+            top:85px;
+            width: 63px;
+            height: 63px;
+        }
+
+
         .people-text {
             display: flex;
             justify-content: center;
@@ -44,10 +62,6 @@
             align-items: center;
             .name {
                 margin-bottom:0.75rem;
-            }
-            h6, p, span {
-                margin-bottom: 0.3rem;
-                font-size: 0.9rem;
             }
             sub {
                 color: $primary_orange;
@@ -59,9 +73,6 @@
         margin-bottom: 3rem;
         transition: all 0.7s ease;
         border:none;
-
-        .card-title {
-        }
 
         .card-subtitle {
             font-weight: bold;

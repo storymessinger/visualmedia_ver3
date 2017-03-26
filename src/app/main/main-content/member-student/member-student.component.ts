@@ -20,6 +20,7 @@ export class MemberStudentComponent implements OnDestroy {
 
   subscription:Subscription;
 
+
   constructor(
     private memberService:MemberService, 
     private scrollAbleService:ScrollAbleService,

@@ -21,7 +21,6 @@ export class ResearchPublicateIndividualComponent implements OnInit {
           this.id = parseInt(param['id']);
         })
     this.publicationItem = this.publicationService.getPublications(this.id);
-    console.log(this.publicationItem);
     this.publicationItem.authorArr = this.publicationItem.authors.split("+");
     
   }

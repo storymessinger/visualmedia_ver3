@@ -1,9 +1,6 @@
 
 <div class="flex-content">
-
-  <div class="make_dimmer"></div>
   <div class="content col-sm container-fluid">
-    
     <div class="row content-row">
 
       <div class="people col-sm-12">
@@ -16,6 +13,7 @@
         <div *ngFor="let person of datas.professor " class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
             <img [src]=" imgPath + person.img">
+            <button md-fab routerLink="#">More</button>
           </div>
 
           <div class="people-text">

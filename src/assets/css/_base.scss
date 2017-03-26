@@ -26,10 +26,6 @@ body {
 
     .main {
         display: flex;
-        .flex-content {
-            flex-grow:1;
-            display: flex;
-        }
     }
 }
 
@@ -41,6 +37,8 @@ body {
 // for sidebar margin
 .flex-content {
     margin-left: $sidebar-width;
+    flex-grow:1;
+    display: flex;
 }
 
 @media (max-width: 1479px) {
@@ -61,7 +59,7 @@ body {
 
     .row {
         margin: 3.5rem 6rem 6rem 6rem;
-        flex-flow:column;
+        // flex-flow:column;
     }
     .divider {
         border-top: 1px solid $primary_light_grey;

@@ -1,9 +1,11 @@
 @import '../../../../assets/css/_variables.scss';
 
-.content-row {
-    // fixing row under col margin bug
-    margin : 0;
-    justify-content: center;
+.row {
+    flex-flow: column;
+}
+
+.contact-row {
+    align-items: center;
 }
 
 .member_image_box {
@@ -41,9 +43,6 @@
     }
 }
 
-.contact-row {
-    align-items: center;
-}
 .contact-intro {
     margin-bottom: 1rem;
 }
