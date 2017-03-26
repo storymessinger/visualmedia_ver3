@@ -1,36 +1,46 @@
 @import '../../../../assets/css/_variables.scss';
 
-.year {
-    border-top: 1px solid #ccc;
-    padding: 2rem 3rem 3rem;
+.content {
+    display:flex;
     flex-flow:column;
-    .year-title {
-        color: $primary_grey;
-        margin-bottom: 3rem;
+    align-items: center;
+}
+
+.list {
+    max-width: 1200px;
+    .year {
+        padding: 0;
+        margin-bottom: 3.5rem;
     }
 }
-.download-box {
-    display:flex;
-    margin-bottom: 5rem;
 
-    .download-img {
-        min-width: 240px;
+hr {
+    margin-bottom: 0;
+    width:100%;
+}
+
+.data-box {
+    display:flex;
+    margin-bottom: 3.5rem;
+
+    .data-img {
         width: 240px;
-        height: 160px;
-        background-color: black;
+        min-width:240px;
+        min-height:180px;
+        img {
+            width: 100%;
+        }
     }
-    .download-desc {
+
+    .data-desc {
         flex-grow:1;
         margin: 0 1.5rem;
         color: $primary_grey;
         h5, h3 {
             color: $primary_dark_grey;
         }
-        .download-text {
-            margin-bottom: 1rem;
-        }
     }
-    .download-type {
+    .data-type {
         min-width: 240px;
         width: 240px;
         p {
@@ -42,13 +52,13 @@
 
 
 @media (max-width: 991px) {
-    .download-box {
+    .data-box {
         flex-flow:column;
-        .download-desc {
+        .data-desc {
             margin: 2rem 0 2rem 0;
         }
     }
-    .download-img {
+    .data-img {
         width:100% !important;
     }
 

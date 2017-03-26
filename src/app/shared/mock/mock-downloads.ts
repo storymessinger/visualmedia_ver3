@@ -1,15 +1,6 @@
 export const Downloads = 
 [
     {
-        "id": 0,
-        "type": "software",
-        "year": 2008,
-        "title": "Skinner",
-        "desc": "Skinner' is an advanced skinning algorithm to replace ordinary smooth bind function in Maya. This program uses some part of the Pinocchio automatic rigging library developed by Ilya Baran (ibaran_at_mit.edu) For further questions, please contact Jaewoo Seo.",
-        "linkPage": "-",
-        "additional": "Binary : Skinner.zip\r\nType : Maya Plugin (.mll)\r\nVersion : Maya 2008\r\nPlatform : Microsoft Windows XP"
-    },
-    {
         "id": 1,
         "type": "software",
         "year": 2008,
@@ -592,12 +583,5 @@ export const Downloads =
         "title": "Group motion recognizer - lite ",
         "desc": "\r\nThis software recognizes the gesture of multiple users. Basically, the recognizer classifies the pose of each user through the Support Vector Machine(SVM). Motions are registered in advance as a sequence of poses. If a pose sequence is matched with registered motion, the recognizer returns the motion as a retrieved result. In this version, 4 poses are registered(Rest, Ready, Left zap, Right zap), so that this software is able to recognize simple “Zap” motion of boxing. For further questions, please contact Hyunggoog Seo (hyunggoog.seo_at_kaist.ac.kr).",
         "additional": "Binary : recognizer_module_exe.zip\r\nType : Standalone\r\nVersion : NA\r\nPlatform : Microsoft Windows 8, 10, Kinect SDK 2.0 required"
-    },
-    {
-        "id": 74,
-        "type": "dataset",
-        "year": "?",
-        "title": "Motion Database",
-        "desc": "VML motion database contains human motion data with various activities. \r\nThis data is free for use in research projects, but resell and redistribution is strictly forbidden.\r\nIf you publish results obtained using this data, please let us know the citation to your paper.\r\nFor further questions, please contact visualmedia_at_kaist.ac.kr."
     }
 ]

@@ -1,83 +1,74 @@
 @import '../../../../assets/css/_variables.scss';
 @import '../../../../assets/css/_materialShadow.scss';
+
+.content {
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+}
+
 .pagination {
     justify-content: center;
 }
 
 .project-list {
-    border-top: 1px solid #ccc;
-    padding: 2rem 3rem 3rem;
+    max-width: 1200px;
+    .project-year {
+        margin-bottom: 3.5rem;
+    }
+}
 
-    // flex-flow: column;
-    
+.project {
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 3.5rem;
+    .project-title {
+        margin-top: 1.5rem;
+        margin-bottom: 3.5rem;
+        padding:0;
+    }
+}
 
-    .card-box {
-        padding: 0 0.5rem;
+.project-desc {
+    padding: 0;
+    padding-right: 3.5rem;
+    table {
+        max-width: 600px;
 
-        .card {
-            overflow:hidden;
-            height: 25rem;
-            position: relative;
-            overflow: hidden;
-            border: none;
-            .card-header {
-                border: none;
-                background-color: inherit;
-            }
-            .card-text {
-                margin-bottom: 1.2rem;
-                overflow: auto;
-            }
-            .card-desc {
-                display: flex;
-                .card-desc-title {
-                    margin-right: 1.8rem;
-                }
-            }
-
-            span {
-                font-size: 1rem;
-            }
-            .overlay {
-                position:absolute;
-                padding: 2.5rem 0 0 2.5rem;
-                p {
-                    font-size:1.1rem;
-                    opacity: 0;
-                    color:white;
-                }
-            }
-
-            .project-img {
-                position: absolute;
-                // top: -9999px;
-                // bottom: -9999px;
-                left: -9999px;
-                right: -9999px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .btn {
-                @include card(1);
-            }
-            .btn:active{
-                @include card(0);
-            }
+        .table-year {
+            width: 4.5rem;
+            padding-left: 0;
         }
     }
 }
 
-@media (max-width: 991px) {
-    .card-text {
-        margin-bottom: 1rem !important;
+.project-img {
+    max-height: 500px;
+    padding:0;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
-@media (max-width: 769px) {
-    html {
-        font-size: 12px;
-    }
-    .project-img-box {
-        order: -1
-    }
 
+.project-funding {
+    display: flex;
+    flex-flow:column;
+}
+
+hr {
+    margin-bottom: 0;
+    width:100%;
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 769px) {
 }

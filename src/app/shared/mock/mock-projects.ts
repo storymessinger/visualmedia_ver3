@@ -1,57 +1,161 @@
-export const Projects = [
-
-    /// Needs UPDATE
+export const Projects = 
+[
     {
-        "projectsId": 0,
-        "type": "external digital art",
-        "name": "Multi-View Project",
-        "fullname": "Development of Realistic Media and Presentation System for Lage Auditorium",
-        "area": "Immersive media display system, Multi-projection contents optimization",
-        "partners": "1+2",
-        "team": "EVE",
-        "funding": 6,
-        "manager": 1,
-        "status": "on going",
-        "date": "2016.05.29"
+        "id": 1,
+        "type": "Tech",
+        "year": 2008,
+        "name": "Digital Creature Project 1st Year",
+        "team": "Digital Creature Project Team"
     },
     {
-        "projectsId": 1,
-        "type": "internal project",
-        "name": "SIGGRAPH Asia 2012, Character Team",
-        "fullname": "Development of Realistic Media and Presentation System for Lage Auditorium",
-        "area": "Immersive media display system, Multi-projection contents optimization",
-        "partners": "1+2",
-        "team": "EVE",
-        "funding": 5,
-        "manager": 2,
-        "status": "finished",
-        "date": "2012.12.01"
+        "id": 2,
+        "type": "Tech",
+        "year": 2009,
+        "name": "Digital Creature Project 2nd Year"
     },
     {
-        "projectsId": 2,
-        "type": "external digital art",
-        "name": "\"The X\" - The first ScreenX movie in the world (invited to BIFF 2013)",
-        "fullname": "Development of Realistic Media and Presentation System for Lage Auditorium",
-        "area": "Immersive media display system, Multi-projection contents optimization",
-        "partners": "1+2",
-        "team": "EVE",
-        "funding": 4,
-        "manager": 3,
-        "status": "finished",
-        "date": "2013.11.01",
-        "digitalArtType": "Trailer (ScreenX Version)"
+        "id": 3,
+        "type": "Tech",
+        "year": 2010,
+        "name": "Digital Creature Project 3rd Year"
     },
     {
-        "projectsId": 3,
-        "type": "internal digital art",
-        "name": "Character Team Making Film",
-        "fullname": "Development of Realistic Media and Presentation System for Lage Auditorium",
-        "area": "Immersive media display system, Multi-projection contents optimization",
-        "partners": "1+2",
-        "team": "EVE",
-        "funding": 3,
-        "manager": 4,
-        "status": "finished",
-        "date": "2012.08.30"
+        "id": 4,
+        "type": "Tech",
+        "year": 2012,
+        "name": "2D-3D Stereoscopic Conversion Project 2nd Year"
+    },
+    {
+        "id": 5,
+        "type": "Tech",
+        "year": 2012,
+        "name": "Pre-visualization Project 1st Year"
+    },
+    {
+        "id": 6,
+        "type": "Tech",
+        "year": 2012,
+        "name": "World Best Software Project 1st Year"
+    },
+    {
+        "id": 7,
+        "type": "Tech",
+        "year": 2013,
+        "name": "2D-3D Stereoscopic Conversion Project 3rd Year"
+    },
+    {
+        "id": 8,
+        "type": "Tech",
+        "year": 2013,
+        "name": "World Best Software Project 2nd Year"
+    },
+    {
+        "id": 9,
+        "type": "Tech",
+        "year": 2013,
+        "name": "ScreenX Project"
+    },
+    {
+        "id": 10,
+        "type": "Tech",
+        "year": 2013,
+        "name": "Pre-visualization Project 2nd Year"
+    },
+    {
+        "id": 11,
+        "type": "Tech",
+        "year": 2014,
+        "name": "Multi-View Project 1st Year"
+    },
+    {
+        "id": 12,
+        "type": "Tech",
+        "year": 2014,
+        "name": "Kolon Project 1st Year"
+    },
+    {
+        "id": 13,
+        "type": "Tech",
+        "year": 2014,
+        "name": "Pre-visualization Project 3rd Year"
+    },
+    {
+        "id": 14,
+        "type": "Tech",
+        "year": 2015,
+        "name": "Multi-View Project 2nd Year"
+    },
+    {
+        "id": 15,
+        "type": "Tech",
+        "year": 2015,
+        "name": "Kolon Project 2nd Year"
+    },
+    {
+        "id": 16,
+        "type": "Tech",
+        "year": 2015,
+        "name": "Curved Projection Project 1st Year"
+    },
+    {
+        "id": 17,
+        "type": "Tech",
+        "year": 2015,
+        "name": "Stylized Animation Production Pipeline Project based on Motion Capture System"
+    },
+    {
+        "id": 18,
+        "type": "Tech",
+        "year": 2016,
+        "name": "Multi-View Project 3rd Year",
+        "area": "Immersive media display system, Multi-projection contents optimization"
+    },
+    {
+        "id": 19,
+        "type": "Art",
+        "year": 2007,
+        "name": "Captain Banana"
+    },
+    {
+        "id": 20,
+        "type": "Art",
+        "year": 2009,
+        "name": "Taming the Cat"
+    },
+    {
+        "id": 21,
+        "type": "Art",
+        "year": 2010,
+        "name": "Baekjae"
+    },
+    {
+        "id": 22,
+        "type": "Art",
+        "year": 2010,
+        "name": "Cumiho"
+    },
+    {
+        "id": 23,
+        "type": "Art",
+        "year": 2010,
+        "name": "Persepolis"
+    },
+    {
+        "id": 24,
+        "type": "Art",
+        "year": 2010,
+        "name": "Captain Banana"
+    },
+    {
+        "id": 25,
+        "type": "Art",
+        "year": 2011,
+        "name": "Tarbosaurus"
+    },
+    {
+        "id": 26,
+        "type": "Art",
+        "year": 2011,
+        "name": "Sector 7"
     }
 ]

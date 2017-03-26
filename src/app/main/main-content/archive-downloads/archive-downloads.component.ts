@@ -1,7 +1,6 @@
-import { ActivatedRoute } from '@angular/router';
 import { DownloadService } from '../../../shared/downloads.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from "rxjs/Rx";
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-archive-downloads',
@@ -10,40 +9,19 @@ import { Subscription } from "rxjs/Rx";
 })
 export class ArchiveDownloadsComponent implements OnInit {
 
-  private subscription: Subscription;
 
   getDatas:any;
   datas:any;
-  aYearDatas:any;
   id: string;
 
-  constructor(private downloadService:DownloadService, private activatedRoute:ActivatedRoute) { 
+  constructor(private downloadService:DownloadService) { 
     this.getDatas= this.downloadService.getDownloads();
-    this.subscription = activatedRoute.params //
-      .subscribe(
-        (param:any) => {
-            // default year is 2017
-            ( param['id'] !== undefined ) ? this.id = param['id'] : this.id = "2017";
-            this.datas= groupBy(this.getDatas, 'year');
-            this.aYearDatas= this.datas[this.id];
-        }
-      )
+    this.datas = _.values(_.groupBy(this.getDatas,"year"))
+      .reverse();
   }
 
   ngOnInit() {
   }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
-
-}
-
-function groupBy(arr, property) {
-  return arr.reduce(function(memo, x) {
-    if (!memo[x[property]]) { memo[x[property]] = []; }
-    memo[x[property]].push(x);
-    return memo;
-  }, {});
 }
 
