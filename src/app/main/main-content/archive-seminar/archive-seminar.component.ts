@@ -1,27 +1,29 @@
-import { Router, ActivatedRoute } from '@angular/router';
-import { SeminarService } from '../../../shared/seminars.service';
-import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from "rxjs/Rx";
+import { SeminarService } from '../../../shared/seminars.service';
+import { Component, OnInit } from '@angular/core';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-archive-seminar',
   templateUrl: './archive-seminar.component.html',
   styleUrls: ['./archive-seminar.component.scss']
 })
-export class ArchiveSeminarComponent implements OnInit, DoCheck, OnDestroy {
+export class ArchiveSeminarComponent implements OnInit {
 
   private subscription: Subscription;
 
-  getSeminars:any = [];
-  seminars:any;
-  aYearSeminars:any;
+  getDatas:any;
+  datas:any;
   id: string;
 
-  constructor(private seminarService:SeminarService, public activatedRoute:ActivatedRoute) { 
+  constructor(private seminarService:SeminarService) { 
   }
 
   ngOnInit() {
-    this.getSeminars = this.seminarService.getSeminars();
+    this.getDatas = this.seminarService.getSeminars();
+    this.datas = _.values(_.groupBy(this.getDatas,function(item){ return item["date"].split('.')[0] }))
+      .reverse();
     
     //* use this later
     // this.seminarService.getSeminars()
@@ -30,32 +32,5 @@ export class ArchiveSeminarComponent implements OnInit, DoCheck, OnDestroy {
     //   });
     //* use this later
   }
-
-  ngDoCheck() {
-    this.subscription = this.activatedRoute.params // url로 주어지는 값
-      .subscribe(
-          (param: any) => {
-            // default year is 2017
-            ( param['id'] !== undefined ) ? this.id = param['id'] : this.id = "2017";
-            this.seminars = groupBy(this.getSeminars, 'year');
-            this.aYearSeminars = this.seminars[this.id];
-            console.log('check');
-            console.log(this.getSeminars);
-            console.log(this.aYearSeminars);
-          }
-      );
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
-
 }
 
-function groupBy(arr, property) {
-  return arr.reduce(function(memo, x) {
-    if (!memo[x[property]]) { memo[x[property]] = []; }
-    memo[x[property]].push(x);
-    return memo;
-  }, {});
-}
