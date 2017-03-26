@@ -1,3 +1,4 @@
+import { NumToMonthPipe } from './../shared/num-to-month.pipe';
 import { SearchService } from './../shared/search.service';
 import { PageScrollService } from 'ng2-page-scroll';
 import { PartnersService } from '../shared/partners.service';
@@ -68,7 +69,8 @@ import { MaterialModule } from '@angular/material';
     IssuesLifeComponent,
     ArchiveDownloadsComponent,
     ArchiveSeminarComponent,
-    KeysPipe
+    KeysPipe,
+    NumToMonthPipe
     ],
   imports: [
     CommonModule, 

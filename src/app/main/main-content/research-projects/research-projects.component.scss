@@ -60,6 +60,12 @@
 .project-funding {
     display: flex;
     flex-flow:column;
+    padding: 0;
+    padding-left: 1.5rem;
+    hr {
+        margin: 0;
+        margin-bottom: 12px;
+    }
 }
 
 hr {

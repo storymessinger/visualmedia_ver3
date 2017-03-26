@@ -1,5 +1,6 @@
 import { IssuesService } from '../../../shared/Issues.service';
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-issues-news',
@@ -8,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IssuesNewsComponent implements OnInit {
 
-  public news:any;
+  getDatas:any;
+  datas:any;
+  id: string;
 
   constructor(private issuesService:IssuesService) {
-    this.news = this.issuesService.getNews();
+    this.getDatas= this.issuesService.getNews();
+    this.datas = _.values(_.groupBy(this.getDatas,"year"))
+      .reverse();
+    console.log(this.datas);
    }
 
   ngOnInit() {

@@ -1,11 +1,12 @@
 import { Issues } from './mock/mock-issues';
 import { Injectable } from '@angular/core';
+import * as _ from 'underscore';
 
 
 @Injectable()
 export class IssuesService {
 
-  public groupedIssues = groupBy(Issues, 'type');
+  public groupedIssues = _.groupBy(Issues, 'type');
 
   constructor() { 
 
@@ -25,11 +26,4 @@ export class IssuesService {
   }
 }
 
-function groupBy(arr, property) {
-  return arr.reduce(function(memo, x) {
-    if (!memo[x[property]]) { memo[x[property]] = []; }
-    memo[x[property]].push(x);
-    return memo;
-  }, {});
-}
 
