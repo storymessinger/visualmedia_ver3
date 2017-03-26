@@ -68,25 +68,45 @@ import { NgModule } from '@angular/core';
                     component: ResearchProjectsIndividualComponent, 
                     data: { breadcrumb: "Projects (individual)" }
                 },
+                {   path: 'publication/:id', 
+                    component: ResearchPublicateIndividualComponent,
+                    data: { breadcrumb: "Publications (individual)" }
+                },
+                {   path: 'publicate/:id', 
+                    component: ResearchPublicateComponent, 
+                    data: { breadcrumb: "Publications (individual)" }
+                },
                 {   path: 'publicate', 
                     component: ResearchPublicateComponent, 
                     data: { breadcrumb: "Publications" }
+                },
+                {   path: 'publicate_kr/:id', 
+                    component: ResearchPublicateKrComponent, 
+                    data: { breadcrumb: "Domestic Publications" }
                 },
                 {   path: 'publicate_kr', 
                     component: ResearchPublicateKrComponent, 
                     data: { breadcrumb: "Domestic Publications" }
                 },
-                {   path: 'publicate/:id', 
-                    component: ResearchPublicateIndividualComponent, 
-                    data: { breadcrumb: "Publications (individual)" }
+                {   path: 'thesis/:id', 
+                    component: ResearchThesisComponent, 
+                    data: { breadcrumb: "Thesis" }
                 },
                 {   path: 'thesis', 
                     component: ResearchThesisComponent, 
                     data: { breadcrumb: "Thesis" }
                 },
+                {   path: 'news/:id', 
+                    component: IssuesNewsComponent,
+                    data: { breadcrumb: "Our News" }
+                },
                 {   path: 'news', 
                     component: IssuesNewsComponent,
                     data: { breadcrumb: "Our News" }
+                },
+                {   path: 'media/:id', 
+                    component: IssuesMediaComponent, 
+                    data: { breadcrumb: "In Media" }
                 },
                 {   path: 'media', 
                     component: IssuesMediaComponent, 

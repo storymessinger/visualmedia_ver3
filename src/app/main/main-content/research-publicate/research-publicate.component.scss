@@ -1,52 +1,58 @@
 @import '../../../../assets/css/_variables.scss';
 
-.year {
-    padding: 2rem 3rem 3rem;
+.content {
+    display:flex;
     flex-flow:column;
-    .year-title {
-        color: $primary_grey;
-        margin-bottom: 3rem;
+    // align-items: center;
+}
+
+.list {
+    max-width: 1200px;
+    .year {
+        padding: 0;
+        margin-bottom: 3.5rem;
     }
 }
-.publication-box {
+
+hr {
+    margin-bottom: 0;
+    width:100%;
+}
+
+.data-box {
     display:flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+    ////
+    width:100%;
 
-    .publication-img {
-        min-width: 240px;
+    .data-img {
         width: 240px;
-        height: 160px;
-        background-color: black;
-    }
-    .publication-desc {
-        margin: 0 2rem 0 2rem;
-        color: $primary_grey;
-        h5, h3 {
-            color: $primary_dark_grey;
-        }
-        .publication-text {
-            margin-bottom: 1rem;
-        }
-        .publication-desc-title {
-
+        min-width:240px;
+        min-height:180px;
+        img {
+            width: 100%;
         }
     }
 
+    .data-desc {
+        flex-grow:1;
+        margin: 0 1.5rem;
+    }
 }
 
 
 @media (max-width: 991px) {
-
-}
-@media (max-width: 575px) {
-    .publication-box {
+    .data-box {
         flex-flow:column;
-        .publication-desc {
+        .data-desc {
             margin: 2rem 0 2rem 0;
         }
     }
-    .publication-img {
+    .data-img {
         width:100% !important;
     }
 
+
+}
+@media (max-width: 575px) {
 }

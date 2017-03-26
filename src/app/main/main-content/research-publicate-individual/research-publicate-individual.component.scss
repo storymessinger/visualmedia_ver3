@@ -6,20 +6,19 @@
         margin-top: 3rem;
     }
 
-    .imgDiv {
-        margin-bottom: 6rem;
-        .max-img {
-            width: 100%;
-        }
-    }
     
     .desc {
-        margin: 1.5rem 0;
         .authors {
             margin-bottom: 1rem;
             h5 {
                 display: inline;
                 padding-right: 0.5rem;
+            }
+        }
+        .imgDiv {
+            margin-bottom: 6rem;
+            .max-img {
+                width: 100%;
             }
         }
     }

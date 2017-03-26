@@ -9,7 +9,7 @@ export class ScrollAbleService {
 
   constructor() { }
 
-  setScroll(name:string ) {
+  setScroll(name:string) {
 //   sendMessage(message: string) {
       this.subject.next(name);
   }

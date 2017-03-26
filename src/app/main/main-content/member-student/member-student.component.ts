@@ -24,22 +24,25 @@ export class MemberStudentComponent implements OnDestroy {
   constructor(
     private memberService:MemberService, 
     private scrollAbleService:ScrollAbleService,
-    private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any
+    private pageScrollService: PageScrollService, 
+    @Inject(DOCUMENT) private document: any
     ) { 
+      
     //* PageScroll Configuration
     PageScrollConfig.defaultScrollOffset = 110;
     PageScrollConfig.defaultDuration = 300;
     //*
+
     this.subscription = this.scrollAbleService.getScroll()
       .subscribe(name => { 
-        this.clickProfessor(name);
+        this.clickScrollTo(name);
       })
     //
     this.getDatas= this.memberService.getMembers();
     this.datas = groupBy(this.getDatas, 'type');
   }
   
-  clickProfessor(name) {
+  clickScrollTo(name) {
     let scrollTo = '#' + name;
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);

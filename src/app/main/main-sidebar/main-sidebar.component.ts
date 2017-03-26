@@ -93,7 +93,7 @@ export class MainSidebarComponent {
         },
         { 
           url: "publicate",
-          data: "Publicationss",
+          data: "Publications",
           innerLink: ["2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006"]
         },
         { 
@@ -172,6 +172,7 @@ export class MainSidebarComponent {
     } else {
       this.activeLink = null;
     }
+    console.log('main');
   }
   toggleSubMenu(data) {
     if (this.subActiveLink != data) {
@@ -181,11 +182,14 @@ export class MainSidebarComponent {
     }
     // if there is anything to scroll
     this.setScroll(data);
+
+    console.log('sub');
   }
 
-  clickSubSubMenu(data) {
+  clickSubSubMenu(event, data) {
     // if there is anything to scroll
     this.setScroll(data);
+    event.stopPropagation();
   }
 
 }
