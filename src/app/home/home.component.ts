@@ -1,6 +1,6 @@
 import { ResearchAreaService } from '../shared/researchArea.service';
 import { IssuesService } from '../shared/Issues.service';
-import { Component, OnInit, Inject, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Inject, ElementRef } from '@angular/core';
 
 // import { TweenLite } from 'gsap';
 // import { TimelineLite } from 'gsap';
@@ -19,7 +19,7 @@ import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
   
   public relPath:string = "../../assets/";
   public issuesByDate:any;
@@ -31,8 +31,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public logoIconPath:string = this.relPath + "imgs/logo-h100.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_orange_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_orange_36px.svg";
-
-  test = { a: 1 };
 
   constructor(
     private issuesService:IssuesService, 
@@ -53,15 +51,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.setScrollMagic();
-  }
-
-  setNavbarColor(offsetY) {
-  }
-
-  ngAfterViewInit() {
-    this.scrollSpyService.getObservable('window').subscribe((e: any) => {
-        this.setNavbarColor(e.path[1].pageYOffset);
-    });
   }
 
   setScrollMagic() {
