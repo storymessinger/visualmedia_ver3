@@ -43,38 +43,48 @@ export class MainSidebarComponent {
       secondLink: [
         { 
           url: "all",
-          data: "Professor",
-          innerLink: []
+          data: "Faculty",
+          scroll: "faculty",
         },
         { 
           url: "all",
-          data: "Doctor",
-          innerLink: []
+          data: "Post Doctors",
+          scroll: "post",
         },
         { 
           url: "all",
-          data: "Master",
-          innerLink: []
+          data: "Ph.D Students",
+          scroll: "phd",
         },
         { 
           url: "all",
-          data: "Researcher",
-          innerLink: []
+          data: "Master Students",
+          scroll: "master",
         },
         { 
           url: "all",
-          data: "Alumni(Docter)",
-          innerLink: []
+          data: "Researchers",
+          scroll: "researcher",
         },
         { 
           url: "all",
-          data: "Alumni(Master)",
-          innerLink: []
+          data: "Interns",
+          scroll: "intern",
         },
         { 
           url: "all",
-          data: "Former",
-          innerLink: []
+          data: "Ph.D Alumni",
+          scroll: "alumni_phd",
+        },
+        { 
+          url: "all",
+          data: "Master Alumni",
+          scroll: "alumni_master",
+        },
+        { 
+          url: "all",
+          data: "Former Members",
+          scroll: "former",
         },
       ]
     },

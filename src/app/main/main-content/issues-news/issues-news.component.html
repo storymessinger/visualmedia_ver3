@@ -18,8 +18,10 @@
         </div>
 
         <div class="data-img">
-          <img src="http://placehold.it/800x600">
-
+        <img src="http://placehold.it/800x600" 
+            [srcset]= 'imgPath + news.img + " 800w, " +
+                       imgPathSmall + news.img + " 300w "'
+             sizes="(min-width:990px) 300px, 800px">
         </div>
         <div class="data-desc">
           <h3 >{{news.title}}</h3>

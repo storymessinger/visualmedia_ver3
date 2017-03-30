@@ -69,3 +69,11 @@
         }
     }
 }
+@media (max-width: 576px) {
+    .people-img {
+        img {
+            width: 180px !important;
+        }
+    }
+}
+

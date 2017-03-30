@@ -22,6 +22,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public issuesByDate:any;
   public researchArea:any;
   public mainImgPath:string = this.relPath + "imgs/home_mainImg.jpg";
+  public researchAreaImgPath:string = this.relPath + "imgs/researchArea/small/";
+  public issuesImgPath:string = this.relPath + "imgs/Issues/";
+
   public logoIconPath:string = this.relPath + "imgs/logo-h100.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_orange_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_orange_36px.svg";
@@ -30,8 +33,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     private issuesService:IssuesService, 
     public researchAreaService:ResearchAreaService,
     private el:ElementRef,
-    private scrollSpyService: ScrollSpyService
-
+    private scrollSpyService: ScrollSpyService,
     ) { 
     this.issuesByDate = issuesService.getIssues()
       .sort(fieldSorter(['year','month','day']))
@@ -44,6 +46,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // testCont.addScene([
     //   this.scale_scene,
     // ]);
+
+
+    //  router.events.subscribe((event: RouterEvent) => {
+    //         this.navigationInterceptor(event);
+    //     });
 
   }
 

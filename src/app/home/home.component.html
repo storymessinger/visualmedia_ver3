@@ -64,7 +64,7 @@
         <div class="card-deck-wrapper col-sm-12">
           <div class="card-deck">
             <div *ngFor="let area of researchArea" class="card">
-              <img class="img-fluid card-img-top" [src]='area.img'>
+              <img class="img-fluid card-img-top" [src]='researchAreaImgPath + area.img'>
               <div class="card-block">
                 <h4 class="card-title">{{area.team}}</h4>
                 <p class="card-text">{{area.area}}</p>
@@ -83,7 +83,7 @@
 
           <div class="card-columns">
             <div *ngFor="let issue of issuesByDate" class="card issueCard">
-              <img class="card-img-top img-fluid" [src]='issue.img'>
+              <img class="news-img card-img-top img-fluid" [src]='issuesImgPath + issue.img'>
               <div class="card-block">
                 <h4 class="card-title">{{issue.title}}</h4>
                 <p class="card-text desc">{{issue.desc}}</p>

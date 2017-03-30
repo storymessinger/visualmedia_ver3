@@ -5,7 +5,7 @@
           <dt class="menu02" (click)="toggleMenu(link.firstLink[1])">{{link.firstLink[1]}}</dt>
           <div class="hideOverflow">
             <dd [ngClass]="{'open': activeLink == link.firstLink[1]}" >
-              <dl (click)="toggleSubMenu(subLink.data)" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
+              <dl (click)="toggleSubMenu(subLink.scroll)" routerLinkActive="active" *ngFor="let subLink of link.secondLink" >
                 <a [routerLink]="[subLink.url]" class="menu01 secondMenu" >{{subLink.data}}</a>
                 <div class="hideOverflow">
                     <dd [ngClass]="{'open': subActiveLink == subLink.data }" >
