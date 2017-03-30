@@ -36,8 +36,7 @@ import { ScrollSpyModule } from 'ng2-scrollspy';
   ],
   providers: [
     IssuesService, 
-    ResearchAreaService,
-    { provide: "windowObject", useValue: window}
+    ResearchAreaService
     ],
   bootstrap: [AppComponent]
 })

@@ -10,12 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemberStudentIndividualComponent implements OnInit {
 
-  private subscription: Subscription;
-  private id: number;
-  private memberItem: any;
-  private topicsArr: any[];
-  
-  public imgPath = "../../../../assets/imgs/people/";
+  subscription: Subscription;
+  id: number;
+  memberItem: any;
+  topicsArr: any[];
+  imgPath = "../../../../assets/imgs/people/";
 
   constructor(private memberService: MemberService, private activatedRoute:ActivatedRoute) { 
     this.subscription = activatedRoute.params //

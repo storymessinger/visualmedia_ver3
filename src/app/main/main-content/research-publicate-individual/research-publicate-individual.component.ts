@@ -10,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchPublicateIndividualComponent implements OnInit {
 
-  private subscription: Subscription;
-  private id: number;
-  private publicationItem: any;
+  subscription: Subscription;
+  id: number;
+  publicationItem: any;
 
   constructor(private publicationService: PublicationsService, private activatedRoute:ActivatedRoute) { 
     this.subscription = activatedRoute.params //
