@@ -1,24 +1,25 @@
 @import '../../../../assets/css/_variables.scss';
 
-div {
-    // border: 1px solid red;
-}
-.row {
-    justify-content: center;
-}
 
 p, td {
     color: rgba(0,0,0,0.54);
 }
 
+@media (min-width: 1250px) {
+    .row {
+        justify-content: center;
+    }
+}
+
 .person-img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    margin-right: 3.5rem;
+    margin-bottom: 3.5rem;
+    
     img {
         width: 100%;
-        margin-bottom: 3.5rem;
+        margin-bottom: 1.5rem;
     }
-    margin-right: 3.5rem;
 }
 
 .person-desc {
@@ -34,6 +35,7 @@ p, td {
     }
     table {
         max-width: 600px;
+        margin-bottom: 3.5rem;
 
         .table-year {
             width: 10rem;

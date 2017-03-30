@@ -2,14 +2,17 @@ import { ResearchAreaService } from '../shared/researchArea.service';
 import { IssuesService } from '../shared/Issues.service';
 import { Component, OnInit, Inject, ElementRef, AfterViewInit } from '@angular/core';
 
-import { TweenLite } from 'gsap';
-import { TimelineLite } from 'gsap';
-import { TweenMax } from 'gsap';
-import { Ease } from 'gsap';
+// import { TweenLite } from 'gsap';
+// import { TimelineLite } from 'gsap';
+// import { TweenMax } from 'gsap';
+// import { Ease } from 'gsap';
+// declare var Expo:any;
+// import * as ScrollMagic from 'ScrollMagic';
+
+declare var TweenLite, TweenMax, TimelineLite, TimelineMax, Ease, Expo, ScrollMagic :any;
 
 import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
 
-// import * as ScrollMagic from 'ScrollMagic';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +32,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   public menuIconPath:string = this.relPath + "imgs/ic_menu_orange_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_orange_36px.svg";
 
+  test = { a: 1 };
+
   constructor(
     private issuesService:IssuesService, 
     public researchAreaService:ResearchAreaService,
@@ -41,59 +46,57 @@ export class HomeComponent implements OnInit, AfterViewInit {
       .reverse();
 
     this.researchArea = researchAreaService.getResearchArea();
-
-    // let testCont = new ScrollMagic.Controller();
-    // testCont.addScene([
-    //   this.scale_scene,
-    // ]);
-
-
     //  router.events.subscribe((event: RouterEvent) => {
     //         this.navigationInterceptor(event);
     //     });
-
   }
 
-  // scale_tween = TweenLite.to('#scale-animation', 1, {
-  //   transform: 'scale(.75)'
-  //   // ease: Expo.easeOut
-  // });
-  // // Scale Scene
-  // scale_scene = new ScrollMagic.Scene({
-  //   triggerElement: '#scale-trigger'
-  // })
-  // .setTween(this.scale_tween);
-
   ngOnInit() {
+    this.setScrollMagic();
   }
 
   setNavbarColor(offsetY) {
-    const navbar =  (this.el.nativeElement.querySelector('#navbar'));
-    navbar.animation = new TimelineLite({paused:true})
-      .to(navbar, 0.3, {
-        //box-shadow
-        //border
-        top:0,
-        backgroundColor:'white',
-        opacity:1
-      })
-
-    let state = navbar.style['opacity'];
-    console.log('on');
-
-    if (offsetY > 600 && state == 0) {
-      console.log('on');
-      navbar.animation.play();
-    } else if (offsetY <= 600 && state == 1) {
-      console.log('off');
-      navbar.animation.reverse();
-    }
   }
 
   ngAfterViewInit() {
     this.scrollSpyService.getObservable('window').subscribe((e: any) => {
         this.setNavbarColor(e.path[1].pageYOffset);
     });
+  }
+
+  setScrollMagic() {
+    const controller = new ScrollMagic.Controller();
+
+    
+    const navigation_tween = new TimelineMax()
+      .to('#logo-animation',0.15, {filter: 'contrast(1) brightness(1)'})
+      .to('#nav-animation', 0.15, { backgroundColor:'white'})
+      .to('.nav-item a', 0.3, {color:'#262626'})
+
+    const title_tween = TweenLite.to('.title', 0.5, {
+      opacity: 0
+    })
+
+    const nav_scene = new ScrollMagic.Scene({
+      triggerElement: '#nav-trigger'
+    })
+      .setTween([navigation_tween, title_tween]);
+
+    const scale_tween = TweenLite.to('#scale-animation', 1, {
+      transform: 'scale(.1)',
+      ease: Expo.easeOut,
+      onComplete: console.log('hi')
+    });
+
+    const scale_scene = new ScrollMagic.Scene({
+      triggerElement: '#scale-trigger'
+    })
+      .setTween(scale_tween);
+
+    controller.addScene([
+      scale_scene,
+      nav_scene
+    ]);
   }
 
   clickMenuBtn(event) {

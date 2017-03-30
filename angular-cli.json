@@ -25,7 +25,13 @@
         "styles.scss"
       ],
       "scripts": [
-
+        "../node_modules/gsap/src/minified/TweenLite.min.js"
+        ,"../node_modules/gsap/src/minified/TimelineLite.min.js"
+        ,"../node_modules/gsap/src/minified/TweenMax.min.js"
+        ,"../node_modules/gsap/src/minified/TimelineMax.min.js"
+        ,"../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"
+        ,"../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"
+        ,"../node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

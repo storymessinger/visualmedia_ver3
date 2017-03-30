@@ -51,8 +51,15 @@
 
 
 .navbar {
-    opacity: 0;
-    top: -80px;
+    // opacity: 0;
+    // top: -80px;
+    background-color: rgba(255,255,255,0);
+
+    .navbar-brand {
+        img {
+            filter: contrast(0) brightness(100);
+        }
+    }
     
     // flexbox
     display: flex;
@@ -65,9 +72,6 @@
     padding-bottom: 0;
     padding-top: 0;
     height: $navbar_height;
-
-    background-color: rgba(255,255,255,0);
-    border-bottom: 1px solid #ccc;
 
     img {
         margin-right: 1rem;
@@ -85,7 +89,7 @@
     }
 
     .nav-link {
-        // color: $primary_dark_grey;
+        color: $primary_white;
         padding: 0 1.5rem;
     }
 }

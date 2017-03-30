@@ -182,18 +182,15 @@ export class MainSidebarComponent {
     } else {
       this.activeLink = null;
     }
-    console.log('main');
   }
-  toggleSubMenu(data) {
+  toggleSubMenu(data, scroll) {
     if (this.subActiveLink != data) {
       this.subActiveLink = data;
     } else {
       this.subActiveLink = null;
     }
     // if there is anything to scroll
-    this.setScroll(data);
-
-    console.log('sub');
+    this.setScroll(scroll);
   }
 
   clickSubSubMenu(event, data) {

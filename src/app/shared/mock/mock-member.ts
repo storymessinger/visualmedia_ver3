@@ -5,7 +5,7 @@ export const Members =
     {
         "id": 1,
         "type": "professor",
-        "name": "Junyoun Noh",
+        "name": "Junyoung Noh",
         "img": "junyongnoh.png",
         "topics": "Computer Graphics, Video Projection",
         "email": "junyongnoh@kaist.ac.kr"

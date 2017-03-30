@@ -62,7 +62,7 @@ body {
         // flex-flow:column;
     }
     .divider {
-        border-top: 1px solid $primary_light_grey;
+        border-top: 1px solid rgba(0,0,0,0.1);
         margin: 0 6rem;
         height:1px;
         width:100%;

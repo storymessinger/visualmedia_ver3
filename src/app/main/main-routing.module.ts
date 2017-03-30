@@ -28,9 +28,7 @@ import { NgModule } from '@angular/core';
         { 
             path: 'main',
             component: MainComponent,
-            data: {
-                breadcrumb: "Main"
-            },
+            data: {},
             children: [
                 {   path: 'info', 
                     component: AboutInfoComponent,
@@ -46,11 +44,13 @@ import { NgModule } from '@angular/core';
                 },
                 {   path: 'all', 
                     component: MemberStudentComponent,
-                    data: { breadcrumb: "Members" }
-                },
-                {   path: 'all/:id', 
-                    component: MemberStudentIndividualComponent,
-                    data: { breadcrumb: "Members (individual)" }
+                    data: { breadcrumb: "People" }, 
+                    children: [
+                        {   path: 'person/:id', 
+                            component: MemberStudentIndividualComponent,
+                            data: { breadcrumb: "Individual Page" }
+                        }
+                    ]
                 },
                 {   path: 'area', 
                     component: ResearchAreaComponent, 
@@ -58,7 +58,7 @@ import { NgModule } from '@angular/core';
                 },
                 {   path: 'area/:id', 
                     component: ResearchAreaIndividualComponent, 
-                    data: { breadcrumb: "Research Area (individual)" }
+                    data: { breadcrumb: "Teams" }
                 },
                 {   path: 'projects', 
                     component: ResearchProjectsComponent, 

@@ -1,9 +1,11 @@
 import { SearchService } from './../../shared/search.service';
-import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild} from '@angular/core';
+import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router'; 
 import "rxjs/add/operator/filter";
 
-import { TweenLite, TimelineLite, TweenMax, TimelineMax } from 'gsap';
+// import { TweenLite, TimelineLite, TweenMax, TimelineMax } from 'gsap';
+
+declare var TweenLite, TweenMax, TimelineLite, TimeliteMax, Ease, Expo, ScrollMagic :any;
 
 interface IBreadcrumb {
   label: string;
@@ -16,7 +18,7 @@ interface IBreadcrumb {
   templateUrl: './main-navbar.component.html',
   styleUrls: ['./main-navbar.component.scss']
 })
-export class MainNavbarComponent implements OnInit { 
+export class MainNavbarComponent implements OnInit, AfterViewInit { 
 
   //imgs
   public relPath:string = "../../../assets/";
@@ -43,7 +45,6 @@ export class MainNavbarComponent implements OnInit {
     private el:ElementRef,
     private searchService:SearchService ) {
       this.breadcrumbs = [];
-      console.log(searchService.getSearch('3d character animator'));
   }
 
   // loop() {
@@ -58,30 +59,8 @@ export class MainNavbarComponent implements OnInit {
   @Output() sidebarClick = new EventEmitter<string>();
 
   ngOnInit() {
-    const self = this;
-    const test3 = this.test2;
-    
-    this.test2 =  (this.el.nativeElement.querySelector('#tween'));
-    // const tweenTest = (this.el.nativeElement.querySelector('#tween'));
-    // TweenLite.to( tweenTest, 3, {backgroundColor:"#ff0000"});
 
-    const tl = new TimelineMax()
-      .from( this.test2, 1.5, {
-        backgroundColor: "#ffffff",
-        boxShadow: "0 1.5px 4px rgba(0,0,0,0.05)",
-        right: "100vw",
-        ease: "Expo.easeInOut"
-      })
-      .from (this.test2, 0.3, {
-        color: "rgba(255,255,255,0)"
-      })
-
-
-    TweenLite.ticker.addEventListener("tick",loop);
-    function loop() {
-      // console.log(self.test2);
-    }
-    
+    this.tweenNavbar();
 
     const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
     //subscribe to the NavigationEnd event
@@ -92,6 +71,22 @@ export class MainNavbarComponent implements OnInit {
     });
   }
 
+  ngAfterViewInit() {
+
+  }
+
+  tweenNavbar() {
+    const tl = new TimelineLite()
+      .from( '#navbar-animation', 1.5, {
+        backgroundColor: "#fafafa",
+        boxShadow: "0 1.5px 4px rgba(0,0,0,0.05)",
+        right: "100vw",
+        ease: "Expo.easeOut"
+      })
+      .from ('.breadcrumb', 0.3, {
+        opacity:0
+      })
+  }
   
   startSearch() { 
   }
