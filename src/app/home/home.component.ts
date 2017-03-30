@@ -5,9 +5,11 @@ import { Component, OnInit, Inject, ElementRef, AfterViewInit } from '@angular/c
 import { TweenLite } from 'gsap';
 import { TimelineLite } from 'gsap';
 import { TweenMax } from 'gsap';
+import { Ease } from 'gsap';
 
 import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
 
+// import * as ScrollMagic from 'ScrollMagic';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +40,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     this.researchArea = researchAreaService.getResearchArea();
 
+    // let testCont = new ScrollMagic.Controller();
+    // testCont.addScene([
+    //   this.scale_scene,
+    // ]);
+
   }
+
+  // scale_tween = TweenLite.to('#scale-animation', 1, {
+  //   transform: 'scale(.75)'
+  //   // ease: Expo.easeOut
+  // });
+  // // Scale Scene
+  // scale_scene = new ScrollMagic.Scene({
+  //   triggerElement: '#scale-trigger'
+  // })
+  // .setTween(this.scale_tween);
 
   ngOnInit() {
   }

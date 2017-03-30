@@ -42,11 +42,8 @@ export class MainNavbarComponent implements OnInit {
     private activatedRoute:ActivatedRoute, 
     private el:ElementRef,
     private searchService:SearchService ) {
-
-      console.log(searchService.startSearch('Bum'));
-      // this.breadcrumbs =  ['home', ...this.router.url.split('/').slice(2)]
-      // this.breadcrumbs = this.router.url.split('/');
       this.breadcrumbs = [];
+      console.log(searchService.getSearch('3d character animator'));
   }
 
   // loop() {
@@ -56,6 +53,9 @@ export class MainNavbarComponent implements OnInit {
   //   TweenLite.to(this.test, 2, {number:100} );
   //   TweenLite.ticker.addEventListener("tick",this.loop);
   // }
+
+  @Input() state;
+  @Output() sidebarClick = new EventEmitter<string>();
 
   ngOnInit() {
     const self = this;
@@ -92,10 +92,10 @@ export class MainNavbarComponent implements OnInit {
     });
   }
 
-
-  @Input() state;
-  @Output() sidebarClick = new EventEmitter<string>();
   
+  startSearch() { 
+  }
+
   onClicked() {
     this.state = !this.state;
     this.sidebarClick.emit(this.state);
@@ -103,7 +103,7 @@ export class MainNavbarComponent implements OnInit {
 
   ////
 
-  private getBreadcrumbs(route: ActivatedRoute, url: string="", breadcrumbs: IBreadcrumb[]=[]):IBreadcrumb[] {
+  getBreadcrumbs(route: ActivatedRoute, url: string="", breadcrumbs: IBreadcrumb[]=[]):IBreadcrumb[] {
 
     const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
 
@@ -145,7 +145,7 @@ export class MainNavbarComponent implements OnInit {
       return this.getBreadcrumbs(child, url, breadcrumbs);
     }
 
-  return breadcrumbs;
+    return breadcrumbs;
 
   }
 

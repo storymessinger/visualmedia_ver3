@@ -6,7 +6,7 @@ import { DownloadService } from './downloads.service';
 import { IssuesService } from './Issues.service';
 import { Injectable } from '@angular/core';
 
-// import { Fuse } from 'fuse.js';
+import * as Fuse from 'fuse.js'
 
 @Injectable()
 export class SearchService {
@@ -14,14 +14,15 @@ export class SearchService {
   public allInfo:any[];
   private options = {
       shouldSort: true,
-      threshold: 0.6,
+      threshold: 0.4,
       location: 0,
       distance: 100,
       maxPatternLength: 32,
-      minMatchCharLength: 1,
+      minMatchCharLength: 2,
       keys: [
         "title",
-        "name"
+        "name",
+        "desc"
     ]
   } 
 
@@ -35,14 +36,18 @@ export class SearchService {
       const d = downloads.getDownloads();
       const i = issues.getIssues();
       const m = members.getMembers();
+      const p_int = publications.getPublicationsInt();
+      const p_kr = publications.getPublicationsKr();
+      const p_thesis = publications.getThesis();
+      const s = seminars.getSeminars();
 
-      this.allInfo = [ ...d, ...i, ...m];
+      this.allInfo = [ ...d, ...i, ...m, ...p_int, ...p_kr, ...p_thesis, ...s ];
     }
 
-    startSearch(query) {
-      // var fuse = new Fuse(this.allInfo, this.options); // "list" is the item array
-      // var result = fuse.search(query);
-      // return result;
+    getSearch(query) {
+      var fuse = new Fuse(this.allInfo, this.options); // "list" is the item array
+      var result = fuse.search(query);
+      return result;
     }
 
 }
