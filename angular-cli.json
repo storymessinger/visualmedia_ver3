@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "./assets/css/normalize.scss",
-        "./../node_modules/bootstrap/scss/bootstrap.scss",
+        "./assets/bootstrap/scss/bootstrap.scss",
         "./assets/css/_base.scss",
         "./assets/css/material-custom-theme.scss",
         "styles.scss"

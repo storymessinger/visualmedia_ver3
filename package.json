@@ -36,7 +36,6 @@
     "angular2-image-gallery": "^0.5.9",
     "body-parser": "^1.17.1",
     "bookshelf": "^0.10.3",
-    "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "fuse.js": "^2.6.2",
