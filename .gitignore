@@ -7,7 +7,7 @@
 
 # dependencies
 /node_modules
-!/node_modules/bootstrap/*
+!/node_modules/bootstrap/scss/_custom.scss
 
 # IDEs and editors
 /.idea
