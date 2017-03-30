@@ -2,6 +2,41 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
+
+* * *
+* * *
+* * *
+
+
+# Quick Guide for Deployment
+
+- clone the repository by using the command
+
+``` git clone https://github.com/storymessinger/visualmedia_ver3.git ```
+
+
+- You need 'npm' to be installed globally before installing other dependencies.  [Follow the link](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm)
+
+- Within the folder, install the dependencies
+
+``` npm install ```
+
+- build the deployment version with the following command 
+
+``` ng build ```
+
+- deploy using node.js
+
+``` node server.js ```
+
+
+* * *
+* * *
+* * *
+
+
+
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
