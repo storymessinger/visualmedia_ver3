@@ -43,11 +43,14 @@
 }
 
 .project-img {
-    max-height: 500px;
-    padding:0;
+    // max-height: 500px;
+    width: 300px;
+    max-width: 300px;
+    padding: 0;
     position: relative;
     overflow: hidden;
     img {
+        width:100%;
         position: absolute;
         margin: auto;
         top: 0;
@@ -59,9 +62,8 @@
 
 .project-funding {
     display: flex;
+    padding-left:1.5rem;
     flex-flow:column;
-    padding: 0;
-    padding-left: 1.5rem;
     hr {
         margin: 0;
         margin-bottom: 12px;
@@ -73,8 +75,17 @@ hr {
     width:100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+    .project-img {
+        width: 100%;
+        order: 3;
+        min-height:300px;
+        max-width:none;
+    }
 }
-
-@media (max-width: 769px) {
+@media (max-width: 991px) {
+    .project-funding {
+        padding-left:0rem;
+        margin-bottom: 1.5rem;
+    }
 }

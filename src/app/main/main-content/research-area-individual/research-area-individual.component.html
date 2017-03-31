@@ -29,8 +29,10 @@
         </h2>
         <div *ngFor="let person of people" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
-            <button md-fab routerLink="#">More</button>
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab routerLink="."><md-icon>add</md-icon></a>
+            </div>
           </div>
 
           <div class="people-text">

@@ -20,6 +20,9 @@ export class IssuesMediaComponent implements OnInit, OnDestroy {
   aYearDatas:any;
   id: string;
 
+  imgPathSmall:string = '../../../../assets/Contents/Issues/smallimg/';
+  imgPath:string = '../../../../assets/Contents/Issues/img/';
+
   private subscription: Subscription;
 
   constructor(

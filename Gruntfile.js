@@ -21,29 +21,32 @@ module.exports = function(grunt) {
                     rename: false,
                     sizes: [
                         {
-                            name: "small",
                             width: 300
                         }
                     ]
                 },
                 files: [
+                    // Partners, Downloads, Project, Publication 제외
                     {
+                        // Issues
                         expand:true,
                         src: ['*.{jpg,gif,png}'],
-                        cwd: 'src/assets/imgs/people/', 
-                        dest: 'src/assets/imgs/people/small/'
+                        cwd: 'src/assets/Contents/Issues/img/', 
+                        dest: 'src/assets/Contents/Issues/smallimg/'
                     },
                     {
+                        // Lifes
                         expand:true,
                         src: ['*.{jpg,gif,png}'],
-                        cwd: 'src/assets/imgs/researchArea/', 
-                        dest: 'src/assets/imgs/researchArea/small/'
+                        cwd: 'src/assets/Contents/Lifes/img/', 
+                        dest: 'src/assets/Contents/Lifes/smallimg/'
                     },
                     {
+                        // People
                         expand:true,
                         src: ['*.{jpg,gif,png}'],
-                        cwd: 'src/assets/imgs/Issues/', 
-                        dest: 'src/assets/imgs/Issues/small/'
+                        cwd: 'src/assets/Contents/People/img/', 
+                        dest: 'src/assets/Contents/People/smallimg/'
                     },
                 ]
             }

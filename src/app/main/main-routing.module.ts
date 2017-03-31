@@ -45,6 +45,10 @@ import { NgModule } from '@angular/core';
                 {   path: 'all', 
                     component: MemberStudentComponent,
                     data: { breadcrumb: "People" }, 
+                    pathMatch: 'full'
+                },
+                {   path: 'all', 
+                    data: { breadcrumb: "People" }, 
                     children: [
                         {   path: 'person/:id', 
                             component: MemberStudentIndividualComponent,

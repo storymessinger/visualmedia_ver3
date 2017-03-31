@@ -2,7 +2,11 @@
 
 # image files
 /src/assets/imgs/
+/src/assets/Contents/
 !/src/assets/imgs/people/
+
+# Publication files
+/src/assets/Publications
 
 # compiled output
 /dist

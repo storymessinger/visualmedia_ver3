@@ -67,36 +67,41 @@
         margin-bottom: 3.5rem;
         padding: 0 1.5rem;
 
-        .people-img img:hover {
-            -webkit-filter: grayscale(100%) contrast(80%);
-        }
         .people-img {
             display: flex;
             align-items: center;
             img {
                 border-radius: 50%;
                 margin: 0 auto;
-                margin-bottom: 1.5rem;
                 width: 240px;
             }
         }
-        .people-img:hover button {
-            display: block;
-        } 
-        .people-img button {
+
+        .people-img-box:hover {
+            img {
+                filter: grayscale(100%) contrast(80%);
+            }
+            a {
+                display: block;
+            }
+        }
+        .people-img-box a {
             background-color: $primary_light_grey;
             color: $primary_dark_grey;
-            font-weight: 400;
-            opacity:0.85;
 
             position: absolute;
             display:none;
-            left:140px;
-            top:85px;
-            width: 63px;
-            height: 63px;
+            left:120px; 
+            top:90px; 
+
+            box-shadow: 0 0 0 rgba(0,0,0,0);
         }
 
+        .people-img-box a:hover {
+            box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 
+                        0 6px 10px 0 rgba(0,0,0,.14), 
+                        0 1px 18px 0 rgba(0,0,0,.12);
+        }
 
         .people-text {
             display: flex;

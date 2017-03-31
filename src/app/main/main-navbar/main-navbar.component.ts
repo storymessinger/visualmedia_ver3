@@ -3,7 +3,7 @@ import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild, 
 import { Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router'; 
 import "rxjs/add/operator/filter";
 
-declare var TweenLite, TweenMax, TimelineLite, TimeliteMax, Ease, Expo, ScrollMagic :any;
+declare var TweenLite, TweenMax, TimelineLite, TimeliteMax, Ease, Power3, ScrollMagic :any;
 
 interface IBreadcrumb {
   label: string;
@@ -20,22 +20,13 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
 
   //imgs
   public relPath:string = "../../../assets/";
-  public logoIconPath:string = this.relPath + "imgs/logo-h100.svg";
+  public logoIconPath:string = this.relPath + "imgs/logo-white.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_white_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_white_36px.svg";
-
-  //Tweenlite test
-  public test = {
-    number : 1
-  };
-  test2 :any;
-
 
   //
   breadcrumbs:IBreadcrumb[];
   myChildren:any;
-
-  @ViewChild('someVar') testEl:ElementRef;
 
   constructor( 
     private router:Router, 
@@ -44,14 +35,6 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
     private searchService:SearchService ) {
       this.breadcrumbs = [];
   }
-
-  // loop() {
-  //   console.log(this.test2);
-  // }
-  // init() {
-  //   TweenLite.to(this.test, 2, {number:100} );
-  //   TweenLite.ticker.addEventListener("tick",this.loop);
-  // }
 
   @Input() state;
   @Output() sidebarClick = new EventEmitter<string>();
@@ -79,7 +62,7 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
         backgroundColor: "#fafafa",
         boxShadow: "0 1.5px 4px rgba(0,0,0,0.05)",
         right: "100vw",
-        ease: "Expo.easeOut"
+        ease: Power3.easeOut
       })
       .from ('.breadcrumb', 0.3, {
         opacity:0

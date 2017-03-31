@@ -12,8 +12,7 @@ import { PageScrollConfig, PageScrollInstance, PageScrollService } from 'ng2-pag
 })
 export class MemberStudentComponent implements OnDestroy {
 
-  // private imgPath = "../../../../assets/imgs/people/";
-  public imgPath = "../../../../assets/imgs/people/";
+  imgPath:string = '../../../../assets/Contents/People/smallimg/';
 
   public getDatas:any[];
   public datas:any;

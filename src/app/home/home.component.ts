@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   public researchAreaImgPath:string = this.relPath + "imgs/researchArea/small/";
   public issuesImgPath:string = this.relPath + "imgs/Issues/";
 
-  public logoIconPath:string = this.relPath + "imgs/logo-h100.svg";
+  public logoIconPath:string = this.relPath + "imgs/logo.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_orange_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_orange_36px.svg";
 

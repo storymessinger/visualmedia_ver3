@@ -1,3 +1,4 @@
+import { MemberService } from './../../../shared/member.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollService, PageScrollConfig, PageScrollInstance } from 'ng2-page-scroll';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
@@ -19,10 +20,16 @@ export class ResearchPublicateComponent implements OnInit, OnDestroy {
   id: string;
   subscription: Subscription;
 
+  authors:string;
+
+  imgPath:string = '../../../../assets/Contents/';
+
+
   constructor(
     private publicationsService:PublicationsService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
+    private memberService: MemberService,
     @Inject(DOCUMENT) private document: any
     ) {
     PageScrollConfig.defaultScrollOffset = 110;
@@ -39,6 +46,14 @@ export class ResearchPublicateComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
   }
+
+  // getAuthorName(str) {
+  //   const authorNumberArr = str.split('+');
+  //   const authorArr = authorNumberArr.map ( num => {
+  //     return this.memberService.getMembers(parseInt(num));
+  //   })
+  //   this.authors = authorArr.join(', ');
+  // }
 
   clickScrollTo(name) {
     let scrollTo = '#' + name;

@@ -16,7 +16,7 @@
           <div class="people-img">
             <div class="people-img-box">
               <img [src]=" imgPath + person.img">
-              <a md-fab routerLink="."><md-icon>add</md-icon></a>
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
             </div>
           </div>
 
@@ -46,7 +46,7 @@
           <div class="people-img">
             <div class="people-img-box">
               <img [src]=" imgPath + person.img">
-              <a md-fab routerLink="."><md-icon>add</md-icon></a>
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
             </div>
           </div>
           <div class="people-text">
@@ -74,7 +74,7 @@
           <div class="people-img">
             <div class="people-img-box">
               <img [src]=" imgPath + person.img">
-              <a md-fab [routerLink]="[ '/main/all/', person.id ]" ><md-icon>add</md-icon></a>
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
             </div>
           </div>
           <div class="people-text">
@@ -99,7 +99,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.master" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>
@@ -123,7 +126,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.researcher" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>
@@ -146,7 +152,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.intern" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>
@@ -169,7 +178,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.alumni_phd" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>
@@ -192,7 +204,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.alumni_master" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>
@@ -215,7 +230,10 @@
         <!-- card container-->
         <div *ngFor="let person of datas.former" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
-            <img [src]=" imgPath + person.img">
+            <div class="people-img-box">
+              <img [src]=" imgPath + person.img">
+              <a md-fab [routerLink]="[ '/main/all/person/', person.id ]" ><md-icon>add</md-icon></a>
+            </div>
           </div>
           <div class="people-text">
             <h3 class="name">{{person.name}}</h3>

@@ -14,6 +14,8 @@ export class ArchiveDownloadsComponent implements OnInit {
   datas:any;
   id: string;
 
+  imgPath:string = '../../../../assets/Contents/';
+
   constructor(private downloadService:DownloadService) { 
     this.getDatas= this.downloadService.getDownloads();
     this.datas = _.values(_.groupBy(this.getDatas,"year"))

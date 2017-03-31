@@ -18,6 +18,9 @@ export class ResearchPublicateKrComponent implements OnInit, OnDestroy {
   id: string;
   subscription: Subscription;
 
+  imgPath:string = '../../../../assets/Contents/';
+
+
   constructor(
     private publicationsService:PublicationsService,
     private scrollAbleService:ScrollAbleService,

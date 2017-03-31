@@ -18,6 +18,8 @@ export class ResearchThesisComponent implements OnInit {
   id: string;
   subscription: Subscription;
 
+  imgPath:string = '../../../../assets/Contents/';
+
   constructor(
     private publicationsService:PublicationsService,
     private scrollAbleService:ScrollAbleService,

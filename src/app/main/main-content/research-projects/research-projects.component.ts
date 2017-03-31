@@ -15,6 +15,8 @@ export class ResearchProjectsComponent implements OnInit {
   datas:any;
   id: string;
 
+  // imgPath:string = '../../../../assets/Contents/';
+
   page:number = 1;
 
   constructor(private projectsService:ProjectsService) {

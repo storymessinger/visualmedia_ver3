@@ -1052,7 +1052,7 @@ export const Publications =
         "authors": 15,
         "thesisinfo": "KAIST Master's thesis, June 2015.",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2015SeunghwaJeong/small.png"
+        "smallimg": "Publications/Thesis/2015SeunghwaJeong/small.png"
     },
     {
         "id": 90,
@@ -1061,9 +1061,9 @@ export const Publications =
         "title": "Auto-Calibration of Multi-Projector Displays with a Single Hand-Held Camera ",
         "authors": 14,
         "thesisinfo": "KAIST Master's thesis, January 2015.",
-        "paper": "Publication/Thesis/2015SanghunPark/2015SanghunPark.pdf",
+        "paper": "Publications/Thesis/2015SanghunPark/2015SanghunPark.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2015SanghunPark/small.png"
+        "smallimg": "Publications/Thesis/2015SanghunPark/small.png"
     },
     {
         "id": 91,
@@ -1073,7 +1073,7 @@ export const Publications =
         "authors": 13,
         "thesisinfo": "KAIST Master's thesis, January 2015.",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2015JaedongKim/small.png"
+        "smallimg": "Publications/Thesis/2015JaedongKim/small.png"
     },
     {
         "id": 92,
@@ -1082,9 +1082,9 @@ export const Publications =
         "title": "Interactive Rigging: Editing bone as a weighting tool ",
         "authors": 33,
         "thesisinfo": "KAIST Master's thesis, June 2014.",
-        "paper": "Publication/Thesis/2014SeungbaeBang/2014SeungbaeBang.pdf",
+        "paper": "Publications/Thesis/2014SeungbaeBang/2014SeungbaeBang.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2014SeungbaeBang/small.jpg"
+        "smallimg": "Publications/Thesis/2014SeungbaeBang/small.jpg"
     },
     {
         "id": 93,
@@ -1094,7 +1094,7 @@ export const Publications =
         "authors": 12,
         "thesisinfo": "KAIST Master's thesis, June 2014.",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2014BumkiKim/small.png"
+        "smallimg": "Publications/Thesis/2014BumkiKim/small.png"
     },
     {
         "id": 94,
@@ -1103,9 +1103,9 @@ export const Publications =
         "title": "A Single Image Representation Model for Efficient Multi-View Stereoscopic Content Creation ",
         "authors": 25,
         "thesisinfo": "KAIST Ph.D's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014YounghuiKim/2014YounghuiKim.pdf",
+        "paper": "Publications/Thesis/2014YounghuiKim/2014YounghuiKim.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2014YounghuiKim/small.png"
+        "smallimg": "Publications/Thesis/2014YounghuiKim/small.png"
     },
     {
         "id": 95,
@@ -1114,9 +1114,9 @@ export const Publications =
         "title": "Creation of stereoscopic movies’ previews:focus on the S3D effect with human factors ",
         "authors": 35,
         "thesisinfo": "KAIST Master's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014JaehwanKwon/2014JaehwanKwon.pdf",
+        "paper": "Publications/Thesis/2014JaehwanKwon/2014JaehwanKwon.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2014JaehwanKwon/small.png"
+        "smallimg": "Publications/Thesis/2014JaehwanKwon/small.png"
     },
     {
         "id": 96,
@@ -1125,9 +1125,9 @@ export const Publications =
         "title": "Data-Driven Image Expansion Using Structure Aware Image Warping ",
         "authors": 36,
         "thesisinfo": "KAIST Master's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014JihwanKim/2014JihwanKim.pdf",
+        "paper": "Publications/Thesis/2014JihwanKim/2014JihwanKim.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2014JihwanKim/small.jpg"
+        "smallimg": "Publications/Thesis/2014JihwanKim/small.jpg"
     },
     {
         "id": 97,
@@ -1136,9 +1136,9 @@ export const Publications =
         "title": "Data-Driven Motion Capture Using a Single Smartphone ",
         "authors": 11,
         "thesisinfo": "KAIST Master's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014HaegwangEom/2014HaegwangEom.pdf",
+        "paper": "Publications/Thesis/2014HaegwangEom/2014HaegwangEom.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2014HaegwangEom/small.jpg"
+        "smallimg": "Publications/Thesis/2014HaegwangEom/small.jpg"
     },
     {
         "id": 98,
@@ -1147,9 +1147,9 @@ export const Publications =
         "title": "Muscle-driven Motion Path Planning Using Reinforcement Learning ",
         "authors": 10,
         "thesisinfo": "KAIST Master's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014SeokpyoHong/2014SeokpyoHong.pdf",
+        "paper": "Publications/Thesis/2014SeokpyoHong/2014SeokpyoHong.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2014SeokpyoHong/small.jpg"
+        "smallimg": "Publications/Thesis/2014SeokpyoHong/small.jpg"
     },
     {
         "id": 99,
@@ -1158,9 +1158,9 @@ export const Publications =
         "title": "The Creation of Realistic Paint Simulation Reﬂecting the Real Painting Characteristics",
         "authors": 26,
         "thesisinfo": "KAIST Ph.D's thesis, January 2014.",
-        "paper": "Publication/Thesis/2014Youmi/2014Youmi.pdf",
+        "paper": "Publications/Thesis/2014Youmi/2014Youmi.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2014Youmi/small.png"
+        "smallimg": "Publications/Thesis/2014Youmi/small.png"
     },
     {
         "id": 100,
@@ -1169,9 +1169,9 @@ export const Publications =
         "title": "\tVideoVoyage: An E\u000ecient Multi-scale Navigable Codec for Video Viewing",
         "authors": 37,
         "thesisinfo": "KAIST Master's thesis, June 2013.",
-        "paper": "Publication/Thesis/2013Kyunghanlee/2013Kyunghanlee.pdf",
+        "paper": "Publications/Thesis/2013Kyunghanlee/2013Kyunghanlee.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2013Kyunghanlee/small.png"
+        "smallimg": "Publications/Thesis/2013Kyunghanlee/small.png"
     },
     {
         "id": 101,
@@ -1180,9 +1180,9 @@ export const Publications =
         "title": "\tVideo Enhancement in Low-Light Condition via Interval Flash",
         "authors": 38,
         "thesisinfo": "KAIST Master's thesis, January 2013.",
-        "paper": "Publication/Thesis/2013Junyouphwang/2013Junyouphwang.pdf",
+        "paper": "Publications/Thesis/2013Junyouphwang/2013Junyouphwang.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2013Junyouphwang/small.png"
+        "smallimg": "Publications/Thesis/2013Junyouphwang/small.png"
     },
     {
         "id": 102,
@@ -1191,9 +1191,9 @@ export const Publications =
         "title": "\tParticle Based Snow Simulation Using Dendritic Structure",
         "authors": 9,
         "thesisinfo": "KAIST Master's thesis, January 2013.",
-        "paper": "Publication/Thesis/2013Hyunggoogseo/2013Hyunggoogseo.pdf",
+        "paper": "Publications/Thesis/2013Hyunggoogseo/2013Hyunggoogseo.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2013Hyunggoogseo/small.png"
+        "smallimg": "Publications/Thesis/2013Hyunggoogseo/small.png"
     },
     {
         "id": 103,
@@ -1202,9 +1202,9 @@ export const Publications =
         "title": "\tMotion Editing Using Three-Dimensional As-Rigid-As-Possible (ARAP) Curve Editing",
         "authors": 39,
         "thesisinfo": "KAIST Master's thesis, January 2013.",
-        "paper": "Publication/Thesis/2013SoyeongJeon/2013SoyeongJeon.pdf",
+        "paper": "Publications/Thesis/2013SoyeongJeon/2013SoyeongJeon.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2013SoyeongJeon/small.png"
+        "smallimg": "Publications/Thesis/2013SoyeongJeon/small.png"
     },
     {
         "id": 104,
@@ -1213,9 +1213,9 @@ export const Publications =
         "title": "High Quality Depth Maps Generation of Humans in Monocular Videos",
         "authors": 42,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Jongjin/2012Jongjin.pdf",
+        "paper": "Publications/Thesis/2012Jongjin/2012Jongjin.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Jongjin/small.jpg"
+        "smallimg": "Publications/Thesis/2012Jongjin/small.jpg"
     },
     {
         "id": 105,
@@ -1224,9 +1224,9 @@ export const Publications =
         "title": "An Example Based Dynamic Disparity Determination from a Scene Context",
         "authors": 40,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Hyungjin/2012Hyungjin.pdf",
+        "paper": "Publications/Thesis/2012Hyungjin/2012Hyungjin.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Hyungjin/small.jpg"
+        "smallimg": "Publications/Thesis/2012Hyungjin/small.jpg"
     },
     {
         "id": 106,
@@ -1235,9 +1235,9 @@ export const Publications =
         "title": "Depth Map Generation for Building Images",
         "authors": 8,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Kyehyun/2012Kyehyun.pdf",
+        "paper": "Publications/Thesis/2012Kyehyun/2012Kyehyun.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Kyehyun/small.jpg"
+        "smallimg": "Publications/Thesis/2012Kyehyun/small.jpg"
     },
     {
         "id": 107,
@@ -1246,9 +1246,9 @@ export const Publications =
         "title": "Depth Manipulation using Disparity Histogram Analysis for Stereoscopic 3D",
         "authors": 7,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Sangwoo/2012Sangwoo.pdf",
+        "paper": "Publications/Thesis/2012Sangwoo/2012Sangwoo.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Sangwoo/small.jpg"
+        "smallimg": "Publications/Thesis/2012Sangwoo/small.jpg"
     },
     {
         "id": 108,
@@ -1257,9 +1257,9 @@ export const Publications =
         "title": "\tAn Efficient Diffusion Model for Viscous Fingering",
         "authors": 6,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Seunghoon/2012Seunghoon.pdf",
+        "paper": "Publications/Thesis/2012Seunghoon/2012Seunghoon.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2012Seunghoon/small.jpg"
+        "smallimg": "Publications/Thesis/2012Seunghoon/small.jpg"
     },
     {
         "id": 109,
@@ -1268,9 +1268,9 @@ export const Publications =
         "title": "A Procedural Flow Generation Method using Coordinate Transformation",
         "authors": 41,
         "thesisinfo": "KAIST Master's thesis, June 2012.",
-        "paper": "Publication/Thesis/2012Jihyung/2012Jihyung.pdf",
+        "paper": "Publications/Thesis/2012Jihyung/2012Jihyung.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2012Jihyung/small.jpg"
+        "smallimg": "Publications/Thesis/2012Jihyung/small.jpg"
     },
     {
         "id": 110,
@@ -1279,9 +1279,9 @@ export const Publications =
         "title": "Template-Driven Depth Estimation for Stereo Conversion",
         "authors": 5,
         "thesisinfo": "KAIST Master's thesis, January 2012.",
-        "paper": "Publication/Thesis/2012Jungjin/2012Jungjin.pdf",
+        "paper": "Publications/Thesis/2012Jungjin/2012Jungjin.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Jungjin/small.jpg"
+        "smallimg": "Publications/Thesis/2012Jungjin/small.jpg"
     },
     {
         "id": 111,
@@ -1290,9 +1290,9 @@ export const Publications =
         "title": "Video Panorama for 2D to 3D Conversion",
         "authors": 43,
         "thesisinfo": "KAIST Master's thesis, January 2012.",
-        "paper": "Publication/Thesis/2012Seongwoo/2012Seongwoo.pdf",
+        "paper": "Publications/Thesis/2012Seongwoo/2012Seongwoo.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2012Seongwoo/small.jpg"
+        "smallimg": "Publications/Thesis/2012Seongwoo/small.jpg"
     },
     {
         "id": 112,
@@ -1301,9 +1301,9 @@ export const Publications =
         "title": "An Approach to the Efficient Creation of Creature Animation",
         "authors": 30,
         "thesisinfo": "KAIST Ph.D's thesis, January 2012.",
-        "paper": "Publication/Thesis/2012Jaewoo/2012Jaewoo.pdf",
+        "paper": "Publications/Thesis/2012Jaewoo/2012Jaewoo.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2012Jaewoo/small.jpg"
+        "smallimg": "Publications/Thesis/2012Jaewoo/small.jpg"
     },
     {
         "id": 113,
@@ -1312,9 +1312,9 @@ export const Publications =
         "title": "Artist Friendly Retargeting and Editing in Producing High Quality Facial Animation",
         "authors": 29,
         "thesisinfo": "KAIST Ph.D's thesis, January 2012.",
-        "paper": "Publication/Thesis/2012Yeongho/2012Yeongho.pdf",
+        "paper": "Publications/Thesis/2012Yeongho/2012Yeongho.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2012Yeongho/small.jpg"
+        "smallimg": "Publications/Thesis/2012Yeongho/small.jpg"
     },
     {
         "id": 114,
@@ -1323,9 +1323,9 @@ export const Publications =
         "title": "Facial Retargeting by Adding Supplemental Blendshapes",
         "authors": 44,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Paul/2011Paul.pdf",
+        "paper": "Publications/Thesis/2011Paul/2011Paul.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2011Paul/small.jpg"
+        "smallimg": "Publications/Thesis/2011Paul/small.jpg"
     },
     {
         "id": 115,
@@ -1334,9 +1334,9 @@ export const Publications =
         "title": "Stereoscopic Image Generation of Background Terrain Scenes",
         "authors": 48,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Huicheol/2011Huicheol.pdf",
+        "paper": "Publications/Thesis/2011Huicheol/2011Huicheol.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2011Huicheol/small.jpg"
+        "smallimg": "Publications/Thesis/2011Huicheol/small.jpg"
     },
     {
         "id": 116,
@@ -1345,9 +1345,9 @@ export const Publications =
         "title": "Multilinear Fluid Simulation with Model Reduction for Pressure Projection",
         "authors": 47,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Jinhyuk/2011Jinhyuk.pdf",
+        "paper": "Publications/Thesis/2011Jinhyuk/2011Jinhyuk.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2011Jinhyuk/small.jpg"
+        "smallimg": "Publications/Thesis/2011Jinhyuk/small.jpg"
     },
     {
         "id": 117,
@@ -1356,9 +1356,9 @@ export const Publications =
         "title": "\tCharacteristic Facial Retargeting",
         "authors": 4,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Jaewon/2011Jaewon.pdf",
+        "paper": "Publications/Thesis/2011Jaewon/2011Jaewon.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2011Jaewon/small.jpg"
+        "smallimg": "Publications/Thesis/2011Jaewon/small.jpg"
     },
     {
         "id": 118,
@@ -1367,9 +1367,9 @@ export const Publications =
         "title": "Disparity Graph Editing for Stereoscopic Contents Creation",
         "authors": 45,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Soyoung/2011Soyoung.pdf",
+        "paper": "Publications/Thesis/2011Soyoung/2011Soyoung.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2011Soyoung/small.jpg"
+        "smallimg": "Publications/Thesis/2011Soyoung/small.jpg"
     },
     {
         "id": 119,
@@ -1378,9 +1378,9 @@ export const Publications =
         "title": "Position based Foam Simulation",
         "authors": 46,
         "thesisinfo": "KAIST Master's thesis, June 2011.",
-        "paper": "Publication/Thesis/2011Heeyoung/2011Heeyoung.pdf",
+        "paper": "Publications/Thesis/2011Heeyoung/2011Heeyoung.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2011Heeyoung/small.jpg"
+        "smallimg": "Publications/Thesis/2011Heeyoung/small.jpg"
     },
     {
         "id": 120,
@@ -1389,9 +1389,9 @@ export const Publications =
         "title": "Multi-object Video Matting Using 2D Scatter Plot Paradigm",
         "authors": 50,
         "thesisinfo": "KAIST Master's thesis, January 2010.",
-        "paper": "Publication/Thesis/2010Dongock/2010Dongock.pdf",
+        "paper": "Publications/Thesis/2010Dongock/2010Dongock.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2010Dongock/small.jpg"
+        "smallimg": "Publications/Thesis/2010Dongock/small.jpg"
     },
     {
         "id": 121,
@@ -1400,9 +1400,9 @@ export const Publications =
         "title": "Fast Fluid Simulation with Tensor-Based Model Reduction",
         "authors": 49,
         "thesisinfo": "KAIST Master's thesis, January 2010.",
-        "paper": "Publication/Thesis/2010Sehwi/2010Sehwi.pdf",
+        "paper": "Publications/Thesis/2010Sehwi/2010Sehwi.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2010Sehwi/small.jpg"
+        "smallimg": "Publications/Thesis/2010Sehwi/small.jpg"
     },
     {
         "id": 122,
@@ -1411,9 +1411,9 @@ export const Publications =
         "title": "Dynamically Evolving Fluid Simulation",
         "authors": 3,
         "thesisinfo": "KAIST Master's thesis, January 2010.",
-        "paper": "Publication/Thesis/2010Daehyeon/2010Daehyeon.pdf",
+        "paper": "Publications/Thesis/2010Daehyeon/2010Daehyeon.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2010Daehyeon/small.jpg"
+        "smallimg": "Publications/Thesis/2010Daehyeon/small.jpg"
     },
     {
         "id": 123,
@@ -1422,9 +1422,9 @@ export const Publications =
         "title": "LightShop: An Interactive Lighting System Incorporating the 2D Image Editing Paradigm",
         "authors": 25,
         "thesisinfo": "KAIST Master's thesis, January 2009.",
-        "paper": "Publication/Thesis/2009Younghui/2009Younghui.pdf",
+        "paper": "Publications/Thesis/2009Younghui/2009Younghui.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2009Younghui/small.jpg"
+        "smallimg": "Publications/Thesis/2009Younghui/small.jpg"
     },
     {
         "id": 124,
@@ -1433,9 +1433,9 @@ export const Publications =
         "title": "Cartoon Animation Style Rendering of Water",
         "authors": 26,
         "thesisinfo": "KAIST Master's thesis, January 2009.",
-        "paper": "Publication/Thesis/2009Mi/2009Mi.pdf",
+        "paper": "Publications/Thesis/2009Mi/2009Mi.pdf",
         "team": "EVE",
-        "smallimg": "Publication/Thesis/2009Mi/small.jpg"
+        "smallimg": "Publications/Thesis/2009Mi/small.jpg"
     },
     {
         "id": 125,
@@ -1444,8 +1444,8 @@ export const Publications =
         "title": "Realistic Modeling of Forest Ecosystems",
         "authors": 51,
         "thesisinfo": "KAIST Master's thesis, January 2009.",
-        "paper": "Publication/Thesis/2009Sara/2009Sara.pdf",
-        "smallimg": "Publication/Thesis/2009Sara/small.jpg"
+        "paper": "Publications/Thesis/2009Sara/2009Sara.pdf",
+        "smallimg": "Publications/Thesis/2009Sara/small.jpg"
     },
     {
         "id": 126,
@@ -1454,9 +1454,9 @@ export const Publications =
         "title": "Deformation-based Animation of Snake Locomotion",
         "authors": 29,
         "thesisinfo": "KAIST Master's thesis, January 2008.",
-        "paper": "Publication/Thesis/2008Yeongho/2008Yeongho.pdf",
+        "paper": "Publications/Thesis/2008Yeongho/2008Yeongho.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2008Yeongho/small.jpg"
+        "smallimg": "Publications/Thesis/2008Yeongho/small.jpg"
     },
     {
         "id": 127,
@@ -1465,9 +1465,9 @@ export const Publications =
         "title": "Extended Spatial Keyframing for Complex Character Animation",
         "authors": 24,
         "thesisinfo": "KAIST Master's thesis, January 2008.",
-        "paper": "Publication/Thesis/2008Byungkuk/2008Byungkuk.pdf",
+        "paper": "Publications/Thesis/2008Byungkuk/2008Byungkuk.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2008Byungkuk/small.jpg"
+        "smallimg": "Publications/Thesis/2008Byungkuk/small.jpg"
     },
     {
         "id": 128,
@@ -1476,9 +1476,9 @@ export const Publications =
         "title": "Geometric Texture Placement for Digital Creatures",
         "authors": 53,
         "thesisinfo": "KAIST Master's thesis, January 2008.",
-        "paper": "Publication/Thesis/2008Jiyoung/2008Jiyoung.pdf",
+        "paper": "Publications/Thesis/2008Jiyoung/2008Jiyoung.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2008Jiyoung/small.jpg"
+        "smallimg": "Publications/Thesis/2008Jiyoung/small.jpg"
     },
     {
         "id": 129,
@@ -1487,9 +1487,9 @@ export const Publications =
         "title": "Automatic generation of feature point on texture mapping contours",
         "authors": 28,
         "thesisinfo": "KAIST Master's thesis, June 2007.",
-        "paper": "Publication/Thesis/2007Taekwon/2007Taekwon.pdf",
+        "paper": "Publications/Thesis/2007Taekwon/2007Taekwon.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2007Taekwon/small.jpg"
+        "smallimg": "Publications/Thesis/2007Taekwon/small.jpg"
     },
     {
         "id": 130,
@@ -1498,9 +1498,9 @@ export const Publications =
         "title": "Animation Character Rigging Based on Human Skeletal System",
         "authors": 54,
         "thesisinfo": "KAIST Master's thesis, June 2007.",
-        "paper": "Publication/Thesis/2007Taesoo/2007Taesoo.pdf",
+        "paper": "Publications/Thesis/2007Taesoo/2007Taesoo.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2007Taesoo/small.jpg"
+        "smallimg": "Publications/Thesis/2007Taesoo/small.jpg"
     },
     {
         "id": 131,
@@ -1509,9 +1509,9 @@ export const Publications =
         "title": "Automatic Pattern Manipulation for Virtual Garment Design",
         "authors": 27,
         "thesisinfo": "KAIST Master's thesis, January 2006.",
-        "paper": "Publication/Thesis/2006Hwiryong/2006Hwiryong.pdf",
+        "paper": "Publications/Thesis/2006Hwiryong/2006Hwiryong.pdf",
         "team": "CFL2",
-        "smallimg": "Publication/Thesis/2006Hwiryong/small.jpg"
+        "smallimg": "Publications/Thesis/2006Hwiryong/small.jpg"
     },
     {
         "id": 132,
@@ -1520,8 +1520,8 @@ export const Publications =
         "title": "Synthesis of Near-Regular Vector Texture Patterns",
         "authors": 30,
         "thesisinfo": "KAIST Master's thesis, January 2006.",
-        "paper": "Publication/Thesis/2006Jaewoo/2006Jaewoo.pdf",
+        "paper": "Publications/Thesis/2006Jaewoo/2006Jaewoo.pdf",
         "team": "Character",
-        "smallimg": "Publication/Thesis/2006Jaewoo/small.jpg"
+        "smallimg": "Publications/Thesis/2006Jaewoo/small.jpg"
     }
 ]

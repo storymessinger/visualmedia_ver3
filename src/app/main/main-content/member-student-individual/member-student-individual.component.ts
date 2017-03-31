@@ -14,7 +14,7 @@ export class MemberStudentIndividualComponent implements OnInit {
   id: number;
   memberItem: any;
   topicsArr: any[];
-  imgPath = "../../../../assets/imgs/people/";
+  imgPath:string = '../../../../assets/Contents/People/img/';
 
   constructor(private memberService: MemberService, private activatedRoute:ActivatedRoute) { 
     this.subscription = activatedRoute.params //

@@ -17,8 +17,8 @@ export class IssuesNewsComponent implements OnInit, OnDestroy {
   datas:any;
   id: string;
   subscription:Subscription;
-  imgPathSmall:string = '../../../../assets/imgs/Issues/small/';
-  imgPath:string = '../../../../assets/imgs/Issues/';
+  imgPathSmall:string = '../../../../assets/Contents/Issues/smallimg/';
+  imgPath:string = '../../../../assets/Contents/Issues/img/';
 
   constructor(
     private issuesService:IssuesService, 
