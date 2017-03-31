@@ -2,13 +2,6 @@ import { ResearchAreaService } from '../shared/researchArea.service';
 import { IssuesService } from '../shared/Issues.service';
 import { Component, OnInit, Inject, ElementRef } from '@angular/core';
 
-// import { TweenLite } from 'gsap';
-// import { TimelineLite } from 'gsap';
-// import { TweenMax } from 'gsap';
-// import { Ease } from 'gsap';
-// declare var Expo:any;
-// import * as ScrollMagic from 'ScrollMagic';
-
 declare var TweenLite, TweenMax, TimelineLite, TimelineMax, Ease, Expo, ScrollMagic :any;
 
 import { ScrollSpyModule, ScrollSpyService } from 'ng2-scrollspy';
@@ -90,7 +83,6 @@ export class HomeComponent implements OnInit {
 
   clickMenuBtn(event) {
     // 폰 전용 메뉴바 떠야
-    console.log(event);
   }
   clickSearchBtn() {
     // 검색기능떠야함 

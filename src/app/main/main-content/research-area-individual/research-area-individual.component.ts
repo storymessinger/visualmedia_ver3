@@ -16,12 +16,12 @@ export class ResearchAreaIndividualComponent implements OnInit, DoCheck{
   mainImgPath = "../../../../assets/imgs/researchArea/";
 
 
-  datas:any[];
-  memberId:any[];
-  people:any[];
-  paperNames:any[];
+  datas:any;
+  memberId:any;
+  people:any;
+  paperNames:any;
+  team:any;
   private subscription: Subscription;
-  private team:any;
 
   constructor(
     private researchAreaService:ResearchAreaService, 

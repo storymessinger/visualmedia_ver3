@@ -3,8 +3,6 @@ import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild, 
 import { Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router'; 
 import "rxjs/add/operator/filter";
 
-// import { TweenLite, TimelineLite, TweenMax, TimelineMax } from 'gsap';
-
 declare var TweenLite, TweenMax, TimelineLite, TimeliteMax, Ease, Expo, ScrollMagic :any;
 
 interface IBreadcrumb {
@@ -22,7 +20,7 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
 
   //imgs
   public relPath:string = "../../../assets/";
-  public logoPath:string = this.relPath + "imgs/logo-white.svg";
+  public logoIconPath:string = this.relPath + "imgs/logo-h100.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_white_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_white_36px.svg";
 

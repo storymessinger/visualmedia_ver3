@@ -8,7 +8,6 @@ export const ResearchArea = [
         "img":"RA_CFL2.png"
         ,"teamdesc01":"Human Computer Interaction, Image Processing, Physically-based Simulation"
         ,"teamdesc02":"CFL2 stands for Computing For Lazy Life. Lazy life in this term denotes comfortable life obtained from technology. We develop interactive techniques to enrich user experiences, especially through computer graphics and vision technology. Our current research addresses modeling an immersive home entertainment environment through video analysis, 3D geometry reconstruction, new paradigm visualization, and exploration of unique hardware setups that work with human sensing-based interaction"
-
     },
     {
         "team": "EVE",
