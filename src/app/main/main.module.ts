@@ -1,3 +1,4 @@
+import { DefaultImageDirective } from './../shared/default-image.directive';
 import { NumToMonthPipe } from './../shared/num-to-month.pipe';
 import { SearchService } from './../shared/search.service';
 import { PageScrollService } from 'ng2-page-scroll';
@@ -70,7 +71,8 @@ import { MaterialModule } from '@angular/material';
     ArchiveDownloadsComponent,
     ArchiveSeminarComponent,
     KeysPipe,
-    NumToMonthPipe
+    NumToMonthPipe,
+    DefaultImageDirective,
     ],
   imports: [
     CommonModule, 
