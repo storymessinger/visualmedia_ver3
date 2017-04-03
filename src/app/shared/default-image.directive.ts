@@ -1,4 +1,4 @@
-import { Directive, Input, Output } from '@angular/core';
+import { Directive, Input, Output, Attribute } from '@angular/core';
 
 @Directive({
   selector: 'img[default]',
@@ -8,6 +8,8 @@ import { Directive, Input, Output } from '@angular/core';
   }
 })
 export class DefaultImageDirective {
+
+  constructor(){}
 
   @Input() srcset:string;
   @Input() default:string;

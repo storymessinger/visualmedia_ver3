@@ -31,7 +31,11 @@ export class HomeComponent implements OnInit {
     private el:ElementRef,
     private scrollSpyService: ScrollSpyService,
     ) { 
-    this.issuesByDate = issuesService.getIssues()
+    // this.issuesByDate = issuesService.getIssues()
+    //   .sort(fieldSorter(['year','month','day']))
+    //   .slice(-10)
+    //   .reverse();
+    this.issuesByDate = []
       .sort(fieldSorter(['year','month','day']))
       .slice(-10)
       .reverse();
@@ -66,8 +70,7 @@ export class HomeComponent implements OnInit {
 
     const scale_tween = TweenLite.to('#scale-animation', 1, {
       transform: 'scale(.1)',
-      ease: Expo.easeOut,
-      onComplete: console.log('hi')
+      ease: Expo.easeOut
     });
 
     const scale_scene = new ScrollMagic.Scene({

@@ -36,12 +36,11 @@ export class SearchService {
       const d = downloads.getDownloads();
       const i = issues.getIssues();
       const m = members.getMembers();
-      const p_int = publications.getPublicationsInt();
-      const p_kr = publications.getPublicationsKr();
-      const p_thesis = publications.getThesis();
+      const p_int = publications.getPublications();
       const s = seminars.getSeminars();
 
-      this.allInfo = [ ...d, ...i, ...m, ...p_int, ...p_kr, ...p_thesis, ...s ];
+      // this.allInfo = [ ...d, ...i, ...m, ...p_int, ...p_kr, ...p_thesis, ...s ];
+      this.allInfo = [];
     }
 
     getSearch(query) {

@@ -1,3 +1,4 @@
+import { VideoThumbnailDirective } from './../shared/video-thumbnail.directive';
 import { DefaultImageDirective } from './../shared/default-image.directive';
 import { NumToMonthPipe } from './../shared/num-to-month.pipe';
 import { SearchService } from './../shared/search.service';
@@ -73,6 +74,7 @@ import { MaterialModule } from '@angular/material';
     KeysPipe,
     NumToMonthPipe,
     DefaultImageDirective,
+    VideoThumbnailDirective
     ],
   imports: [
     CommonModule, 

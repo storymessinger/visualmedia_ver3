@@ -1,7 +1,10 @@
+import { PageScrollConfig, PageScrollInstance, PageScrollService } from 'ng2-page-scroll';
+import { DOCUMENT } from '@angular/platform-browser';
+import { ScrollAbleService } from './../../../shared/scroll-able.service';
 import { Router } from '@angular/router';
 import { Subscription } from "rxjs/Rx";
 import { SeminarService } from '../../../shared/seminars.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Inject } from '@angular/core';
 import * as _ from 'underscore';
 
 @Component({
@@ -11,26 +14,43 @@ import * as _ from 'underscore';
 })
 export class ArchiveSeminarComponent implements OnInit {
 
-  private subscription: Subscription;
 
   getDatas:any;
   datas:any;
   id: string;
+  subscription: Subscription;
 
-  constructor(private seminarService:SeminarService) { 
+  imgPath:string = '../../../../assets/Contents/People/smallimg/';
+
+  constructor(
+    private seminarService:SeminarService, 
+    ////
+    private scrollAbleService:ScrollAbleService,
+    private pageScrollService: PageScrollService, 
+    @Inject(DOCUMENT) private document: any
+    ) {
+    PageScrollConfig.defaultScrollOffset = 110;
+    PageScrollConfig.defaultDuration = 300;
+    this.subscription = this.scrollAbleService.getScroll()
+      .subscribe(name => { 
+        this.clickScrollTo(name);
+      })
   }
 
   ngOnInit() {
-    this.getDatas = this.seminarService.getSeminars();
-    this.datas = _.values(_.groupBy(this.getDatas,function(item){ return item["date"].split('.')[0] }))
-      .reverse();
-    
-    //* use this later
-    // this.seminarService.getSeminars()
-    //  .subscribe(items => {
-    //     this.getSeminars = items;
-    //   });
-    //* use this later
+    this.seminarService.getSeminars()
+     .subscribe(items => {
+        this.getDatas= items;
+        this.datas = _.values(_.groupBy(this.getDatas,function(item){ return item["date"].split('.')[0] }))
+          .reverse();
+      });
   }
+  /////
+  clickScrollTo(name) {
+    let scrollTo = '#' + name;
+    let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
+    this.pageScrollService.start(pageScrollInstance);
+  }
+  //////
 }
 

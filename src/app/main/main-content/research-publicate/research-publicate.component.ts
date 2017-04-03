@@ -1,4 +1,4 @@
-import { MemberService } from './../../../shared/member.service';
+import { DataService } from './../../../shared/data.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollService, PageScrollConfig, PageScrollInstance } from 'ng2-page-scroll';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
@@ -26,10 +26,9 @@ export class ResearchPublicateComponent implements OnInit, OnDestroy {
 
 
   constructor(
-    private publicationsService:PublicationsService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
-    private memberService: MemberService,
+    private dataService: DataService,
     @Inject(DOCUMENT) private document: any
     ) {
     PageScrollConfig.defaultScrollOffset = 110;
@@ -39,12 +38,13 @@ export class ResearchPublicateComponent implements OnInit, OnDestroy {
         this.clickScrollTo(name);
       })
 
-    this.getDatas= this.publicationsService.getPublicationsInt();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
+    // this.getDatas= this.publicationsService.getPublicationsInt();
+    // this.datas = _.values(_.groupBy(this.getDatas,"year"))
+    //   .reverse();
    }
 
   ngOnInit() {
+    this.getPublication();
   }
 
   // getAuthorName(str) {
@@ -60,6 +60,18 @@ export class ResearchPublicateComponent implements OnInit, OnDestroy {
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);
   }
+
+  getPublication() {
+    this.dataService.getPublications()
+     .subscribe(items => {
+        // international
+        this.getDatas = items.filter( item => item.type === 'international');
+        // year
+        this.datas = _.values(_.groupBy(this.getDatas,"year"))
+          .reverse();
+      });
+  }
+
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks
       this.subscription.unsubscribe();

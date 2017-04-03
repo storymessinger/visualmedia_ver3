@@ -33,13 +33,10 @@ export class ResearchPublicateKrComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-
-    this.getDatas= this.publicationsService.getPublicationsKr();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
    }
 
   ngOnInit() {
+    this.getPublication_kr();
   }
 
   clickScrollTo(name) {
@@ -47,6 +44,18 @@ export class ResearchPublicateKrComponent implements OnInit, OnDestroy {
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);
   }
+
+  getPublication_kr() {
+    this.publicationsService.getPublications()
+     .subscribe(items => {
+        // kr
+        this.getDatas = items.filter( item => item.type === 'domestic');
+        // year
+        this.datas = _.values(_.groupBy(this.getDatas,"year"))
+          .reverse();
+      });
+  }
+
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks
       this.subscription.unsubscribe();

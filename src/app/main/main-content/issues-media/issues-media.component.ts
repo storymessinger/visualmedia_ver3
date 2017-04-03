@@ -38,11 +38,16 @@ export class IssuesMediaComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-    ////
+   }
 
-    this.getDatas= this.issuesService.getMedia();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
+   ngOnInit() {
+    this.issuesService.getIssues()
+    .subscribe(items => {
+      let media = _.groupBy(items,'type');
+      this.getDatas = media['media'];
+      this.datas = _.values(_.groupBy(this.getDatas,function(item){ return item["date"].split('.')[0] }))
+        .reverse();
+    });
    }
 
   /////
@@ -52,9 +57,6 @@ export class IssuesMediaComponent implements OnInit, OnDestroy {
     this.pageScrollService.start(pageScrollInstance);
   }
   //////
-
-  ngOnInit() {
-  }
 
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks

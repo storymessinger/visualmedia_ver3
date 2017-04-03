@@ -20,9 +20,10 @@ export class IssuesNewsComponent implements OnInit, OnDestroy {
   imgPathSmall:string = '../../../../assets/Contents/Issues/smallimg/';
   imgPath:string = '../../../../assets/Contents/Issues/img/';
 
+  test;
+
   constructor(
     private issuesService:IssuesService, 
-
     ////
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
@@ -34,11 +35,17 @@ export class IssuesNewsComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-    ////
+   }
 
-    this.getDatas= this.issuesService.getNews();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
+   ngOnInit() {
+    this.issuesService.getIssues()
+    .subscribe(items => {
+      let news = _.groupBy(items,'type');
+      this.getDatas = news['news'];
+      this.datas = _.values(_.groupBy(items,function(item){ return item["date"].split('.')[0] }))
+        .reverse();
+    });
+
    }
 
   /////
@@ -48,9 +55,6 @@ export class IssuesNewsComponent implements OnInit, OnDestroy {
     this.pageScrollService.start(pageScrollInstance);
   }
   //////
-
-  ngOnInit() {
-  }
 
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks

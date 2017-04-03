@@ -1,6 +1,9 @@
+import { Http } from '@angular/http';
 import { Publications } from './mock/mock-publications';
 import { Injectable } from '@angular/core';
 import * as _ from 'underscore';
+import 'rxjs/Rx';
+import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class PublicationsService {
@@ -13,18 +16,14 @@ export class PublicationsService {
   domestic = this.groupedPublication['domestic'];
   thesis = this.groupedPublication['thesis'];
 
-  constructor() { 
+  constructor(private http:Http) { 
 
   }
 
-  getPublicationsInt(id:number= 0):any {
-    if (id == 0) {
-      return this.international;
-    } else {
-      return this.international.find( item => item.id === id);
-    }
+  getPublications():any {
+    return this.http.get('main/publicate-data')
+      .map(res => res.json())
   }
-    // return this.groupedIssues['news'];
 
   getPublicationsKr(id:number= 0):any {
     if (id == 0) {

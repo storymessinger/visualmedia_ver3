@@ -20,7 +20,9 @@
           <p>{{publication.authors}}</p>
           <p class="menu01">Conference: {{publication.conference}}</p>
           <p class="menu01">Journal: {{publication.journal}}</p>
-          <p class="menu01"><a href="#">Project Page</a> / <a href="#">Paper</a></p>
+          <p class="menu01">
+            <a [routerLink]='["individual",publication.id]'>Project Page</a> / 
+            <a href="#">Paper</a></p>
         </div>
       </div>
 

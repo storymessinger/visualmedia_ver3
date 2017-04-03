@@ -39,12 +39,24 @@ export class ResearchThesisComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.getPublication_thesis();
   }
 
   clickScrollTo(name) {
     let scrollTo = '#' + name;
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);
+  }
+
+  getPublication_thesis() {
+    this.publicationsService.getPublications()
+     .subscribe(items => {
+        // thesis
+        this.getDatas = items.filter( item => item.type === 'thesis');
+        // year
+        this.datas = _.values(_.groupBy(this.getDatas,"year"))
+          .reverse();
+      });
   }
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks

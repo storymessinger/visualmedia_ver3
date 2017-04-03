@@ -1,4 +1,4 @@
-import { Seminars } from './mock/mock-seminar';
+// import { Seminars } from './mock/mock-seminar';
 
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
@@ -11,19 +11,12 @@ export class SeminarService {
   constructor(private http:Http) { 
   }
 
-  // theSeminars:any;
-  // setSeminars() {
-  //   this.theSeminars = Seminars;
-  // }
-
   getSeminars() {
 
-    //* use this later
-    // return this.http.get('main/content/seminar')
-    //   .map(res => res.json());
-    //* use this later
+    return this.http.get('main/seminar')
+      .map(res => res.json());
 
-    return Seminars;
+    // return Seminars;
   }
 
 }

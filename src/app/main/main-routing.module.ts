@@ -68,37 +68,53 @@ import { NgModule } from '@angular/core';
                     component: ResearchProjectsComponent, 
                     data: { breadcrumb: "Projects" }
                 },
-                {   path: 'projects/:id', 
-                    component: ResearchProjectsIndividualComponent, 
-                    data: { breadcrumb: "Projects (individual)" }
-                },
-                {   path: 'publication/:id', 
-                    component: ResearchPublicateIndividualComponent,
-                    data: { breadcrumb: "Publications (individual)" }
-                },
-                {   path: 'publicate/:id', 
-                    component: ResearchPublicateComponent, 
-                    data: { breadcrumb: "Publications (individual)" }
+                {   path: 'projects', 
+                    data: { breadcrumb: "Projects" }, 
+                    children: [
+                        {   path: 'project/:id', 
+                            component: ResearchProjectsIndividualComponent,
+                            data: { breadcrumb: "Individual Project" }
+                        }
+                    ]
                 },
                 {   path: 'publicate', 
                     component: ResearchPublicateComponent, 
                     data: { breadcrumb: "Publications" }
                 },
-                {   path: 'publicate_kr/:id', 
-                    component: ResearchPublicateKrComponent, 
-                    data: { breadcrumb: "Domestic Publications" }
+                {   path: 'publicate', 
+                    data: { breadcrumb: "Publications" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'publicate_kr', 
                     component: ResearchPublicateKrComponent, 
-                    data: { breadcrumb: "Domestic Publications" }
+                    data: { breadcrumb: "Domestic" }
                 },
-                {   path: 'thesis/:id', 
-                    component: ResearchThesisComponent, 
-                    data: { breadcrumb: "Thesis" }
+                {   path: 'publicate_kr', 
+                    data: { breadcrumb: "Domestic" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'thesis', 
                     component: ResearchThesisComponent, 
                     data: { breadcrumb: "Thesis" }
+                },
+                {   path: 'thesis', 
+                    data: { breadcrumb: "Thesis" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'news/:id', 
                     component: IssuesNewsComponent,

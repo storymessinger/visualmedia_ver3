@@ -11,21 +11,31 @@ import { Component, OnInit } from '@angular/core';
 export class ResearchPublicateIndividualComponent implements OnInit {
 
   subscription: Subscription;
+  getDatas:any;
+  datas:any;
   id: number;
-  publicationItem: any;
 
-  constructor(private publicationService: PublicationsService, private activatedRoute:ActivatedRoute) { 
+  constructor(
+    private publicationsService:PublicationsService, 
+    private activatedRoute:ActivatedRoute
+    ) { 
     this.subscription = activatedRoute.params //
       .subscribe(
         (param:any) => {
           this.id = parseInt(param['id']);
         })
-    this.publicationItem = this.publicationService.getPublicationsInt(this.id);
-    this.publicationItem.authorArr = this.publicationItem.authors.split("+");
-    
   }
 
   ngOnInit() {
+    this.getPublication(this.id);
+  }
+
+  getPublication(id:number=0) {
+    this.publicationsService.getPublications()
+     .subscribe(items => {
+        // id
+        this.datas = items.find( item => item.id === id );
+      });
   }
 
 }
