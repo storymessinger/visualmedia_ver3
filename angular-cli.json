@@ -33,8 +33,8 @@
         ,"../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"
         ,"../node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
