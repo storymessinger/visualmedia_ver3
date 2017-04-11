@@ -1,4 +1,13 @@
+.row {
+    margin: 0
+}
 .area {
     width: 100vw;
     position: relative;
+}
+
+.area-desc {
+    display:flex;
+    flex-flow:column;
+    align-items:center;
 }

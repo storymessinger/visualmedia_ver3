@@ -1,3 +1,7 @@
+import { AboutSponserComponent } from './main-content/about-sponser/about-sponser.component';
+import { VideoThumbnailDirective } from './../shared/video-thumbnail.directive';
+import { DefaultImageDirective } from './../shared/default-image.directive';
+import { DataService } from './../shared/data.service';
 import { NumToMonthPipe } from './../shared/num-to-month.pipe';
 import { SearchService } from './../shared/search.service';
 import { PageScrollService } from 'ng2-page-scroll';
@@ -32,6 +36,7 @@ import { AboutAdmissionComponent } from './main-content/about-admission/about-ad
 import { SidebarBtnDirective } from './main-sidebar/sidebar-btn.directive';
 import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
+import { SearchResultComponent } from './main-content/search-result/search-result.component';
 import { ScrollAbleService } from '../shared/scroll-able.service';
 import { MainComponent } from './main.component';
 
@@ -70,7 +75,11 @@ import { MaterialModule } from '@angular/material';
     ArchiveDownloadsComponent,
     ArchiveSeminarComponent,
     KeysPipe,
-    NumToMonthPipe
+    NumToMonthPipe,
+    DefaultImageDirective,
+    VideoThumbnailDirective,
+    SearchResultComponent,
+    AboutSponserComponent
     ],
   imports: [
     CommonModule, 
@@ -89,6 +98,7 @@ import { MaterialModule } from '@angular/material';
     PartnersService, 
     ScrollAbleService,
     PageScrollService,
-    SearchService]
+    SearchService,
+    DataService]
 })
 export class MainModule { }

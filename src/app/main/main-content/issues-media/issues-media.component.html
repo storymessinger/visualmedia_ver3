@@ -18,11 +18,7 @@
         </div>
 
         <div class="data-img">
-        <img src="http://placehold.it/800x600" 
-            [srcset]= 'imgPath + media.img + " 800w, " +
-                       imgPathSmall + media.img + " 300w "'
-             sizes="(min-width:990px) 300px, 800px">
-
+          <img default="http://placehold.it/799x799" [srcset]=" imgPath + media.img">
         </div>
         <div class="data-desc">
           <div>

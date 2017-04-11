@@ -10,12 +10,12 @@
 <body>
   <nav class="navbar navbar-light fixed-top" id="nav-animation">
     <img class="menu_btn" (click)=clickMenuBtn($event) [src]=menuIconPath fill-opacity="0" width="30px">
-    <a class="indexpage-nav-btn navbar-brand" routerLink="/">
-      <img [src]=logoIconPath height="56" id="logo-animation">
+    <a routerLink="/" class="indexpage-nav-btn navbar-brand" >
+      <img [src]='logoIconPath' height="56" id="logo-animation">
     </a>
     <ul class="nav navbar-nav">
-      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/info">ABOUT</a></li>
-      <li class="menu01 nav-item"><a class="nav-link" [routerLink]="['/main/all']" >PEOPLE</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/info" >ABOUT</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" [routerLink]="['/main/people']" fragment="post">PEOPLE</a></li>
       <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/area">RESEARCH</a></li>
       <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/news" >NEWS & EVENT</a></li>
       <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/downloads">ARCHIVE</a></li>
@@ -63,12 +63,13 @@
         </div>
         <div class="card-deck-wrapper col-sm-12">
           <div class="card-deck">
-            <div *ngFor="let area of researchArea" class="card">
-              <img class="img-fluid card-img-top" [src]='researchAreaImgPath + area.img'>
+            <div *ngFor="let team of teams" class="card">
+              <img class="img-fluid card-img-top" 
+                   src="http://placehold.it/400x400" [srcset]='imgPath + team.img'>
               <div class="card-block">
-                <h4 class="card-title">{{area.team}}</h4>
-                <p class="card-text">{{area.area}}</p>
-                <p class="card-text"><small class="text-muted">{{area.desc}}</small></p>
+                <h4 class="card-title">{{team.shortname}}</h4>
+                <p class="card-text">{{team.desc}}</p>
+                <p class="card-text"><small class="text-muted">{{team.fullname}}</small></p>
               </div>
             </div>
           </div>
@@ -82,8 +83,10 @@
           </div>
 
           <div class="card-columns">
-            <div *ngFor="let issue of issuesByDate" class="card issueCard">
-              <img class="news-img card-img-top img-fluid" [src]='issuesImgPath + issue.img'>
+            <div *ngFor="let issue of issues" class="card issueCard">
+              <img class="news-img card-img-top img-fluid" 
+                  src='http://placehold.it//400x400'
+                  [srcset]='imgPath+ issue.img'>
               <div class="card-block">
                 <h4 class="card-title">{{issue.title}}</h4>
                 <p class="card-text desc">{{issue.desc}}</p>

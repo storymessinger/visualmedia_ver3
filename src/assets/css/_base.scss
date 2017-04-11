@@ -54,10 +54,12 @@ body {
     justify-content: center;
 
     // Speical
+    min-height:100vh;
     background-color:#fafafa;
 
 
     .row {
+        // margin: 3.5rem 6rem 6rem 6rem;
         margin: 3.5rem 6rem 6rem 6rem;
         // flex-flow:column;
     }

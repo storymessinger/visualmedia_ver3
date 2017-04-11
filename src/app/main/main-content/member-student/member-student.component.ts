@@ -1,27 +1,24 @@
+import { DataService } from './../../../shared/data.service';
 import { Subscription } from 'rxjs/Rx';
 import { ScrollAbleService } from '../../../shared/scroll-able.service';
-import { MemberService } from '../../../shared/member.service';
-import { Component, OnDestroy, ElementRef, Inject } from '@angular/core';
+import { Component, OnDestroy, ElementRef, Inject, DoCheck, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollConfig, PageScrollInstance, PageScrollService } from 'ng2-page-scroll';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-member-student',
   templateUrl: './member-student.component.html',
   styleUrls: ['./member-student.component.scss']
 })
-export class MemberStudentComponent implements OnDestroy {
+export class MemberStudentComponent implements OnInit, DoCheck, OnDestroy {
 
-  imgPath:string = '../../../../assets/Contents/People/smallimg/';
-
-  public getDatas:any[];
+  imgPath:string = './assets/Contents/';
   public datas:any;
-
   subscription:Subscription;
 
-
   constructor(
-    private memberService:MemberService, 
+    private dataService:DataService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
@@ -36,9 +33,6 @@ export class MemberStudentComponent implements OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-    //
-    this.getDatas= this.memberService.getMembers();
-    this.datas = groupBy(this.getDatas, 'type');
   }
   
   clickScrollTo(name) {
@@ -47,18 +41,17 @@ export class MemberStudentComponent implements OnDestroy {
     this.pageScrollService.start(pageScrollInstance);
   }
 
+  ngOnInit() {
+    this.dataService.getMembers();
+  }
+
+  ngDoCheck() {
+    this.datas = _.groupBy(this.dataService.people, 'type');
+  }
 
   ngOnDestroy() {
       // unsubscribe to ensure no memory leaks
       this.subscription.unsubscribe();
   }
 
-}
-
-function groupBy(arr, property) {
-  return arr.reduce(function(memo, x) {
-    if (!memo[x[property]]) { memo[x[property]] = []; }
-    memo[x[property]].push(x);
-    return memo;
-  }, {});
 }

@@ -8,6 +8,7 @@ export class IssuesService {
 
   public groupedIssues = _.groupBy(Issues, 'type');
 
+
   constructor() { 
 
   }

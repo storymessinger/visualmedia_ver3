@@ -9,6 +9,7 @@ export class ResearchProjectsIndividualComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit() {
   }
 

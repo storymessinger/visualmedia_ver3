@@ -1,3 +1,5 @@
+import { AboutSponserComponent } from './main-content/about-sponser/about-sponser.component';
+import { SearchResultComponent } from './main-content/search-result/search-result.component';
 import { ArchiveSeminarComponent } from './main-content/archive-seminar/archive-seminar.component';
 import { ArchiveDownloadsComponent } from './main-content/archive-downloads/archive-downloads.component';
 import { IssuesLifeComponent } from './main-content/issues-life/issues-life.component';
@@ -17,11 +19,9 @@ import { AboutPartnersComponent } from './main-content/about-partners/about-part
 import { AboutAdmissionComponent } from './main-content/about-admission/about-admission.component';
 import { AboutInfoComponent } from './main-content/about-info/about-info.component';
 
-
 import { MainComponent } from './main.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-
 
 @NgModule({
     imports: [RouterModule.forChild([
@@ -42,12 +42,16 @@ import { NgModule } from '@angular/core';
                     component: AboutPartnersComponent,
                     data: { breadcrumb: "Partners" }
                 },
-                {   path: 'all', 
+                {   path: 'sponsership', 
+                    component: AboutSponserComponent,
+                    data: { breadcrumb: "Sponsership" }
+                },
+                {   path: 'people', 
                     component: MemberStudentComponent,
                     data: { breadcrumb: "People" }, 
                     pathMatch: 'full'
                 },
-                {   path: 'all', 
+                {   path: 'people', 
                     data: { breadcrumb: "People" }, 
                     children: [
                         {   path: 'person/:id', 
@@ -58,59 +62,73 @@ import { NgModule } from '@angular/core';
                 },
                 {   path: 'area', 
                     component: ResearchAreaComponent, 
-                    data: { breadcrumb: "Research Area" }
+                    data: { breadcrumb: "Research Area" },
+                    pathMatch: 'full'
                 },
-                {   path: 'area/:id', 
-                    component: ResearchAreaIndividualComponent, 
-                    data: { breadcrumb: "Teams" }
+                {   path: 'area', 
+                    data: { breadcrumb: "Research Area" }, 
+                    children: [
+                        {   path: 'area/:id', 
+                            component: ResearchAreaIndividualComponent,
+                            data: { breadcrumb: "Teams" }
+                        }
+                    ]
                 },
                 {   path: 'projects', 
                     component: ResearchProjectsComponent, 
                     data: { breadcrumb: "Projects" }
                 },
-                {   path: 'projects/:id', 
-                    component: ResearchProjectsIndividualComponent, 
-                    data: { breadcrumb: "Projects (individual)" }
-                },
-                {   path: 'publication/:id', 
-                    component: ResearchPublicateIndividualComponent,
-                    data: { breadcrumb: "Publications (individual)" }
-                },
-                {   path: 'publicate/:id', 
-                    component: ResearchPublicateComponent, 
-                    data: { breadcrumb: "Publications (individual)" }
+                {   path: 'projects', 
+                    data: { breadcrumb: "Projects" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchProjectsIndividualComponent,
+                            data: { breadcrumb: "Individual Project" }
+                        }
+                    ]
                 },
                 {   path: 'publicate', 
                     component: ResearchPublicateComponent, 
                     data: { breadcrumb: "Publications" }
                 },
-                {   path: 'publicate_kr/:id', 
-                    component: ResearchPublicateKrComponent, 
-                    data: { breadcrumb: "Domestic Publications" }
+                {   path: 'publicate', 
+                    data: { breadcrumb: "Publications" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'publicate_kr', 
                     component: ResearchPublicateKrComponent, 
-                    data: { breadcrumb: "Domestic Publications" }
+                    data: { breadcrumb: "Domestic" }
                 },
-                {   path: 'thesis/:id', 
-                    component: ResearchThesisComponent, 
-                    data: { breadcrumb: "Thesis" }
+                {   path: 'publicate_kr', 
+                    data: { breadcrumb: "Domestic" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'thesis', 
                     component: ResearchThesisComponent, 
                     data: { breadcrumb: "Thesis" }
                 },
-                {   path: 'news/:id', 
-                    component: IssuesNewsComponent,
-                    data: { breadcrumb: "Our News" }
+                {   path: 'thesis', 
+                    data: { breadcrumb: "Thesis" }, 
+                    children: [
+                        {   path: 'individual/:id', 
+                            component: ResearchPublicateIndividualComponent,
+                            data: { breadcrumb: "Individual" }
+                        }
+                    ]
                 },
                 {   path: 'news', 
                     component: IssuesNewsComponent,
                     data: { breadcrumb: "Our News" }
-                },
-                {   path: 'media/:id', 
-                    component: IssuesMediaComponent, 
-                    data: { breadcrumb: "In Media" }
                 },
                 {   path: 'media', 
                     component: IssuesMediaComponent, 
@@ -120,23 +138,19 @@ import { NgModule } from '@angular/core';
                     component: IssuesLifeComponent, 
                     data: { breadcrumb: "Our Daily Life" }
                 },
-                {   path: 'downloads/:id', 
-                    component: ArchiveDownloadsComponent, 
-                    data: { breadcrumb: "Downloads" }
-                },
                 {   path: 'downloads', 
                     component: ArchiveDownloadsComponent, 
                     data: { breadcrumb: "Downloads" },
                     pathMatch: 'full'
                 },
-                {   path: 'seminar/:id', 
-                    component: ArchiveSeminarComponent, 
-                    data: { breadcrumb: "Seminar" }
-                },
                 {   path: 'seminar', 
                     component: ArchiveSeminarComponent, 
                     data: { breadcrumb: "Seminar" },
                     pathMatch: 'full'
+                },
+                {   path: 'search/:id', 
+                    component: SearchResultComponent,
+                    data: { breadcrumb: "Search Result" },
                 }
 
             ]

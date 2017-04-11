@@ -1,31 +1,27 @@
-import { PartnersService } from '../../../shared/partners.service';
-import { Component, OnInit } from '@angular/core';
+import { DataService } from './../../../shared/data.service';
+import { Component, OnInit, DoCheck } from '@angular/core';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-about-partners',
   templateUrl: './about-partners.component.html',
   styleUrls: ['./about-partners.component.scss']
 })
-export class AboutPartnersComponent implements OnInit {
+export class AboutPartnersComponent implements OnInit, DoCheck {
 
-  public getDatas:any[];
   public datas:any;
-  private relPath = "./../../../../assets/imgs/partners/";
+  private imgPath = "./assets/Contents/";
 
-  constructor(private partnersService:PartnersService) { 
-    this.getDatas= this.partnersService.getPartners();
-    this.datas = groupBy(this.getDatas, 'type');
+  constructor(
+    private dataService:DataService
+  ) { 
   }
 
   ngOnInit() {
+    this.dataService.getPartners();
+  }
+  ngDoCheck() {
+    this.datas = _.groupBy(this.dataService.partners, 'type');
   }
 
-}
-
-function groupBy(arr, property) {
-  return arr.reduce(function(memo, x) {
-    if (!memo[x[property]]) { memo[x[property]] = []; }
-    memo[x[property]].push(x);
-    return memo;
-  }, {});
 }

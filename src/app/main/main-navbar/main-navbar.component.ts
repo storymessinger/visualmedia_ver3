@@ -1,5 +1,5 @@
-import { SearchService } from './../../shared/search.service';
-import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { DataService } from './../../shared/data.service';
+import { Component, Output, Input, EventEmitter, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, Params, NavigationEnd} from '@angular/router'; 
 import "rxjs/add/operator/filter";
 
@@ -16,7 +16,7 @@ interface IBreadcrumb {
   templateUrl: './main-navbar.component.html',
   styleUrls: ['./main-navbar.component.scss']
 })
-export class MainNavbarComponent implements OnInit, AfterViewInit { 
+export class MainNavbarComponent implements OnInit { 
 
   //imgs
   public relPath:string = "../../../assets/";
@@ -27,21 +27,25 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
   //
   breadcrumbs:IBreadcrumb[];
   myChildren:any;
+  @ViewChild("myInput")
+  private _inputElement: ElementRef;
 
   constructor( 
     private router:Router, 
     private activatedRoute:ActivatedRoute, 
     private el:ElementRef,
-    private searchService:SearchService ) {
+    private dataService:DataService ) {
       this.breadcrumbs = [];
   }
 
   @Input() state;
   @Output() sidebarClick = new EventEmitter<string>();
 
-  ngOnInit() {
+  tl_btn:any;
+  tl_search:any;
+  tl_navbar:any;
 
-    this.tweenNavbar();
+  ngOnInit() {
 
     const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
     //subscribe to the NavigationEnd event
@@ -50,14 +54,20 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
       let root: ActivatedRoute = this.activatedRoute.root;
       this.breadcrumbs = this.getBreadcrumbs(root);
     });
-  }
 
-  ngAfterViewInit() {
+    this.tl_btn = new TimelineLite({paused:true})
+      .set('.open-search', { display: "none" })
+      .set('.close-search', { display: "unset" })
+    this.tl_search = new TimelineLite({paused:true})
+      .set('.search', { display: "unset" })
+      .to( '.breadcrumb', 0.9, {
+        opacity: "0"
+      })
+      .to( '.search', 1, {
+        opacity: "1"
+      })
 
-  }
-
-  tweenNavbar() {
-    const tl = new TimelineLite()
+    this.tl_navbar = new TimelineLite()
       .from( '#navbar-animation', 1.5, {
         backgroundColor: "#fafafa",
         boxShadow: "0 1.5px 4px rgba(0,0,0,0.05)",
@@ -67,9 +77,26 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
       .from ('.breadcrumb', 0.3, {
         opacity:0
       })
+
+    this.tl_navbar.play()
+  }
+
+  tweenSearch() {
+    this.tl_btn.play();
+    this.tl_search.play();
+    // auto focus (why not work?)
+    this._inputElement.nativeElement.focus();
+    // clear away the value
+    this._inputElement.nativeElement.value = null;
+  }
+  closeSearch(){
+    this.tl_btn.reverse();
+    this.tl_search.reverse();
   }
   
-  startSearch() { 
+  startSearch(event) { 
+    this.closeSearch();
+    this.router.navigate(['/main/search', event.target.value]);
   }
 
   onClicked() {
@@ -85,11 +112,12 @@ export class MainNavbarComponent implements OnInit, AfterViewInit {
 
     //get the child routes
     let children: ActivatedRoute[] = route.children;
+    console.log(typeof(children.length));
     this.myChildren = children;
 
 
     //return if there are no more children
-    if (children.length === 0) {
+    if (children.length === 0 || children === null) {
       return breadcrumbs;
     }
 

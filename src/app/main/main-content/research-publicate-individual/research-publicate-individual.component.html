@@ -3,28 +3,27 @@
   <div class="content col-sm container-fluid">
     <div class="row">
       <div class="logo">
-        <img src="./../../../../assets/imgs/logo-h100.svg" width="180"/>
+        <img src="./assets/imgs/logo-h100.svg" width="180"/>
       </div>
 
-      <p class="display-2">{{publicationItem.title}}</p>
+      <p class="display-2">{{datas.title}}</p>
 
       <div class="desc">
         <div class="authors">
-          <h5 *ngFor="let author of publicationItem.authorArr">
-            {{author}}
-          </h5>
+          <h5>{{datas.people_name}}</h5>
         </div>
 
-        <h5>{{publicationItem.conference}}</h5>
+        <h5>{{datas.conference}}</h5>
 
-        <h5 *ngIf="publicationItem.journal">{{publicationItem.journal}}</h5>
+        <h5 *ngIf="datas.journal">{{datas.journal}}</h5>
 
-        <h5 *ngIf="publicationItem.thesisInfo">{{publicationItem.thesisInfo}}</h5>
+        <h5 *ngIf="datas.thesisInfo">{{datas.thesisInfo}}</h5>
 
-        <p><a href="#">Paper (25.6MB PDF)</a> / <a href="#">Slides (PPTX, 204.3MB)</a> / <a href="#">Videos</a> / <a href="#">Supplemental document</a> / <a href="#">Code (ZIP, 43.2MB)</a> / <a href="#">Datasets</a></p>
+        <p><a [href]='imgPath + datas.paper'>Paper</a> / <a href="#">Slides (PPTX, 204.3MB)</a> / <a href="#">Videos</a> / <a href="#">Supplemental document</a> / <a href="#">Code (ZIP, 43.2MB)</a> / <a href="#">Datasets</a></p>
 
-        <!--<div class="col-sm-12 imgDiv"><img [src]=" relImgPath + publicationItem.img" class="max-img"/></div>-->
-        <div class="imgDiv"><img alt="publication-img" src="../../../../assets/imgs/Publications/Home_MainPic_resize.jpg" class="max-img"/></div>
+        <div class="imgDiv">
+          <img default="http://placehold.it/800x600" [srcset]=" imgPath + datas.img" class="max-img">
+        </div>
       </div>
 
       <!-- Examples -->

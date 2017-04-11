@@ -1,27 +1,24 @@
+import { DataService } from './../../../shared/data.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollService, PageScrollConfig, PageScrollInstance } from 'ng2-page-scroll';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
-import { PublicationsService } from '../../../shared/publications.service';
-import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy, DoCheck } from '@angular/core';
 import { Subscription } from 'rxjs/Rx';
-import * as _ from 'underscore';
 
 @Component({
   selector: 'app-research-thesis',
   templateUrl: './research-thesis.component.html',
   styleUrls: ['./research-thesis.component.scss']
 })
-export class ResearchThesisComponent implements OnInit {
+export class ResearchThesisComponent implements OnInit, DoCheck {
 
-  getDatas:any[];
   datas:any;
   id: string;
   subscription: Subscription;
-
-  imgPath:string = '../../../../assets/Contents/';
+  imgPath:string = './assets/Contents/';
 
   constructor(
-    private publicationsService:PublicationsService,
+    private dataService:DataService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
@@ -32,13 +29,13 @@ export class ResearchThesisComponent implements OnInit {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-
-    this.getDatas= this.publicationsService.getThesis();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
    }
 
   ngOnInit() {
+    this.dataService.getPublication_thesis();
+  }
+  ngDoCheck() {
+    this.datas = this.dataService.publications_thesis;
   }
 
   clickScrollTo(name) {

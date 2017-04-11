@@ -1,3 +1,4 @@
+import { DataService } from './../shared/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,7 +12,10 @@ export class MainComponent implements OnInit {
   public sidebarState:boolean = false; //default is false
   public isMouseOnSidebar:boolean;
   
-  constructor() { }
+  constructor(private dataservice:DataService) { 
+    this.dataservice.init();
+  }
+
 
   ngOnInit() {
   }

@@ -9,20 +9,21 @@
 
       <div *ngFor="let seminar of data" class="data-box">
         <div class="data-img">
-          <img src="http://placehold.it/800x600">
+          <img videoThumbnail [videoUrl]='seminar.link' 
+              sizes="(min-width:990px) 300px, 800px" >
 
         </div>
         <div class="data-desc">
           <h3 >{{seminar.title}}</h3>
           <div>
-            <p>Presenter: {{seminar.presenter}} </p>
+            <p>Presenter: {{seminar.people_name}} </p>
             <p class="menu01">{{seminar.date}}</p>
 
           </div>
         </div>
         <div class="data-type">
-          <!--<p class="menu01">{{seminar.type | uppercase }}</p>-->
-          <img src="http://placehold.it/400x400">
+          <p class="menu01">{{seminar.people_type | uppercase }}</p>
+          <img default="http://placehold.it/399x399" [srcset]=" imgPath + seminar.person_img">
         </div>
       </div>
 

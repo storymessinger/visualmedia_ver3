@@ -2,23 +2,24 @@
   <div class="content col-sm-12 container-fluid">
     <div class="row">
       <div class="person-img">
-        <img [src]=' imgPath + memberItem.img '>
+        <img default="http://placehold.it/399x399" [srcset]=" imgPath + datas.img">
 
         <h3>E-mail</h3>
-        <p>{{memberItem.email}}</p>
+        <p>{{datas.email}}</p>
         <h3>Mailing Address</h3>
         <p>example address</p>
 
       </div>
 
+
       <div class="person-desc">
-        <h1>{{memberItem.name}}</h1>
-        <p>{{memberItem.type}}</p>
+        <h1>{{datas.name}}</h1>
+        <p>{{datas.type}}</p>
         <p>Visual Media Lab <br> 
            Graduate School of Culture and Technology, KAIST</p>
         <hr/>
         <h3>Research Interest</h3>
-        <p *ngFor='let topic of topicsArr' class="topics">{{topic}}</p>
+        <p class="topics">{{datas.topics}}</p>
         <hr/>
         <h3>Education</h3>
 
@@ -78,17 +79,10 @@
 
         <h3>Projects</h3>
         <div class="projects">
-          <div class="project-item">
-            <img src="http://placehold.it/400x300">
-            <p>Multiprojection Project</p>
-          </div>
-          <div class="project-item">
-            <img src="http://placehold.it/400x300">
-            <p>Multiprojection Project</p>
-          </div>
-          <div class="project-item">
-            <img src="http://placehold.it/400x300">
-            <p>Multiprojection Project</p>
+          <div *ngFor="let project of projects" class="project-item">
+            <img src="http://placehold.it/399x399">
+            <!--<img default="http://placehold.it/399x399" [srcset]="imgPath">-->
+            <p>{{projects.name}}</p>
           </div>
         </div>
 

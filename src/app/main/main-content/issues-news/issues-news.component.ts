@@ -1,8 +1,8 @@
+import { DataService } from './../../../shared/data.service';
 import { Subscription } from 'rxjs/Rx';
 import { PageScrollService, PageScrollConfig, PageScrollInstance } from 'ng2-page-scroll';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
-import { IssuesService } from '../../../shared/Issues.service';
-import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy, DoCheck } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import * as _ from 'underscore';
 
@@ -11,17 +11,15 @@ import * as _ from 'underscore';
   templateUrl: './issues-news.component.html',
   styleUrls: ['./issues-news.component.scss']
 })
-export class IssuesNewsComponent implements OnInit, OnDestroy {
+export class IssuesNewsComponent implements OnInit, DoCheck, OnDestroy {
 
-  getDatas:any;
   datas:any;
   id: string;
   subscription:Subscription;
-  imgPathSmall:string = '../../../../assets/Contents/Issues/smallimg/';
-  imgPath:string = '../../../../assets/Contents/Issues/img/';
+  imgPath:string = './assets/Contents/';
 
   constructor(
-    private issuesService:IssuesService, 
+    private dataService:DataService,
 
     ////
     private scrollAbleService:ScrollAbleService,
@@ -34,22 +32,19 @@ export class IssuesNewsComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-    ////
-
-    this.getDatas= this.issuesService.getNews();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
    }
-
-  /////
   clickScrollTo(name) {
     let scrollTo = '#' + name;
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);
   }
-  //////
 
   ngOnInit() {
+    this.dataService.getIssues();
+  }
+
+  ngDoCheck() {
+    this.datas = this.dataService.news;
   }
 
   ngOnDestroy() {

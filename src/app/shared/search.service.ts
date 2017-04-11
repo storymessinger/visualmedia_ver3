@@ -1,19 +1,15 @@
-import { SeminarService } from './seminars.service';
-import { PublicationsService } from './publications.service';
-import { ProjectsService } from './projects.service';
-import { MemberService } from './member.service';
-import { DownloadService } from './downloads.service';
-import { IssuesService } from './Issues.service';
-import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from './data.service';
+import { Injectable, Input } from '@angular/core';
 
 import * as Fuse from 'fuse.js'
 
 @Injectable()
 export class SearchService {
 
-  public allInfo:any[];
-  private options = {
-      shouldSort: true,
+  searchInput:any;
+
+  private options = { shouldSort: true,
       threshold: 0.4,
       location: 0,
       distance: 100,
@@ -27,27 +23,29 @@ export class SearchService {
   } 
 
   constructor(
-    private downloads:DownloadService, 
-    private issues:IssuesService, 
-    private members:MemberService, 
-    private projects:ProjectsService, 
-    private publications:PublicationsService,
-    private seminars:SeminarService) { 
-      const d = downloads.getDownloads();
-      const i = issues.getIssues();
-      const m = members.getMembers();
-      const p_int = publications.getPublicationsInt();
-      const p_kr = publications.getPublicationsKr();
-      const p_thesis = publications.getThesis();
-      const s = seminars.getSeminars();
+    private dataService:DataService,
+    private router:Router
+    ) { }
 
-      this.allInfo = [ ...d, ...i, ...m, ...p_int, ...p_kr, ...p_thesis, ...s ];
-    }
+  initSearch(input:string = "") {
+    this.searchInput = input;
+    this.router.navigate(['/main/search']);
+  }
 
-    getSearch(query) {
-      var fuse = new Fuse(this.allInfo, this.options); // "list" is the item array
-      var result = fuse.search(query);
-      return result;
-    }
-
+  getSearch_people() {
+    console.log(this.dataService.people);
+    var fuse = new Fuse(this.dataService.people, this.options); // "list" is the item array
+    var result = fuse.search(this.searchInput);
+    return result;
+  }
+  getSearch_publications() {
+    var fuse = new Fuse(this.dataService.publications, this.options); // "list" is the item array
+    var result = fuse.search(this.searchInput);
+    return result;
+  }
+  getSearch_projects() {
+    var fuse = new Fuse(this.dataService.projects, this.options); // "list" is the item array
+    var result = fuse.search(this.searchInput);
+    return result;
+  }
 }

@@ -1,33 +1,27 @@
+import { DataService } from './../../../shared/data.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
 import { PageScrollInstance, PageScrollService, PageScrollConfig } from 'ng2-page-scroll';
-import { IssuesService } from '../../../shared/Issues.service';
 import { Subscription } from 'rxjs/Rx';
-import * as _ from 'underscore';
 
-import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-issues-media',
   templateUrl: './issues-media.component.html',
   styleUrls: ['./issues-media.component.scss']
 })
-export class IssuesMediaComponent implements OnInit, OnDestroy {
+export class IssuesMediaComponent implements OnInit, DoCheck, OnDestroy {
 
 
-  getDatas:any;
   datas:any;
-  aYearDatas:any;
   id: string;
-
-  imgPathSmall:string = '../../../../assets/Contents/Issues/smallimg/';
-  imgPath:string = '../../../../assets/Contents/Issues/img/';
+  imgPath:string = './assets/Contents/';
 
   private subscription: Subscription;
 
   constructor(
-    private issuesService:IssuesService,
-    ////
+    private dataService:DataService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
@@ -38,22 +32,20 @@ export class IssuesMediaComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-    ////
-
-    this.getDatas= this.issuesService.getMedia();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
    }
 
-  /////
   clickScrollTo(name) {
     let scrollTo = '#' + name;
     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, scrollTo);
     this.pageScrollService.start(pageScrollInstance);
   }
-  //////
 
   ngOnInit() {
+    this.dataService.getIssues();
+  }
+
+  ngDoCheck() {
+    this.datas = this.dataService.medias;
   }
 
   ngOnDestroy() {

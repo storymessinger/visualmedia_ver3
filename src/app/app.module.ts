@@ -32,7 +32,6 @@ import { ScrollSpyModule } from 'ng2-scrollspy';
     NgbModule.forRoot(), // Add Bootstrap module here.
     MaterialModule,
     ScrollSpyModule.forRoot()
-    
   ],
   providers: [
     IssuesService, 

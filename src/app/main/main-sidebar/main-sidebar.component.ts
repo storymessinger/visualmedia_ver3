@@ -42,47 +42,47 @@ export class MainSidebarComponent {
       firstLink: ["member", "People"],
       secondLink: [
         { 
-          url: "all",
+          url: "people",
           data: "Faculty",
           scroll: "faculty",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Post Doctors",
           scroll: "post",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Ph.D Students",
           scroll: "phd",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Master Students",
           scroll: "master",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Researchers",
           scroll: "researcher",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Interns",
           scroll: "intern",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Ph.D Alumni",
           scroll: "alumni_phd",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Master Alumni",
           scroll: "alumni_master",
         },
         { 
-          url: "all",
+          url: "people",
           data: "Former Members",
           scroll: "former",
         },
@@ -94,7 +94,7 @@ export class MainSidebarComponent {
         { 
           url: "area",
           data: "Research Area",
-          innerLink: ["CFL2", "EVE", "Character"]
+          innerLink: []
         },
         { 
           url: "projects",

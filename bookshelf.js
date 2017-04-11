@@ -5,7 +5,7 @@ const dbConfig = {
     host: 'localhost',
     user: 'root',
     password: 'visualmedia',
-    database: 'o2',
+    database: 'visualmedia',
     charset: 'utf8'
   }
 };

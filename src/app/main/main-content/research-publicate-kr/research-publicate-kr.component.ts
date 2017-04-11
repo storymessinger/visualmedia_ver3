@@ -1,28 +1,24 @@
+import { DataService } from './../../../shared/data.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import { PageScrollService, PageScrollConfig, PageScrollInstance } from 'ng2-page-scroll';
 import { ScrollAbleService } from './../../../shared/scroll-able.service';
-import { PublicationsService } from '../../../shared/publications.service';
-import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy, DoCheck } from '@angular/core';
 import { Subscription } from 'rxjs/Rx';
-import * as _ from 'underscore';
 
 @Component({
   selector: 'app-research-publicate-kr',
   templateUrl: './research-publicate-kr.component.html',
   styleUrls: ['./research-publicate-kr.component.scss']
 })
-export class ResearchPublicateKrComponent implements OnInit, OnDestroy {
+export class ResearchPublicateKrComponent implements OnInit, DoCheck, OnDestroy {
 
-  getDatas:any[];
   datas:any;
   id: string;
   subscription: Subscription;
-
-  imgPath:string = '../../../../assets/Contents/';
-
+  imgPath:string = './assets/Contents/';
 
   constructor(
-    private publicationsService:PublicationsService,
+    private dataService:DataService,
     private scrollAbleService:ScrollAbleService,
     private pageScrollService: PageScrollService, 
     @Inject(DOCUMENT) private document: any
@@ -33,13 +29,14 @@ export class ResearchPublicateKrComponent implements OnInit, OnDestroy {
       .subscribe(name => { 
         this.clickScrollTo(name);
       })
-
-    this.getDatas= this.publicationsService.getPublicationsKr();
-    this.datas = _.values(_.groupBy(this.getDatas,"year"))
-      .reverse();
    }
 
   ngOnInit() {
+    this.dataService.getPublication_kr();
+  }
+
+  ngDoCheck() {
+    this.datas = this.dataService.publications_kr;
   }
 
   clickScrollTo(name) {
