@@ -8,6 +8,7 @@ import { Component, OnInit, DoCheck } from '@angular/core';
   templateUrl: './research-publicate-individual.component.html',
   styleUrls: ['./research-publicate-individual.component.scss']
 })
+
 export class ResearchPublicateIndividualComponent implements OnInit,DoCheck {
 
   subscription: Subscription;
@@ -30,7 +31,9 @@ export class ResearchPublicateIndividualComponent implements OnInit,DoCheck {
     this.dataService.getPublication(this.id);
   }
   ngDoCheck() {
-    this.datas = this.dataService.publication_individual;
+    if (this.dataService.publication_individual !== []) {
+      this.datas = this.dataService.publication_individual;
+    }
   }
 
 

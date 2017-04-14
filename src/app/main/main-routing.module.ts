@@ -68,7 +68,7 @@ import { NgModule } from '@angular/core';
                 {   path: 'area', 
                     data: { breadcrumb: "Research Area" }, 
                     children: [
-                        {   path: 'area/:id', 
+                        {   path: 'teams/:id', 
                             component: ResearchAreaIndividualComponent,
                             data: { breadcrumb: "Teams" }
                         }

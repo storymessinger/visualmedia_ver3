@@ -14,11 +14,12 @@ export class DataService {
   public people:any;
   public people_person:any;
   public publications:any;
-  public publication_individual:any;
+  public publication_individual:any = [];
   public publications_int:any;
   public publications_kr:any;
   public publications_thesis:any;
   public projects:any;
+  public projects_individual:any = [];
   public partners:any;
   public seminars:any;
   public researchArea:any = [];
@@ -71,13 +72,22 @@ export class DataService {
       })
   }
 
-  getProjects() {
+  getProjects(id:number = null) {
+    if(id) {
+     this.http.get('main/projects-data-individual/'+ id)
+      .map(res => res.json())
+      .subscribe(items => {
+        console.log('items: ' + items);
+        this.projects_individual = items;
+      });
+    } else {
      this.http.get('main/projects-data')
       .map(res => res.json())
       .subscribe(items => {
         let sub= _.values(_.groupBy(items,"year")).reverse();
         this.projects = sub.map( subArr => this.dateSort_descend(subArr));
       });
+    }
   }
 
   getPublication(id:number = null) {
@@ -85,7 +95,7 @@ export class DataService {
      this.http.get('main/publication-data-individual/' + id)
       .map(res => res.json())
       .subscribe(items => {
-        this.publication_individual = items;
+        this.publication_individual = items[0];
       })
     } else {
      this.http.get('main/publication-data')

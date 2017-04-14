@@ -19,7 +19,14 @@
 
         <h5 *ngIf="datas.thesisInfo">{{datas.thesisInfo}}</h5>
 
-        <p><a [href]='imgPath + datas.paper'>Paper</a> / <a href="#">Slides (PPTX, 204.3MB)</a> / <a href="#">Videos</a> / <a href="#">Supplemental document</a> / <a href="#">Code (ZIP, 43.2MB)</a> / <a href="#">Datasets</a></p>
+        <p>
+          <a [href]='imgPath + datas.paper'>Paper</a> / 
+          <!--<a href="#">Slides (PPTX, 204.3MB)</a> / 
+          <a href="#">Videos</a> / 
+          <a href="#">Supplemental document</a> /
+          <a href="#">Code (ZIP, 43.2MB)</a> / 
+          <a href="#">Datasets</a>-->
+        </p>
 
         <div class="imgDiv">
           <img default="http://placehold.it/800x600" [srcset]=" imgPath + datas.img" class="max-img">

@@ -1,4 +1,5 @@
-import { ResearchAreaService } from '../../../shared/researchArea.service';
+import { ResearchArea } from './../../../shared/mock/mock-researchArea';
+import { DataService } from './../../../shared/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchAreaComponent implements OnInit {
 
-  constructor(private researchAreaService:ResearchAreaService) { }
+  constructor(
+    private dataService:DataService
+    ) { }
 
-  public areas:any;
 
   ngOnInit() {
-    this.areas = this.researchAreaService.getResearchArea();
   }
 
 }

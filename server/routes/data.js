@@ -58,6 +58,35 @@ router.get(['/projects-data'], function (req, res) {
   })
 })
 
+router.get(['/projects-data-individual/:id'], function (req, res) {
+  var id = req.params.id;
+  var sql = `
+    SELECT 
+      p1.*, 
+      teams.shortname as teams_shortname,
+      people.name as people_name,
+      partners.name as funding_name,
+      partners.logo as funding_img
+    FROM 
+      projects as p1 
+    LEFT JOIN
+      teams ON teams.id = p1.teams_id
+    LEFT JOIN
+      people ON people.id = p1.people_id
+    LEFT JOIN
+      partners ON partners.id = p1.funding_id
+    WHERE
+      p1.fullname = (
+        SELECT p2.fullname
+        FROM projects as p2
+        WHERE p2.id = ${id} 
+      ) and p1.fullname IS NOT NULL
+  `
+  connection.query(sql, function (err, results, fields) {
+    res.send(results);
+  })
+})
+
 router.get(['/publication-data'], function (req, res) {
 
   var sql = `

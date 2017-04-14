@@ -19,7 +19,7 @@ interface IBreadcrumb {
 export class MainNavbarComponent implements OnInit { 
 
   //imgs
-  public relPath:string = "../../../assets/";
+  public relPath:string = "./assets/";
   public logoIconPath:string = this.relPath + "imgs/logo-white.svg";
   public menuIconPath:string = this.relPath + "imgs/ic_menu_white_36px.svg";
   public searchIconPath:string = this.relPath + "imgs/ic_zoom_in_white_36px.svg";
@@ -112,7 +112,6 @@ export class MainNavbarComponent implements OnInit {
 
     //get the child routes
     let children: ActivatedRoute[] = route.children;
-    console.log(typeof(children.length));
     this.myChildren = children;
 
 
