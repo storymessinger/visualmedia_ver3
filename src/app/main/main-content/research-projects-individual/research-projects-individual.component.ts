@@ -11,6 +11,7 @@ import { Component, OnInit, DoCheck } from '@angular/core';
 })
 export class ResearchProjectsIndividualComponent implements OnInit, DoCheck {
 
+  imgPath:string = './assets/Contents/';
   subscription: Subscription;
   id: number;
   datas:any[] = [];
@@ -34,7 +35,6 @@ export class ResearchProjectsIndividualComponent implements OnInit, DoCheck {
     funding_name:null,
     funding_img:null
   }
-  partners:any[] = [];
 
   constructor(
     private dataService:DataService,
@@ -55,15 +55,6 @@ export class ResearchProjectsIndividualComponent implements OnInit, DoCheck {
     if (this.dataService.projects_individual[0] != undefined){
       this.datas = this.dataService.projects_individual;
       this.first_data = this.dataService.projects_individual[0];
-      this.partners=[];
-      this.datas.forEach(items => {
-        let sub = {
-          name : items.funding_name,
-          img : items.funding_img
-        }
-        this.partners.push(sub);
-      })
-
     }
   }
 

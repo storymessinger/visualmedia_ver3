@@ -13,12 +13,12 @@
           
         </div>
         <div class="data-desc">
-          <h3 >{{download.title}}<md-icon>file download</md-icon></h3>
-          <md-icon>file download</md-icon>
+          <h3 >{{download.title}}</h3>
           <p class="menu01">{{download.desc}}</p>
         </div>
         <div class="data-type">
-          <h5 ><a [href]='imgPath + download.file' target="_blank">{{download.type | uppercase }}</a></h5>
+          <h5 ><a [href]='imgPath + download.file' target="_blank">{{download.type | uppercase }}</a><md-icon class="material-icons">file_download</md-icon></h5>
+          
           <p class="menu01">
             {{download.additional}}
           </p>

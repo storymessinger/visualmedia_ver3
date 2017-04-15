@@ -1,7 +1,7 @@
 <div class="flex-content">
   <div class="content col-sm container-fluid">
     <div class="front-image-max">
-      <img src="../../../../assets/imgs/about_us_intro.png">
+      <img src="./assets/imgs/about_us_intro.png">
     </div> 
 
     <div class="row no-gutters">
@@ -15,7 +15,7 @@
         <div *ngFor="let person of datas" class="people-box col-sm-12 col-md-6 col-lg-4">
           <div class="people-img">
             <div class="people-img-box">
-              <img [src]=" imgPath + person.people_img">
+              <img default="http://placehold.it/399x399" [srcset]=" imgPath + person.people_img">
               <a md-fab [routerLink]="[ '/main/all/person/', person.people_id ]" ><md-icon>add</md-icon></a>
             </div>
           </div>
@@ -25,12 +25,12 @@
         </div>
 
       </div>
-      <div *ngFor="let partner of partners" class="project-partners col-12">
+      <div class="project-partners col-12">
         <div class="partner-box col-sm-12 col-md-4 col-lg-3">
-          <div class="partner-img">
-            <img [src]=' imgPath + partner.img'>
+          <div *ngIf="first_data.funding_img" class="partner-img">
+            <img default="http://placehold.it/399x399" [srcset]=" imgPath + first_data.funding_img">
           </div>
-          <p class="menu01 text-center">{{partner.name}}</p>
+          <p *ngIf="partner.funding_name" class="menu01 text-center">{{partner.funding_name}}</p>
         </div>
       </div>
     </div>

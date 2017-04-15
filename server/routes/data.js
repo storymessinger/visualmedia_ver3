@@ -76,11 +76,20 @@ router.get(['/projects-data-individual/:id'], function (req, res) {
     LEFT JOIN
       partners ON partners.id = p1.funding_id
     WHERE
-      p1.fullname = (
-        SELECT p2.fullname
+    ((
+      (SELECT p2.fullname
         FROM projects as p2
-        WHERE p2.id = ${id} 
-      ) and p1.fullname IS NOT NULL
+        WHERE p2.id = ${id}) = '') AND p1.id = ${id}) 
+    OR
+    ((
+      (SELECT p2.fullname
+        FROM projects as p2
+        WHERE p2.id = ${id}) <> '') AND 
+        p1.fullname = 
+        (SELECT p2.fullname
+        FROM projects as p2
+        WHERE p2.id = ${id})
+    )
   `
   connection.query(sql, function (err, results, fields) {
     res.send(results);
